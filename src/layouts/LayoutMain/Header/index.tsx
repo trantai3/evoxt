@@ -6,9 +6,6 @@ import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 const Header = () => {
-<<<<<<< HEAD
-  return <div>123</div>;
-=======
   const [isClickSubMenu, setIsClickSubMenu] = useState(false);
   const [isBars, setIsBars] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -204,7 +201,6 @@ const Header = () => {
       </div>
     </>
   );
->>>>>>> new-branch
 };
 
 export default Header;
