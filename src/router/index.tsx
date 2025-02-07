@@ -1,3 +1,5 @@
+import { LayoutMain } from "@/layouts/LayoutMain";
+import MainPage from "@/pages/MainPage";
 import {
   RouteObject,
   createBrowserRouter,
@@ -7,6 +9,8 @@ import {
 const rootRoute: RouteObject[] = [
   {
     path: "/",
+    element: <LayoutMain />,
+    children: [{ index: true, element: <MainPage /> }],
   },
 ];
 
