@@ -1,0 +1,113 @@
+@use "../../../assets/fonts/font.scss";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+$a-color: #ffffff;
+.header {
+  &__one {
+    background-color: #0f1e53;
+
+    a {
+      &:hover {
+        color: #007bff;
+      }
+    }
+
+    .header__register {
+      border: 1px solid #77b6ea;
+      cursor: pointer;
+    }
+
+    .header__register:hover {
+      background-color: #77b6ea;
+      a:hover {
+        color: $a-color;
+      }
+    }
+
+    .header__environment {
+      border-left: 1px solid #ddd;
+      text-decoration: none;
+    }
+    .header__environment:hover {
+      color: #0f49c2;
+    }
+  }
+
+  &__two {
+    background-color: #0f1e53;
+  }
+
+  &__container {
+    .header__right {
+      a {
+        font-family: "Ubuntu", sans-serif;
+        color: $a-color;
+      }
+      a:hover {
+        color: #4169e1;
+      }
+      .deploy:hover .submenu {
+        display: block;
+      }
+      .submenu {
+        li:hover {
+          background-color: #142763;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .header__right {
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    .deploy-menu {
+      margin-top: 10px;
+    }
+    .submenu {
+      display: none !important;
+    }
+    .elementMenu {
+      padding-left: 10px;
+    }
+  }
+  .iconBar {
+    display: block !important;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header__right {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  .iconBar {
+    display: block !important;
+    font-size: 24px;
+  }
+  .submenu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .header__one {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .header__two {
+    .header__container {
+      flex-direction: column;
+      gap: 24px;
+      img {
+        max-width: 180px !important;
+      }
+    }
+  }
+}

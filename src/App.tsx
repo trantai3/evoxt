@@ -1,6 +1,5 @@
 import MainRouter from "@/router";
-import "@/assets/style.scss";
-
+import "./css/base.scss";
 const App = () => {
   return <MainRouter />;
 };
