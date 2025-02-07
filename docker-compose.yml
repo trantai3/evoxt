@@ -1,0 +1,11 @@
+version: "3"
+services:
+  evoxt:
+    image: evoxt:latest
+    ports:
+      - "5055:80"
+    restart: always
+    networks:
+      - evoxt-network
+networks:
+  evoxt-network:

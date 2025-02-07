@@ -1,0 +1,32 @@
+variables:
+  GIT_SSL_NO_VERIFY: "true"
+  DOCKER_DRIVER: overlay2
+
+image:
+  name: docker/compose
+
+services:
+  - docker:dind
+
+stages:
+  - build
+  - deploy
+
+build dev:
+  stage: build
+  tags:
+    - temposoft
+  script:
+    - docker build . -t evoxt:latest
+  only:
+    - main
+
+deploy dev:
+  stage: deploy
+  tags:
+    - temposoft
+  script:
+    - docker-compose -f docker-compose.yml down
+    - docker-compose -f docker-compose.yml up -d
+  only:
+    - main
