@@ -13,28 +13,30 @@ const section2 = [
 ];
 const Section2 = () => {
   return (
-    <div className="section__2">
-      <div className="container">
-        <div className="section__2--heading">
-          Industry Leading Single Core Performance
-        </div>
-        <div className="section__2--subheading">
-          Take a look at how our CPU compare to others.
-        </div>
-        <div className="section__2--table">
-          {section2.map((e, index) => (
-            <div key={index} className="table__row">
-              <img src={e.icon} alt="" />
-              <div className="row__container">
-                <div className={`row__infor row__infor-${index}`}>
-                  <p className="content">{e.content}</p>
+    <div className="mainPage">
+      <div className="section__2">
+        <div className="container">
+          <div className="section__2--heading">
+            Industry Leading Single Core Performance
+          </div>
+          <div className="section__2--subheading">
+            Take a look at how our CPU compare to others.
+          </div>
+          <div className="section__2--table">
+            {section2.map((e, index) => (
+              <div key={index} className="table__row">
+                <img src={e.icon} alt="" />
+                <div className="row__container">
+                  <div className={`row__infor row__infor-${index}`}>
+                    <p className="content">{e.content}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-          <p className="section__2--notice">
-            The data are collected from 2020. This might differ in the future.
-          </p>
+            ))}
+            <p className="section__2--notice">
+              The data are collected from 2020. This might differ in the future.
+            </p>
+          </div>
         </div>
       </div>
     </div>
