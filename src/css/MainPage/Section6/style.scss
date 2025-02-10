@@ -1,0 +1,100 @@
+@use "../../../assets/fonts/font.scss";
+.mainPage {
+  .section__6 {
+    padding: 100px 0;
+    .container {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
+    &-heading {
+      font-size: 48px;
+      font-weight: bold;
+      font-family: "Roboto Slab", serif;
+      color: #050049;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &-subheading {
+      font-family: "Roboto", sans-serif;
+      color: #050049;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 65px;
+    }
+    .ant-carousel {
+      .slick-slider {
+        .slick-dots {
+          .slick-active {
+            button {
+              background-color: #007aff;
+            }
+          }
+        }
+      }
+    }
+    .carouselImg {
+      img {
+        margin: 0 auto;
+      }
+      p {
+        text-align: center;
+        padding-bottom: 60px;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .mainPage {
+    .section__6 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mainPage {
+    .section__6 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .mainPage {
+    .section__6 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .mainPage {
+    .section__6 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .mainPage {
+    .section__6 {
+      &-heading {
+        font-size: 32px;
+      }
+      .container {
+        padding: 0 20px;
+      }
+    }
+  }
+}
