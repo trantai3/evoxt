@@ -1,0 +1,111 @@
+@use "../../../assets/fonts/font.scss";
+.mainPage {
+  .section__9 {
+    background-color: #0f1e53;
+    padding: 100px 0;
+    .container {
+      padding-left: 220px;
+      padding-right: 220px;
+    }
+    &-heading {
+      font-size: 48px;
+      font-weight: bold;
+      font-family: "Roboto Slab", serif;
+      color: white;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &-subheading {
+      font-family: "Roboto", sans-serif;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 65px;
+    }
+    &-main {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      .wrapper {
+        border: solid 1px #ddd;
+        width: 250px;
+        height: 300px;
+        padding: 10px;
+        background: white;
+        transition: 0.2s;
+        border-radius: 8px;
+        &-heading {
+          font-family: "Roboto";
+          font-weight: bold;
+          text-align: center;
+          margin: 16px;
+          color: #050049;
+          font-size: 17px;
+        }
+        &-text {
+          padding: 0 10px;
+          text-align: center;
+          color: #050049;
+          margin-bottom: 25px;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .mainPage {
+    .section__9 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mainPage {
+    .section__9 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .mainPage {
+    .section__9 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .mainPage {
+    .section__9 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .mainPage {
+    .section__9 {
+      &-heading {
+        font-size: 32px;
+      }
+      .container {
+        padding: 0 20px;
+      }
+    }
+  }
+}

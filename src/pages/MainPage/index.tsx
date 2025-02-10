@@ -6,6 +6,7 @@ import Section5 from "./section5";
 import Section6 from "./section6";
 import Section7 from "./section7";
 import Section8 from "./section8";
+import Section9 from "./section9";
 
 const MainPage = () => {
   return (
@@ -18,6 +19,7 @@ const MainPage = () => {
       <Section6 />
       <Section7 />
       <Section8 />
+      <Section9 />
     </>
   );
 };
