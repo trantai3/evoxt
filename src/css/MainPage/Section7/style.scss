@@ -1,0 +1,123 @@
+@use "../../../assets/fonts/font.scss";
+.mainPage {
+  .section__7 {
+    background-color: #0f1e53;
+    padding: 100px 0;
+    .container {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
+    &-heading {
+      font-size: 48px;
+      font-weight: bold;
+      font-family: "Roboto Slab", serif;
+      color: white;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &-subheading {
+      font-family: "Roboto", sans-serif;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 65px;
+    }
+    &-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      .wrapper {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        gap: 8px;
+        flex-direction: column;
+        .title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h3 {
+            font-size: 29px;
+            font-weight: bold;
+            color: white;
+          }
+          img {
+            margin-right: 20px;
+            width: 30px;
+            height: 30px;
+          }
+        }
+        .content {
+          p {
+            font-size: 17px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .mainPage {
+    .section__7 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mainPage {
+    .section__7 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .mainPage {
+    .section__7 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .mainPage {
+    .section__7 {
+      &-main {
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .mainPage {
+    .section__7 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .mainPage {
+    .section__7 {
+      &-heading {
+        font-size: 32px;
+      }
+      .container {
+        padding: 0 20px;
+      }
+    }
+  }
+}
