@@ -1,0 +1,310 @@
+@use "../../../assets/fonts/font.scss";
+.mainPage {
+  .section__8 {
+    padding: 100px 0;
+    .container {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
+    &-heading {
+      font-size: 48px;
+      font-weight: bold;
+      font-family: "Roboto Slab", serif;
+      color: #050049;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &-subheading {
+      font-family: "Roboto", sans-serif;
+      color: #050049;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 65px;
+    }
+    &-main {
+      position: relative;
+    }
+    .loc_info {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      background: royalblue;
+      border: 1px solid royalblue;
+      color: white;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .loc_info_display {
+      position: absolute;
+      width: 250px;
+      height: 320px;
+      z-index: 1;
+      background: white;
+      -webkit-box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+      box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+      font-family: "Questrial", serif;
+      &_header_img {
+        width: 250px;
+        height: 170px;
+        overflow: hidden;
+        img {
+          height: auto;
+          max-width: 100%;
+        }
+      }
+      &_text {
+        padding: 15px;
+        &_long {
+          color: #858585;
+        }
+      }
+    }
+    .plusLosAngle {
+      left: 15%;
+      top: 32.3%;
+      &:hover ~ .imgLosAngle {
+        display: block;
+      }
+    }
+    .imgLosAngle {
+      left: 17.5%;
+      top: 32.3%;
+      display: none;
+    }
+    .plusMontreal {
+      left: 28%;
+      top: 25.5%;
+      &:hover ~ .imgMontreal {
+        display: block;
+      }
+    }
+    .imgMontreal {
+      left: 30%;
+      top: 26.3%;
+      display: none;
+      &:hover {
+        display: block;
+      }
+    }
+    .plusNewYork {
+      left: 27.9%;
+      top: 29.2%;
+      &:hover ~ .imgNewYork {
+        display: block;
+      }
+    }
+    .imgNewYork {
+      left: 29.5%;
+      top: 29.3%;
+      display: none;
+    }
+    .plusLondon {
+      left: 46.5%;
+      top: 22.4%;
+      &:hover ~ .imgLondon {
+        display: block;
+      }
+    }
+    .imgLondon {
+      left: 49%;
+      top: 22.4%;
+      display: none;
+    }
+    .plusNether {
+      left: 47.65%;
+      top: 21.4%;
+      &:hover ~ .imgNether {
+        display: block;
+      }
+    }
+    .imgNether {
+      left: 49.15%;
+      top: 21.4%;
+      display: none;
+    }
+    .plusGermany {
+      left: 48.65%;
+      top: 23.4%;
+      &:hover ~ .imgGermany {
+        display: block;
+      }
+    }
+    .imgGermany {
+      left: 51.15%;
+      top: 23.4%;
+      display: none;
+    }
+    .plusPoland {
+      left: 51.48%;
+      top: 21.9%;
+      &:hover ~ .imgPoland {
+        display: block;
+      }
+    }
+    .imgPoland {
+      left: 53.98%;
+      top: 21.9%;
+      display: none;
+      &:hover {
+        display: block;
+      }
+    }
+    .plusMalaysia {
+      left: 74.4%;
+      top: 53%;
+      &:hover ~ .imgMalaysia {
+        display: block;
+      }
+    }
+    .imgMalaysia {
+      left: 51.4%;
+      top: 53%;
+      display: none;
+      &:hover {
+        display: block;
+      }
+    }
+    .plusJakarta {
+      left: 76%;
+      top: 59.5%;
+      &:hover ~ .imgJakarta {
+        display: block;
+      }
+    }
+    .imgJakarta {
+      left: 53.4%;
+      top: 60%;
+      display: none;
+      &:hover {
+        display: block;
+      }
+    }
+    .plusSydney {
+      left: 85.8%;
+      top: 78%;
+      &:hover ~ .imgSydney {
+        display: block;
+      }
+    }
+    .imgSydney {
+      left: 62.4%;
+      top: 79%;
+      display: none;
+      &:hover {
+        display: block;
+      }
+    }
+    .plusHongKong {
+      left: 77.3%;
+      top: 41%;
+      &:hover ~ .imgHongKong {
+        display: block;
+      }
+    }
+    .imgHongKong {
+      left: 54.3%;
+      top: 41%;
+      display: none;
+      &:hover {
+        display: block;
+      }
+    }
+    .plusOsaka {
+      left: 82.1%;
+      top: 33%;
+      &:hover ~ .imgOsaka {
+        display: block;
+      }
+    }
+    .imgOsaka {
+      left: 83%;
+      top: 33%;
+      display: none;
+      &:hover {
+        display: block;
+      }
+    }
+    .plusTokyo {
+      left: 82.9%;
+      top: 32.5%;
+      &:hover ~ .imgTokyo {
+        display: block;
+      }
+    }
+    .imgTokyo {
+      left: 85%;
+      display: none;
+      &:hover {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .mainPage {
+    .section__8 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mainPage {
+    .section__8 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .mainPage {
+    .section__8 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .mainPage {
+    .section__8 {
+      &-main {
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .mainPage {
+    .section__8 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .mainPage {
+    .section__8 {
+      &-heading {
+        font-size: 32px;
+      }
+      .container {
+        padding: 0 20px;
+      }
+    }
+  }
+}
