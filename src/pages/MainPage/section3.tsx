@@ -23,7 +23,6 @@ import icon14CA from "../../assets/icons/MainPage/Section3/icon14CA.svg";
 import icon15CA from "../../assets/icons/MainPage/Section3/icon15CA.png";
 import icon16CA from "../../assets/icons/MainPage/Section3/icon16CA.png";
 import icon17CA from "../../assets/icons/MainPage/Section3/icon17CA.svg";
-
 import "../../css/MainPage/Section3/style.scss";
 import { Link } from "react-router-dom";
 const section2Header = [

@@ -1,0 +1,144 @@
+@use "../../../assets/fonts/font.scss";
+.mainPage {
+  .section__4 {
+    padding: 100px 0;
+    .container {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
+    &-heading {
+      font-size: 48px;
+      font-weight: bold;
+      font-family: "Roboto Slab", serif;
+      color: #050049;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &-subheading {
+      font-family: "Roboto", sans-serif;
+      color: #050049;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 65px;
+    }
+    .tab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 40px;
+      .tabLinks {
+        cursor: pointer;
+        padding: 0 6px;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        img {
+          width: 25px;
+          height: 25px;
+        }
+        span {
+          font-size: 17px;
+          color: #050049;
+        }
+      }
+      .active {
+        border-bottom: solid 3px royalblue;
+      }
+    }
+    .titleBenchMark {
+      font-size: 17px;
+      color: #222222;
+      text-align: center;
+    }
+    .benchmark {
+      white-space: pre-wrap;
+      height: 400px;
+      overflow-y: scroll;
+      background: black;
+      color: white;
+      text-align: left;
+      padding: 3%;
+      max-width: 600px;
+      margin: auto;
+    }
+    .benchmark-notice {
+      font-size: 13px;
+      color: #222222;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 50px auto;
+      background-color: royalblue;
+      font-size: 17px;
+      padding: 10px 20px;
+      color: white;
+    }
+    button:hover {
+      background-color: #212083;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .mainPage {
+    .section__4 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mainPage {
+    .section__4 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .mainPage {
+    .section__4 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .mainPage {
+    .section__4 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .mainPage {
+    .section__4 {
+      &-heading {
+        font-size: 32px;
+      }
+      .container {
+        padding: 0 20px;
+        .tab {
+          .tabLinks {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
