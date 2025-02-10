@@ -1,0 +1,194 @@
+@use "../../../assets/fonts/font.scss";
+.mainPage {
+  .section__5 {
+    background-color: #0f1e53;
+    padding: 100px 0;
+    .container {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+    &-heading {
+      font-size: 48px;
+      font-weight: bold;
+      font-family: "Roboto Slab", serif;
+      color: white;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &-subheading {
+      font-family: "Roboto", sans-serif;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 65px;
+    }
+    .scrollX {
+      overflow-x: auto;
+    }
+    .tab {
+      max-width: 1300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      .tablinks {
+        cursor: pointer;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        padding: 5px 10px;
+        img {
+          width: 25px;
+          height: 25px;
+        }
+        span {
+          font-size: 17px;
+        }
+      }
+    }
+    &-content {
+      .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin: 50px 0;
+        &-left {
+          display: flex;
+          gap: 20px;
+          flex-direction: column;
+          .listButtons {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            button {
+              color: white;
+              padding: 10px 40px;
+              border-radius: 25px;
+              font-size: 17px;
+              &.readmoreButton {
+                background: royalblue;
+              }
+              &.docButton {
+                background-color: #6c6c6c;
+              }
+            }
+          }
+          .gotodocButton {
+            color: white;
+            background: royalblue;
+            padding: 10px 40px;
+            border-radius: 25px;
+            font-size: 17px;
+          }
+        }
+        &-right {
+          img {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 530px;
+            height: auto;
+          }
+        }
+        &-heading {
+          color: white;
+          font-size: 29px;
+          font-weight: bold;
+        }
+        &-content {
+          font-size: 17px;
+          color: white;
+        }
+      }
+    }
+    .active {
+      border-bottom: solid 3px royalblue;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .mainPage {
+    .section__5 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mainPage {
+    .section__5 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .mainPage {
+    .section__5 {
+      .tab {
+        .tablinks {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .mainPage {
+    .section__5 {
+      &-content {
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .mainPage {
+    .section__5 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .mainPage {
+    .section__5 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .mainPage {
+    .section__5 {
+      &-heading {
+        font-size: 32px;
+      }
+      .container {
+        padding: 0 20px;
+        .tab {
+          .tabLinks {
+            flex-direction: column;
+          }
+        }
+        .wrapper {
+          .listButtons {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
