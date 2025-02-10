@@ -76,23 +76,27 @@ $colorRoyalBlue: #4169e1;
 }
 
 @media (max-width: 1230px) {
-  .content {
-    flex-direction: column;
-    gap: 36px;
+  .MainPage__Section1 {
+    .content {
+      flex-direction: column;
+      gap: 36px;
+    }
   }
 }
 
 @media (max-width: 767px) {
-  .content {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
-    &-left {
-      .deploy-button {
-        padding: 10px !important;
+  .MainPage__Section1 {
+    .content {
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+      &-left {
+        .deploy-button {
+          padding: 10px !important;
+        }
       }
-    }
-    &-right {
-      display: none;
+      &-right {
+        display: none;
+      }
     }
   }
 }
