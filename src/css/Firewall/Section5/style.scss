@@ -1,0 +1,74 @@
+@use "../../../assets/fonts/font.scss";
+.firewallPage {
+  .section__5 {
+    padding: 100px 0;
+    .container {
+      padding-left: 220px;
+      padding-right: 220px;
+      h3 {
+        font-size: 29px;
+        text-align: left;
+        margin-bottom: 20px;
+        line-height: 1.2em;
+        font-weight: 400;
+        text-transform: none;
+      }
+      ul {
+        li {
+          list-style: disc;
+        }
+        font-size: 17px;
+        color: #222222;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .firewallPage {
+    .section__5 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .firewallPage {
+    .section__5 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .firewallPage {
+    .section__5 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .firewallPage {
+    .section__5 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .firewallPage {
+    .section__5 {
+      .container {
+        padding: 0 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@use "../../../assets/fonts/font.scss";
+.firewallPage {
+  .section__1 {
+    padding: 100px 0;
+    .container {
+      padding-left: 220px;
+      padding-right: 220px;
+      .banner {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: 50%;
+          height: auto;
+          max-width: 100%;
+        }
+        .text-banner {
+          h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            line-height: 1.2em;
+            font-weight: 400;
+            text-transform: none;
+          }
+          p {
+            font-size: 17px;
+            color: #2b2b2b;
+            font-family: "Open Sans", sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .firewallPage {
+    .section__1 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .firewallPage {
+    .section__1 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .firewallPage {
+    .section__1 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .firewallPage {
+    .section__1 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .firewallPage {
+    .section__1 {
+      .container {
+        padding: 0 20px;
+        .banner {
+          flex-direction: column;
+          h1 {
+            text-align: center;
+          }
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

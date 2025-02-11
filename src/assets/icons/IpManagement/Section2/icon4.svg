@@ -1,0 +1,8 @@
+<svg height='300px' width='300px'  fill="#4169e1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><style type="text/css">
+	.st0{fill:none;stroke:#4169e1;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#4169e1;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#4169e1;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#4169e1;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:2.0674,3.1011;}
+	.st4{fill:none;stroke:#4169e1;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:2,2;}
+	.st5{fill:none;stroke:#4169e1;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2,2;}
+</style><g><rect x="2" y="39" class="st1" width="10" height="9"></rect><rect x="38" y="39" class="st1" width="10" height="9"></rect><rect x="20" y="39" class="st1" width="10" height="9"></rect><polyline class="st1" points="7,39 7,33 43,33 43,39  "></polyline><line class="st1" x1="25" y1="26" x2="25" y2="38"></line><g><path class="st1" d="M25,27c0,0-10-6.5-10-15.3C15,6.3,19.5,2,25,2s10,4.3,10,9.7C35,20.5,25,27,25,27z"></path><ellipse class="st1" cx="25" cy="11.7" rx="4.2" ry="4"></ellipse></g></g></svg>
