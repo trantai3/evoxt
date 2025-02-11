@@ -3,6 +3,7 @@ import Clone from "@/pages/Clone";
 import Firewall from "@/pages/Firewall";
 import IpManagement from "@/pages/IpManagement";
 import MainPage from "@/pages/MainPage";
+import WeeklyOffsiteBackup from "@/pages/Weekly-Offsite-Backup";
 import {
   RouteObject,
   createBrowserRouter,
@@ -18,6 +19,7 @@ const rootRoute: RouteObject[] = [
       { path: "clone", element: <Clone /> },
       { path: "firewall", element: <Firewall /> },
       { path: "ip-management", element: <IpManagement /> },
+      { path: "weekly-offsite-backup", element: <WeeklyOffsiteBackup /> },
     ],
   },
 ];
