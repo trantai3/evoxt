@@ -1,5 +1,6 @@
 import Section1 from "./section1";
 import Section10 from "./section10";
+import Section11 from "./section11";
 import Section2 from "./section2";
 import Section3 from "./section3";
 import Section4 from "./section4";
@@ -22,6 +23,7 @@ const MainPage = () => {
       <Section8 />
       <Section9 />
       <Section10 />
+      <Section11 />
     </>
   );
 };
