@@ -1,4 +1,5 @@
 import { LayoutMain } from "@/layouts/LayoutMain";
+import Clone from "@/pages/Clone";
 import MainPage from "@/pages/MainPage";
 import {
   RouteObject,
@@ -10,7 +11,10 @@ const rootRoute: RouteObject[] = [
   {
     path: "/",
     element: <LayoutMain />,
-    children: [{ index: true, element: <MainPage /> }],
+    children: [
+      { index: true, element: <MainPage /> },
+      { path: "clone", element: <Clone /> },
+    ],
   },
 ];
 
