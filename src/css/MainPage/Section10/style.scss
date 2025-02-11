@@ -1,0 +1,181 @@
+@use "../../../assets/fonts/font.scss";
+.mainPage {
+  .section__10 {
+    padding: 100px 0;
+    .container {
+      padding-left: 220px;
+      padding-right: 220px;
+    }
+    &-heading {
+      font-size: 48px;
+      font-weight: bold;
+      font-family: "Roboto Slab", serif;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #050049;
+    }
+    &-subheading {
+      font-family: "Roboto", sans-serif;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 65px;
+      color: #050049;
+    }
+    .search {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      width: 80%;
+      input {
+        width: 100%;
+        padding: 10px 15px;
+        border-radius: 25px;
+        font-size: 17px;
+        &:focus {
+          outline: none;
+          border: 1px solid #4169e1;
+        }
+        &:hover {
+          border: 1px solid #4169e1;
+        }
+      }
+      .icon {
+        font-size: 20px;
+        margin-left: -35px;
+      }
+    }
+    .popular-searches {
+      width: 60%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      margin-top: 30px;
+      .terminal {
+        &-header {
+          display: flex;
+          background-color: #333;
+          padding: 10px;
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
+          gap: 10px;
+          .button {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            &-red {
+              background-color: #ff605c;
+            }
+            &-yellow {
+              background-color: #ffbd44;
+            }
+            &-green {
+              background-color: #00ca4e;
+            }
+          }
+        }
+        &-content {
+          padding: 15px;
+          background-color: #222;
+          font-family: "Ubuntu Mono", monospace;
+          color: white;
+          padding-bottom: 100px;
+          .command-line {
+            font-size: 17px;
+            margin-bottom: 5px;
+            word-wrap: break-word;
+          }
+          .result-ul {
+            li {
+              display: flex;
+              gap: 5px;
+              font-size: 17px;
+              color: #1e73be;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+    .go-to-categories {
+      display: flex;
+      gap: 24px;
+      border-radius: 25px;
+      padding: 10px;
+      align-items: center;
+      background-color: #16519e;
+      .section-10-items-documentation-inner {
+        img {
+          background-color: white;
+          height: 100px;
+          width: 200px;
+          border-radius: 25px;
+          padding: 15px;
+        }
+      }
+      .documentation-text {
+        font-size: 22px;
+        font-weight: bold;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .mainPage {
+    .section__10 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mainPage {
+    .section__10 {
+      .container {
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .mainPage {
+    .section__10 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .mainPage {
+    .section__10 {
+      .container {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .mainPage {
+    .section__10 {
+      &-heading {
+        font-size: 32px;
+      }
+      .container {
+        padding: 0 20px;
+        .go-to-categories {
+          flex-direction: column;
+          .documentation-text {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
