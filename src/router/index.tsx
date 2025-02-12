@@ -1,6 +1,8 @@
+import LayoutDeploy from "@/layouts/LayoutDeploy";
 import { LayoutMain } from "@/layouts/LayoutMain";
 import AboutUs from "@/pages/AboutUs";
 import Clone from "@/pages/Clone";
+import Dashboard from "@/pages/Dashboard";
 import Firewall from "@/pages/Firewall";
 import IpManagement from "@/pages/IpManagement";
 import MainPage from "@/pages/MainPage";
@@ -29,6 +31,11 @@ const rootRoute: RouteObject[] = [
       { path: "about-us", element: <AboutUs /> },
       { path: "terms-of-service", element: <TermOfService /> },
     ],
+  },
+  {
+    path: "/deploy",
+    element: <LayoutDeploy />,
+    children: [{ index: true, element: <Dashboard /> }],
   },
 ];
 
