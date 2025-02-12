@@ -1,0 +1,28 @@
+.termOfServicePage {
+  .section__1 {
+    .container {
+      margin: 95px auto;
+      .wrap {
+        padding: 40px;
+        background-color: #ffffff;
+        h1 {
+          font-size: 42px;
+          margin-bottom: 20px;
+          line-height: 1.2em;
+          font-weight: 400;
+          text-transform: none;
+        }
+        span {
+          font-size: 18px;
+          padding-bottom: 20px;
+          ul {
+            padding-left: 22px;
+            li {
+              list-style: disc;
+            }
+          }
+        }
+      }
+    }
+  }
+}

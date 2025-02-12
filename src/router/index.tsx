@@ -6,6 +6,7 @@ import IpManagement from "@/pages/IpManagement";
 import MainPage from "@/pages/MainPage";
 import MemberRanking from "@/pages/MemberRanking";
 import Pricing from "@/pages/Pricing";
+import TermOfService from "@/pages/TermOfService";
 import WeeklyOffsiteBackup from "@/pages/Weekly-Offsite-Backup";
 import {
   RouteObject,
@@ -26,6 +27,7 @@ const rootRoute: RouteObject[] = [
       { path: "membership-ranking", element: <MemberRanking /> },
       { path: "pricing", element: <Pricing /> },
       { path: "about-us", element: <AboutUs /> },
+      { path: "terms-of-service", element: <TermOfService /> },
     ],
   },
 ];
