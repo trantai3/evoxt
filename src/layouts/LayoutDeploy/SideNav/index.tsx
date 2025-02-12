@@ -31,7 +31,9 @@ const SideNav = () => {
   };
   const [isClose, setClose] = useState(false);
   return isClose === true ? (
-    <div className="sideNavLayoutDeploy">
+    <div
+      className={`sideNavLayoutDeploy ${isClose === true ? "openSideNav" : ""}`}
+    >
       <Link onClick={() => setClose(!isClose)} className="close" to="/deploy">
         <IoIosClose />
       </Link>
@@ -221,7 +223,10 @@ const SideNav = () => {
       </p>
     </div>
   ) : (
-    <div onClick={() => setClose(!isClose)} className="opensidebar">
+    <div
+      onClick={() => setClose(!isClose)}
+      className={`opensidebar ${isClose === false ? "closeSideNav" : ""} `}
+    >
       Open Sidebar
     </div>
   );

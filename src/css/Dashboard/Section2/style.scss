@@ -1,0 +1,118 @@
+@use "../../../assets/fonts/font.scss";
+.dashboardPage {
+  padding-left: 40px;
+  .section__2 {
+    padding: 0 30px;
+    padding-bottom: 100px;
+    margin: 20px 0;
+    h1 {
+      font-size: 32px;
+      border-bottom: solid 1px #ddd;
+      font-weight: 400;
+      font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .ticketinvoice {
+      display: flex;
+      gap: 50px;
+      padding-top: 35px;
+      .ticket,
+      .invoices {
+        flex: 1;
+        padding: 20px;
+        border: solid 1px lightgrey;
+        font-family: "Raleway", sans-serif;
+        &-head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          h3 {
+            font-size: 20px;
+            color: #333333;
+          }
+          a {
+            font-size: 14px;
+            color: royalblue;
+          }
+        }
+        &-box {
+          font-size: 14px;
+          color: #333333;
+        }
+      }
+    }
+    .overflow-x {
+      overflow-x: auto;
+      max-width: 1200px;
+      white-space: nowrap;
+    }
+    .tabs {
+      display: flex;
+      align-items: center;
+      .tab {
+        font-size: 17px;
+        padding: 12px 6px;
+        margin: 0 10px;
+        color: #adadad;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        &:hover {
+          color: #4169e1b5;
+        }
+        &-active {
+          color: royalblue;
+          font-weight: bold;
+          border-bottom: royalblue solid 5px;
+        }
+      }
+    }
+    .vms {
+      padding: 6px 12px;
+      box-shadow: 0 6px 12px rgba(140, 152, 164, 0.075);
+      border: 1px solid #ddd;
+      .vmw {
+        &-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 200px;
+          justify-content: center;
+        }
+        &-title {
+          font-weight: bold;
+          font-size: 22px;
+          font-family: "Roboto", sans-serif;
+        }
+        &-subtitle {
+          font-size: 16px;
+          color: #333333;
+          margin-bottom: 10px;
+          font-family: "Raleway", sans-serif;
+        }
+        &-deploy {
+          background: royalblue;
+          font-size: 16px;
+          color: white;
+          padding: 10px 20px;
+          font-weight: bold;
+          text-decoration: none;
+          border: royalblue solid 2px;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .dashboardPage {
+    .section__2 {
+      .ticketinvoice {
+        .ticket-head {
+          flex-direction: column;
+        }
+        flex-direction: column;
+      }
+    }
+  }
+}

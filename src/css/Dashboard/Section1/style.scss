@@ -1,0 +1,67 @@
+.dashboardPage {
+  .section__1 {
+    padding: 10px 0;
+    display: flex;
+    padding-right: 100px;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+    .chooseLanguage {
+      display: flex;
+      justify-content: center;
+      width: 150px;
+      height: 30px;
+      border: solid 1px #ddd;
+      border-radius: 6px;
+      gap: 8px;
+      align-items: center;
+      .flag {
+        img {
+          width: 20px;
+        }
+      }
+      .language {
+        font-size: 18px;
+        color: #808080;
+      }
+    }
+    .addservicebutton {
+      button {
+        padding: 0px 70px;
+        border-radius: 25px;
+        border: none;
+        background: royalblue;
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        transition: 0.6s;
+        width: 210px;
+      }
+    }
+    .logout {
+      padding: 6px 15px;
+      background-color: white;
+      color: grey;
+      border-radius: 3px;
+      border: solid 1px #ddd;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .dashboardPage {
+    .section__1 {
+      flex-direction: column;
+      .chooseLanguage {
+        max-width: 150px;
+        max-height: 30px;
+      }
+      .addservicebutton {
+        button {
+          max-width: 210px;
+        }
+      }
+    }
+  }
+}
