@@ -1,4 +1,4 @@
-.memberRankingPage {
+.pricingPage {
   .container {
     margin: 140px auto;
     padding: 0 150px;
@@ -12,67 +12,67 @@
         font-weight: 400;
         text-transform: none;
       }
+      h4 {
+        font-size: 24px;
+        font-family: inherit;
+        margin-bottom: 20px;
+        font-weight: 400;
+      }
+      p {
+        margin-bottom: 25px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 500;
+      }
+      .country {
+        font-weight: 500;
+        font-size: 18px;
+      }
       .overflow-x {
+        margin-bottom: 30px;
         overflow-x: auto;
         max-width: 1200px;
         white-space: nowrap;
-      }
-      table {
-        width: 100%;
-        thead {
-          th {
-            font-size: 16px;
-            color: #222222;
-            padding: 8px;
-            border-bottom: 2px solid #222222;
+        table {
+          width: 100%;
+          thead {
+            th {
+              font-size: 16px;
+              color: #222222;
+              padding: 8px;
+              border-bottom: 2px solid #222222;
+            }
           }
-          .benefits {
-            text-align: start;
-          }
-        }
-        tbody {
-          tr {
+          tbody {
             td {
               font-size: 16px;
-              padding: 15px;
+              text-align: center;
               color: #222222;
               border-bottom: 1px solid #0000001a;
-              ul {
-                li {
-                  text-align: start;
-                  font-weight: 500;
-                  font-family: "Open Sans", sans-serif;
-                  list-style: disc;
-                }
-              }
-            }
-            .minumum {
-              font-weight: 400;
-            }
-            .member-1 {
-              color: sandybrown;
-            }
-            .member-2 {
-              color: silver;
-            }
-            .member-3 {
-              color: gold;
-            }
-            .member-4 {
-              color: royalblue;
-            }
-            .member-5 {
-              color: skyblue;
+              padding: 15px;
             }
           }
         }
+        span {
+          font-size: 16px;
+        }
+      }
+      h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+        line-height: 1.2em;
+        font-weight: 400;
+        text-transform: none;
+      }
+      span {
+        font-size: 17px;
+        font-family: "Open Sans", sans-serif;
       }
     }
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .memberRankingPage {
+  .pricingPage {
     .section__1 {
       .container {
         padding: 0 100px;
@@ -82,7 +82,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .memberRankingPage {
+  .pricingPage {
     .section__1 {
       .container {
         padding: 0 100px;
@@ -92,7 +92,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .memberRankingPage {
+  .pricingPage {
     .section__1 {
       .container {
         padding: 0 50px;
@@ -102,7 +102,7 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .memberRankingPage {
+  .pricingPage {
     .section__1 {
       .container {
         padding: 0 50px;
@@ -112,7 +112,7 @@
 }
 
 @media (max-width: 575px) {
-  .memberRankingPage {
+  .pricingPage {
     .section__1 {
       .container {
         padding: 0 20px;

@@ -4,6 +4,7 @@ import Firewall from "@/pages/Firewall";
 import IpManagement from "@/pages/IpManagement";
 import MainPage from "@/pages/MainPage";
 import MemberRanking from "@/pages/MemberRanking";
+import Pricing from "@/pages/Pricing";
 import WeeklyOffsiteBackup from "@/pages/Weekly-Offsite-Backup";
 import {
   RouteObject,
@@ -22,6 +23,7 @@ const rootRoute: RouteObject[] = [
       { path: "ip-management", element: <IpManagement /> },
       { path: "weekly-offsite-backup", element: <WeeklyOffsiteBackup /> },
       { path: "membership-ranking", element: <MemberRanking /> },
+      { path: "pricing", element: <Pricing /> },
     ],
   },
 ];

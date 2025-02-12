@@ -82,9 +82,9 @@ const Section1 = () => {
                 <tbody>
                   {section1.map((e, index) => (
                     <tr key={index}>
-                      <th className={`member-${index}`}>{e.membership}</th>
-                      <th className="minumum">{e.minumum}</th>
-                      <th className="benefits">{e.benefits}</th>
+                      <td className={`member-${index}`}>{e.membership}</td>
+                      <td className="minumum">{e.minumum}</td>
+                      <td className="benefits">{e.benefits}</td>
                     </tr>
                   ))}
                 </tbody>
