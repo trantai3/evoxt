@@ -1,4 +1,5 @@
 import { LayoutMain } from "@/layouts/LayoutMain";
+import AboutUs from "@/pages/AboutUs";
 import Clone from "@/pages/Clone";
 import Firewall from "@/pages/Firewall";
 import IpManagement from "@/pages/IpManagement";
@@ -24,6 +25,7 @@ const rootRoute: RouteObject[] = [
       { path: "weekly-offsite-backup", element: <WeeklyOffsiteBackup /> },
       { path: "membership-ranking", element: <MemberRanking /> },
       { path: "pricing", element: <Pricing /> },
+      { path: "about-us", element: <AboutUs /> },
     ],
   },
 ];
