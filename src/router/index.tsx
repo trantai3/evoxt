@@ -8,6 +8,7 @@ import IpManagement from "@/pages/IpManagement";
 import MainPage from "@/pages/MainPage";
 import MemberRanking from "@/pages/MemberRanking";
 import Pricing from "@/pages/Pricing";
+import Service from "@/pages/Service";
 import TermOfService from "@/pages/TermOfService";
 import WeeklyOffsiteBackup from "@/pages/Weekly-Offsite-Backup";
 import {
@@ -35,7 +36,10 @@ const rootRoute: RouteObject[] = [
   {
     path: "/deploy",
     element: <LayoutDeploy />,
-    children: [{ index: true, element: <Dashboard /> }],
+    children: [
+      { index: true, path: "dashboard", element: <Dashboard /> },
+      { path: "service", element: <Service /> },
+    ],
   },
 ];
 

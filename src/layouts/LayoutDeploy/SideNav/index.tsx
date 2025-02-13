@@ -1,4 +1,5 @@
 import "../../../css/SideNavLayoutDeploy/SideNav/style.scss";
+import { bars } from "@/components/Recoil/atom/app";
 import iconMain from "../../../assets/icons/Dashboard/icon.svg";
 import iconDashboard from "../../../assets/icons/Dashboard/iconDashboard.svg";
 import iconService from "../../../assets/icons/Dashboard/iconService.svg";
@@ -11,8 +12,9 @@ import { FaFileAlt } from "react-icons/fa";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+import { useRecoilState } from "recoil";
 const SideNav = () => {
   const [dropdowns, setDropdowns] = useState({
     service: false,
@@ -30,13 +32,19 @@ const SideNav = () => {
     }));
   };
   const [isClose, setClose] = useState(false);
-  return isClose === true ? (
+  const [isBars, setIsBars] = useRecoilState(bars);
+  const handleClick = () => {
+    setClose(false);
+    setIsBars(false);
+  };
+  const location = useLocation();
+  return isClose === true || isBars === true ? (
     <div
       className={`sideNavLayoutDeploy ${isClose === true ? "openSideNav" : ""}`}
     >
-      <Link onClick={() => setClose(!isClose)} className="close" to="/deploy">
+      <button onClick={() => handleClick()} className="close">
         <IoIosClose />
-      </Link>
+      </button>
       <Link className="img" to="/dashboard">
         <img src={iconMain} />
       </Link>
@@ -67,7 +75,9 @@ const SideNav = () => {
         <div>
           <img src={iconDashboard} alt="" />
         </div>
-        <p>Dashboard</p>
+        <Link to="/deploy/dashboard">
+          <p>Dashboard</p>
+        </Link>
       </div>
       <div onClick={() => toggleDropdown("service")} className="service">
         <div>
@@ -81,7 +91,7 @@ const SideNav = () => {
       {dropdowns.service === true && (
         <div className="dropdown">
           <p className="dropdown-text">
-            <Link to="">Service</Link>
+            <Link to="/deploy/service">Service</Link>
           </p>
         </div>
       )}
@@ -223,12 +233,16 @@ const SideNav = () => {
       </p>
     </div>
   ) : (
-    <div
-      onClick={() => setClose(!isClose)}
-      className={`opensidebar ${isClose === false ? "closeSideNav" : ""} `}
-    >
-      Open Sidebar
-    </div>
+    <>
+      {location.pathname === "/deploy/dashboard" && (
+        <div
+          onClick={() => setClose(!isClose)}
+          className={`opensidebar ${isClose === false ? "closeSideNav" : ""}`}
+        >
+          Open Sidebar
+        </div>
+      )}
+    </>
   );
 };
 
