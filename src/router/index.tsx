@@ -6,6 +6,7 @@ import Dashboard from "@/pages/Dashboard";
 import Deploy from "@/pages/Deploy";
 import DeployDedicatedServer from "@/pages/DeployDedicatedServer";
 import Firewall from "@/pages/Firewall";
+import Invoices from "@/pages/Invoices";
 import IpManagement from "@/pages/IpManagement";
 import MainPage from "@/pages/MainPage";
 import MemberRanking from "@/pages/MemberRanking";
@@ -47,6 +48,7 @@ const rootRoute: RouteObject[] = [
       { path: "dedicated-server", element: <DeployDedicatedServer /> },
       { path: "order-id", element: <OrderId /> },
       { path: "register-domain", element: <RegisterDomain /> },
+      { path: "invoices", element: <Invoices /> },
     ],
   },
 ];

@@ -132,7 +132,7 @@ const SideNav = () => {
       {dropdowns.billing === true && (
         <div className="dropdown">
           <p className="dropdown-text">
-            <Link to="">Invoices</Link>
+            <Link to="/deploy/invoices">Invoices</Link>
           </p>
           <p className="dropdown-text">
             <Link to="">Add Funds</Link>
