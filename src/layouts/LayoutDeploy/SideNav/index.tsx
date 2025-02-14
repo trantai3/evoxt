@@ -107,7 +107,7 @@ const SideNav = () => {
       {dropdowns.deploy === true && (
         <div className="dropdown">
           <p className="dropdown-text">
-            <Link to="">Deploy a Virtual Machine</Link>
+            <Link to="/deploy">Deploy a Virtual Machine</Link>
           </p>
           <p className="dropdown-text">
             <Link to="">Deploy a Dedicated Server</Link>

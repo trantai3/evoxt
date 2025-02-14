@@ -3,6 +3,7 @@ import { LayoutMain } from "@/layouts/LayoutMain";
 import AboutUs from "@/pages/AboutUs";
 import Clone from "@/pages/Clone";
 import Dashboard from "@/pages/Dashboard";
+import Deploy from "@/pages/Deploy";
 import Firewall from "@/pages/Firewall";
 import IpManagement from "@/pages/IpManagement";
 import MainPage from "@/pages/MainPage";
@@ -39,6 +40,7 @@ const rootRoute: RouteObject[] = [
     children: [
       { index: true, path: "dashboard", element: <Dashboard /> },
       { path: "service", element: <Service /> },
+      { path: "", element: <Deploy /> },
     ],
   },
 ];
