@@ -13,6 +13,7 @@ import MainPage from "@/pages/MainPage";
 import MemberRanking from "@/pages/MemberRanking";
 import OrderId from "@/pages/OrderId";
 import Pricing from "@/pages/Pricing";
+import RefundRequest from "@/pages/RefundRequest";
 import RegisterDomain from "@/pages/RegisterDomain";
 import Service from "@/pages/Service";
 import TermOfService from "@/pages/TermOfService";
@@ -51,6 +52,7 @@ const rootRoute: RouteObject[] = [
       { path: "register-domain", element: <RegisterDomain /> },
       { path: "invoices", element: <Invoices /> },
       { path: "addfunds", element: <AddFunds /> },
+      { path: "refund", element: <RefundRequest /> },
     ],
   },
 ];
