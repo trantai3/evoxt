@@ -11,6 +11,7 @@ import MainPage from "@/pages/MainPage";
 import MemberRanking from "@/pages/MemberRanking";
 import OrderId from "@/pages/OrderId";
 import Pricing from "@/pages/Pricing";
+import RegisterDomain from "@/pages/RegisterDomain";
 import Service from "@/pages/Service";
 import TermOfService from "@/pages/TermOfService";
 import WeeklyOffsiteBackup from "@/pages/Weekly-Offsite-Backup";
@@ -45,6 +46,7 @@ const rootRoute: RouteObject[] = [
       { path: "", element: <Deploy /> },
       { path: "dedicated-server", element: <DeployDedicatedServer /> },
       { path: "order-id", element: <OrderId /> },
+      { path: "register-domain", element: <RegisterDomain /> },
     ],
   },
 ];
