@@ -1,6 +1,7 @@
 import LayoutDeploy from "@/layouts/LayoutDeploy";
 import { LayoutMain } from "@/layouts/LayoutMain";
 import AboutUs from "@/pages/AboutUs";
+import AddFunds from "@/pages/AddFunds";
 import Clone from "@/pages/Clone";
 import Dashboard from "@/pages/Dashboard";
 import Deploy from "@/pages/Deploy";
@@ -49,6 +50,7 @@ const rootRoute: RouteObject[] = [
       { path: "order-id", element: <OrderId /> },
       { path: "register-domain", element: <RegisterDomain /> },
       { path: "invoices", element: <Invoices /> },
+      { path: "addfunds", element: <AddFunds /> },
     ],
   },
 ];

@@ -135,7 +135,7 @@ const SideNav = () => {
             <Link to="/deploy/invoices">Invoices</Link>
           </p>
           <p className="dropdown-text">
-            <Link to="">Add Funds</Link>
+            <Link to="/deploy/addfunds">Add Funds</Link>
           </p>
           <p className="dropdown-text">
             <Link to="">Refund Request</Link>

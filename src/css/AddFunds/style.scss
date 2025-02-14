@@ -1,0 +1,262 @@
+@use "../../assets/fonts/font.scss";
+.addFundsPage {
+  .container {
+    font-family: "Open Sans", Verdana, Tahoma, serif;
+    padding-left: 170px;
+    padding-right: 30px;
+    margin-top: 20px;
+    h1 {
+      font-size: 36px;
+      padding-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333333;
+      border-bottom: solid 1px #ddd;
+    }
+    .table {
+      width: 100%;
+      background-color: #ffffff;
+      margin: 50px 0px;
+      padding: 70px 60px;
+      border: solid 1px #ddd;
+
+      .tabs {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        .tab {
+          padding: 0px 6px;
+          cursor: pointer;
+          margin-right: 20px;
+          &-active {
+            border-bottom: solid 3px royalblue;
+          }
+          &:hover {
+            border-bottom: solid 3px rgba(65, 105, 225, 0.302);
+          }
+        }
+      }
+      .account-balance {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .account-value {
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        display: flex;
+        gap: 100px;
+        align-items: center;
+        padding: 65px;
+        .account-amount {
+          width: 15%;
+          border-radius: 25px;
+          background-color: white;
+          padding: 5px 15px;
+          .title {
+            font-size: 20px;
+            padding: 5px 15px;
+          }
+          .amount {
+            display: flex;
+            align-items: center;
+            .dollarsign {
+              font-size: 50px;
+              font-weight: bold;
+            }
+            input {
+              width: 100%;
+              font-size: 50px;
+              font-weight: bold;
+              background-color: white;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+        .payment-method {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          flex-direction: column;
+          label {
+            font-size: 17px;
+            font-weight: bold;
+          }
+          select {
+            padding: 10px;
+            border: 1px solid #ccc;
+          }
+          button {
+            border-radius: 5px;
+            background: royalblue;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 8px 15px;
+          }
+        }
+      }
+      .payment-choose {
+        display: flex;
+        font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        padding-top: 100px;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+        .credit-debit,
+        .paypal {
+          width: 28%;
+          h3 {
+            display: flex;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+          }
+          &-table {
+            display: flex;
+            border-radius: 10px;
+            flex-direction: column;
+            gap: 12px;
+            padding: 25px;
+            border: solid 1px #ddd;
+            &-title {
+              font-size: 24px;
+            }
+            .auto {
+              font-size: 14px;
+            }
+            .selectedpayment {
+              padding: 10px;
+              margin-bottom: 10px;
+              border: solid 1px #ddd;
+              border-radius: 5px;
+              font-size: 12px;
+              strong {
+                color: #4169e1;
+                margin-right: 5px;
+              }
+            }
+            .success {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              p {
+                font-size: 12px;
+              }
+              button {
+                border: solid 1px royalblue;
+                background: royalblue;
+                color: white;
+                border-radius: 2px;
+                padding: 3px 15px;
+                transition: 0.4s;
+              }
+            }
+          }
+        }
+      }
+      .faq-content {
+        margin: 60px 0;
+        .faq {
+          font-size: 14px;
+          font-weight: bold;
+          padding: 10px 10px;
+        }
+        .faqanswer {
+          padding: 10px 10px;
+        }
+      }
+      .notice {
+        font-size: 14px;
+      }
+      .overflow-x {
+        max-width: 1200px;
+        overflow-x: auto;
+        white-space: nowrap;
+        table {
+          width: 100%;
+          th {
+            border-bottom: solid 2px black;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1258px) and (max-width: 1700px) {
+  .addFundsPage {
+    .container {
+      padding-left: 100px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .addFundsPage {
+    .container {
+      .payment-choose {
+        flex-direction: column;
+        .credit-debit {
+          width: 100% !important;
+        }
+        .paypal {
+          width: 100% !important;
+        }
+      }
+      .account-value {
+        flex-direction: column;
+        .account-amount {
+          width: 60% !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .addFundsPage {
+    .container {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .addFundsPage {
+    .container {
+      padding-left: 50px;
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .addFundsPage {
+    .container {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .addFundsPage {
+    .container {
+      padding-left: 20px;
+      .table {
+        padding: 50px 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .addFundsPage {
+    .container {
+      .table {
+        padding: 50px 10px;
+      }
+    }
+  }
+}
