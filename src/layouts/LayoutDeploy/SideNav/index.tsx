@@ -110,7 +110,7 @@ const SideNav = () => {
             <Link to="/deploy">Deploy a Virtual Machine</Link>
           </p>
           <p className="dropdown-text">
-            <Link to="">Deploy a Dedicated Server</Link>
+            <Link to="/deploy/dedicated-server">Deploy a Dedicated Server</Link>
           </p>
           <p className="dropdown-text">
             <Link to="">Order Extra IP Address</Link>

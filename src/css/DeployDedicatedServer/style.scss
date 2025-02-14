@@ -1,0 +1,91 @@
+@use "../../assets/fonts/font.scss";
+.deployDedicatedPage {
+  .container {
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 170px;
+    padding-right: 30px;
+    margin-top: 20px;
+    h1 {
+      font-size: 36px;
+      padding-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333333;
+      border-bottom: solid 1px #ddd;
+    }
+    h3 {
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .subTitle {
+      font-size: 15px;
+    }
+    .overflow-x {
+      overflow-x: auto;
+      white-space: nowrap;
+      max-width: 1200px;
+      table {
+        width: 100%;
+        thead {
+          th {
+            padding: 8px 10px;
+            border-bottom: 2px solid black;
+            margin-bottom: 10px;
+          }
+        }
+        tbody {
+          color: #333333;
+          font-size: 14px;
+          font-family: "Open Sans", Verdana, Tahoma, serif;
+          tr {
+            margin-bottom: 10px;
+            td {
+              padding: 10px;
+              text-align: center;
+              img {
+                width: 40px;
+                height: 40px;
+              }
+              div {
+                display: flex;
+                justify-content: center;
+              }
+            }
+            button {
+              background: royalblue;
+              color: white;
+              border: solid 1px royalblue;
+              transition: 0.3s;
+              padding: 10px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1258px) and (max-width: 1700px) {
+  .deployDedicatedPage {
+    .container {
+      padding-left: 100px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .deployDedicatedPage {
+    .container {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .deployDedicatedPage {
+    .container {
+      padding-left: 20px;
+    }
+  }
+}
