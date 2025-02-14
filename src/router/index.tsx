@@ -9,6 +9,7 @@ import Firewall from "@/pages/Firewall";
 import IpManagement from "@/pages/IpManagement";
 import MainPage from "@/pages/MainPage";
 import MemberRanking from "@/pages/MemberRanking";
+import OrderId from "@/pages/OrderId";
 import Pricing from "@/pages/Pricing";
 import Service from "@/pages/Service";
 import TermOfService from "@/pages/TermOfService";
@@ -43,6 +44,7 @@ const rootRoute: RouteObject[] = [
       { path: "service", element: <Service /> },
       { path: "", element: <Deploy /> },
       { path: "dedicated-server", element: <DeployDedicatedServer /> },
+      { path: "order-id", element: <OrderId /> },
     ],
   },
 ];

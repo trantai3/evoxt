@@ -1,0 +1,71 @@
+@use "../../assets/fonts/font.scss";
+.orderIdPage {
+  .container {
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 170px;
+    padding-right: 30px;
+    margin-top: 20px;
+    h1 {
+      font-size: 36px;
+      padding-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333333;
+      border-bottom: solid 1px #ddd;
+    }
+    .orderChoose {
+      font-size: 14px;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+    select {
+      padding: 10px 15px;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        border: solid 1px royalblue;
+      }
+    }
+    .quantity {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    .quantityChoose {
+      display: flex;
+      align-items: center;
+    }
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      border: none;
+      background: royalblue;
+      color: white;
+      font-size: 15px;
+    }
+  }
+}
+
+@media (min-width: 1258px) and (max-width: 1700px) {
+  .orderIdPage {
+    .container {
+      padding-left: 100px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .orderIdPage {
+    .container {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .orderIdPage {
+    .container {
+      padding-left: 20px;
+    }
+  }
+}
