@@ -21,6 +21,7 @@ import Service from "@/pages/Service";
 import Submitticket from "@/pages/Submitticket";
 import SupportTickets from "@/pages/SupportTickets";
 import TermOfService from "@/pages/TermOfService";
+import UserProfile from "@/pages/UserProfile";
 import WeeklyOffsiteBackup from "@/pages/Weekly-Offsite-Backup";
 import {
   RouteObject,
@@ -68,6 +69,11 @@ const rootRoute: RouteObject[] = [
         element: <ClientArea />,
       },
     ],
+  },
+  {
+    path: "/user",
+    element: <LayoutDeploy />,
+    children: [{ path: "profile", element: <UserProfile /> }],
   },
 ];
 

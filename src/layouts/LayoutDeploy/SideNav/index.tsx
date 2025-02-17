@@ -181,7 +181,7 @@ const SideNav = () => {
             <Link to="/deploy/clientarea">Evoxt Account Details</Link>
           </p>
           <p className="dropdown-text">
-            <Link to="">User Profile</Link>
+            <Link to="/user/profile">User Profile</Link>
           </p>
           <p className="dropdown-text">
             <Link to="">Change User Password</Link>
