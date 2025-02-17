@@ -207,7 +207,7 @@ const SideNav = () => {
             <Link to="/account/contacts">Email Contacts</Link>
           </p>
           <p className="dropdown-text">
-            <Link to="">Email History</Link>
+            <Link to="/clientarea-email-history">Email History</Link>
           </p>
           <p className="dropdown-text">
             <Link to="">API Credentials</Link>

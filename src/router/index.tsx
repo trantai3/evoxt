@@ -10,6 +10,7 @@ import Clone from "@/pages/Clone";
 import Dashboard from "@/pages/Dashboard";
 import Deploy from "@/pages/Deploy";
 import DeployDedicatedServer from "@/pages/DeployDedicatedServer";
+import EmailHistory from "@/pages/EmailHistory";
 import Firewall from "@/pages/Firewall";
 import Invoices from "@/pages/Invoices";
 import IpManagement from "@/pages/IpManagement";
@@ -110,6 +111,11 @@ const rootRoute: RouteObject[] = [
     path: "/keysmanagement",
     element: <LayoutDeploy />,
     children: [{ path: "", element: <KeysManagement /> }],
+  },
+  {
+    path: "/clientarea-email-history",
+    element: <LayoutDeploy />,
+    children: [{ path: "", element: <EmailHistory /> }],
   },
 ];
 
