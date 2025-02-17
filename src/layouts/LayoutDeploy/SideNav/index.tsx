@@ -199,7 +199,9 @@ const SideNav = () => {
             <Link to="/autorenewal_config">Auto Renewal Configuration</Link>
           </p>
           <p className="dropdown-text">
-            <Link to="">Manage Credit Cards **New**</Link>
+            <Link to="/account/paymentmethods">
+              Manage Credit Cards **New**
+            </Link>
           </p>
           <p className="dropdown-text">
             <Link to="">Email Contacts</Link>

@@ -16,6 +16,7 @@ import KeysManagement from "@/pages/KeyManagements";
 import MainPage from "@/pages/MainPage";
 import MemberRanking from "@/pages/MemberRanking";
 import OrderId from "@/pages/OrderId";
+import PaymentMethod from "@/pages/PaymentMethods";
 import Pricing from "@/pages/Pricing";
 import RefundRequest from "@/pages/RefundRequest";
 import RefundRequestHistory from "@/pages/RefundRequestHistory";
@@ -78,7 +79,13 @@ const rootRoute: RouteObject[] = [
   {
     path: "/account",
     element: <LayoutDeploy />,
-    children: [{ path: "users", element: <AccountUser /> }],
+    children: [
+      { path: "users", element: <AccountUser /> },
+      {
+        path: "paymentmethods",
+        element: <PaymentMethod />,
+      },
+    ],
   },
   {
     path: "/autorenewal_config",
