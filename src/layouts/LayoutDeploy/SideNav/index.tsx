@@ -145,9 +145,6 @@ const SideNav = () => {
               Refund Request History
             </Link>
           </p>
-          <p className="dropdown-text">
-            <Link to="">Merge Invoices</Link>
-          </p>
         </div>
       )}
       <div onClick={() => toggleDropdown("support")} className="support">
@@ -162,7 +159,7 @@ const SideNav = () => {
       {dropdowns.support === true && (
         <div className="dropdown">
           <p className="dropdown-text">
-            <Link to="">Open Ticket</Link>
+            <Link to="/deploy/submitticket">Open Ticket</Link>
           </p>
           <p className="dropdown-text">
             <Link to="">Tickets</Link>
