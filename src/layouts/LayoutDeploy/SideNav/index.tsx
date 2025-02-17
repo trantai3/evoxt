@@ -178,7 +178,7 @@ const SideNav = () => {
       {dropdowns.account === true && (
         <div className="dropdown">
           <p className="dropdown-text">
-            <Link to="">Evoxt Account Details</Link>
+            <Link to="/deploy/clientarea">Evoxt Account Details</Link>
           </p>
           <p className="dropdown-text">
             <Link to="">User Profile</Link>

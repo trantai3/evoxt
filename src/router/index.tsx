@@ -2,6 +2,7 @@ import LayoutDeploy from "@/layouts/LayoutDeploy";
 import { LayoutMain } from "@/layouts/LayoutMain";
 import AboutUs from "@/pages/AboutUs";
 import AddFunds from "@/pages/AddFunds";
+import ClientArea from "@/pages/ClientArea";
 import Clone from "@/pages/Clone";
 import Dashboard from "@/pages/Dashboard";
 import Deploy from "@/pages/Deploy";
@@ -61,6 +62,10 @@ const rootRoute: RouteObject[] = [
       {
         path: "supporttickets",
         element: <SupportTickets />,
+      },
+      {
+        path: "clientarea",
+        element: <ClientArea />,
       },
     ],
   },
