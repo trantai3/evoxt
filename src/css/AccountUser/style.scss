@@ -1,0 +1,313 @@
+@use "../../assets/fonts/font.scss";
+.AccountUserPage {
+  .container {
+    font-family: "Open Sans", Verdana, Tahoma, serif;
+    padding-left: 170px;
+    padding-right: 30px;
+    margin-top: 20px;
+    h1 {
+      font-size: 36px;
+      padding-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333333;
+      border-bottom: solid 1px #ddd;
+    }
+    .table {
+      box-shadow: 0 6px 12px rgba(140, 152, 164, 0.075);
+      border: 1px solid #ddd;
+      margin-top: 25px;
+      margin-bottom: 60px;
+      padding: 40px;
+      .infor {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      table {
+        width: 100%;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+        thead {
+          .th-0 {
+            padding: 8px 8px 8px 50px;
+            border-bottom: 1px solid #ddd;
+          }
+          .th-1,
+          .th-2,
+          .th-3 {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+          }
+        }
+        tbody {
+          .emailAddress {
+            display: flex;
+            padding: 8px 8px 8px 20px;
+            justify-content: center;
+            gap: 8px;
+            align-items: center;
+            .img {
+              padding: 6px;
+              background-color: rgb(245, 214, 214);
+              border-radius: 50%;
+              img {
+                width: 35px;
+                height: auto;
+                object-fit: contain;
+              }
+            }
+          }
+          .role {
+            padding: 8px;
+            text-align: center;
+          }
+          .twofa {
+            display: flex;
+            padding: 8px;
+            justify-content: center;
+            gap: 4px;
+            align-items: center;
+          }
+          .actions {
+            display: flex;
+            padding: 8px;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            .manage-permissions {
+              padding: 5px 10px;
+              background-color: #fff;
+              cursor: not-allowed;
+              border: 1px solid #ccc;
+              opacity: 0.65;
+            }
+            .remove-access {
+              padding: 5px 10px;
+              opacity: 0.65;
+              background-color: #d9534f;
+              color: #fff;
+            }
+          }
+        }
+      }
+      .notice {
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+    .invite-infor {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .input-invite {
+      width: 100%;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      &:hover {
+        border: 1px solid royalblue;
+      }
+      &:focus {
+        outline: none;
+        border: 1px solid royalblue;
+      }
+    }
+    .tabs {
+      display: flex;
+      margin-bottom: 15px;
+      gap: 36px;
+      align-items: center;
+      .tab {
+        cursor: pointer;
+      }
+      .tab-0 {
+        background-color: rgb(211, 66, 66);
+        color: white;
+        padding: 0px 20px;
+      }
+      .tab-1 {
+        background-color: royalblue;
+        padding: 0px 20px;
+        color: white;
+      }
+    }
+    .choose-permissions {
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #e3e3e3;
+      background-color: #f5f5f5;
+      .element {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+    }
+    .button {
+      button {
+        background-color: royalblue;
+        padding: 6px 12px;
+        color: white;
+        &:hover {
+          background-color: #212083;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1258px) and (max-width: 1700px) {
+  .AccountUserPage {
+    .container {
+      padding-left: 100px;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .AccountUserPage {
+    .container {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1199px) {
+  .AccountUserPage {
+    .container {
+      table {
+        .emailAddress {
+          flex-direction: column;
+          .email-time {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .AccountUserPage {
+    .container {
+      padding-left: 50px;
+      .table {
+        .overflow-x {
+          .actions {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .AccountUserPage {
+    .container {
+      .table {
+        padding: 20px;
+        table {
+          thead {
+            .th-1 {
+              display: none;
+            }
+          }
+          tbody {
+            .td-0 {
+              .img {
+                display: none;
+              }
+            }
+            .td-1 {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .AccountUserPage {
+    .container {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .AccountUserPage {
+    .container {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .AccountUserPage {
+    .container {
+      padding-left: 20px;
+      .table {
+        table {
+          thead {
+            .th-2 {
+              display: none;
+            }
+          }
+          tbody {
+            .td-2 {
+              display: none;
+            }
+          }
+        }
+      }
+      .tabs {
+        flex-direction: column;
+        .tab {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .AccountUserPage {
+    .container {
+      .table {
+        padding: 10px;
+        table {
+          thead {
+            tr {
+              display: flex;
+              flex-direction: column;
+              .th-0 {
+                padding-left: 8px !important;
+              }
+            }
+          }
+          tbody {
+            tr {
+              display: flex;
+              flex-direction: column;
+              .emailAddress {
+                .email-time {
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

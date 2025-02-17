@@ -190,7 +190,7 @@ const SideNav = () => {
             <Link to="/user/security">User Security Settings</Link>
           </p>
           <p className="dropdown-text">
-            <Link to="">Manage Users</Link>
+            <Link to="/account/users">Manage Users</Link>
           </p>
           <p className="dropdown-text">
             <Link to="">Keys Management</Link>

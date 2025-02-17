@@ -1,6 +1,7 @@
 import LayoutDeploy from "@/layouts/LayoutDeploy";
 import { LayoutMain } from "@/layouts/LayoutMain";
 import AboutUs from "@/pages/AboutUs";
+import AccountUser from "@/pages/AccountUser";
 import AddFunds from "@/pages/AddFunds";
 import ClientArea from "@/pages/ClientArea";
 import Clone from "@/pages/Clone";
@@ -71,6 +72,11 @@ const rootRoute: RouteObject[] = [
         element: <ClientArea />,
       },
     ],
+  },
+  {
+    path: "/account",
+    element: <LayoutDeploy />,
+    children: [{ path: "users", element: <AccountUser /> }],
   },
   {
     path: "/user",
