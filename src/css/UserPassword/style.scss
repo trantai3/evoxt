@@ -1,0 +1,135 @@
+@use "../../assets/fonts/font.scss";
+.userPasswordPage {
+  .container {
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 170px;
+    padding-right: 30px;
+    margin-top: 20px;
+    h1 {
+      font-size: 36px;
+      padding-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333333;
+      border-bottom: solid 1px #ddd;
+    }
+    .table {
+      width: 100%;
+      box-shadow: 0 6px 12px rgba(140, 152, 164, 0.075);
+      border: 1px solid #ddd;
+      margin-top: 25px;
+      margin-bottom: 60px;
+      padding: 40px;
+      h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+      &-content {
+        display: flex;
+        gap: 36px;
+        align-items: center;
+        .password-create {
+          flex: 1;
+          .row {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            justify-content: center;
+            gap: 24px;
+            align-items: center;
+            label {
+              flex: 1;
+              font-size: 14px;
+              font-weight: 700;
+              text-align: right;
+            }
+            input {
+              padding: 6px 12px;
+              border: 1px solid #ccc;
+              flex: 2;
+              &:focus {
+                outline: none;
+                border: 1px solid royalblue;
+              }
+              &:hover {
+                border: 1px solid royalblue;
+              }
+            }
+          }
+          .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            button {
+              padding: 6px 12px;
+              &.save-changes {
+                color: white;
+                background-color: royalblue;
+                &:hover {
+                  background-color: #212083;
+                }
+              }
+              &.cancel {
+                border: 1px solid #ccc;
+                &:hover {
+                  background-color: #e6e6e6;
+                }
+              }
+            }
+          }
+        }
+        .password-generate {
+          padding: 6px 12px;
+          border: 1px solid #ddd;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1258px) and (max-width: 1700px) {
+  .userPasswordPage {
+    .container {
+      padding-left: 100px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .userPasswordPage {
+    .container {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .userPasswordPage {
+    .container {
+      padding-left: 20px;
+      .table {
+        padding: 20px;
+        &-content {
+          flex-direction: column-reverse;
+          .password-create {
+            width: 100%;
+            .row {
+              width: 100%;
+              flex-direction: column;
+              label {
+                width: 100%;
+                text-align: left;
+              }
+              input {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

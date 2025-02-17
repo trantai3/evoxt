@@ -21,6 +21,7 @@ import Service from "@/pages/Service";
 import Submitticket from "@/pages/Submitticket";
 import SupportTickets from "@/pages/SupportTickets";
 import TermOfService from "@/pages/TermOfService";
+import UserPassword from "@/pages/UserPassword";
 import UserProfile from "@/pages/UserProfile";
 import WeeklyOffsiteBackup from "@/pages/Weekly-Offsite-Backup";
 import {
@@ -73,7 +74,10 @@ const rootRoute: RouteObject[] = [
   {
     path: "/user",
     element: <LayoutDeploy />,
-    children: [{ path: "profile", element: <UserProfile /> }],
+    children: [
+      { path: "profile", element: <UserProfile /> },
+      { path: "password", element: <UserPassword /> },
+    ],
   },
 ];
 
