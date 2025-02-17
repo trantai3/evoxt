@@ -3,6 +3,7 @@ import { LayoutMain } from "@/layouts/LayoutMain";
 import AboutUs from "@/pages/AboutUs";
 import AccountUser from "@/pages/AccountUser";
 import AddFunds from "@/pages/AddFunds";
+import AutoRenew from "@/pages/AutoRenew";
 import ClientArea from "@/pages/ClientArea";
 import Clone from "@/pages/Clone";
 import Dashboard from "@/pages/Dashboard";
@@ -78,6 +79,11 @@ const rootRoute: RouteObject[] = [
     path: "/account",
     element: <LayoutDeploy />,
     children: [{ path: "users", element: <AccountUser /> }],
+  },
+  {
+    path: "/autorenewal_config",
+    element: <LayoutDeploy />,
+    children: [{ path: "", element: <AutoRenew /> }],
   },
   {
     path: "/user",

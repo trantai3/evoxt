@@ -196,7 +196,7 @@ const SideNav = () => {
             <Link to="/keysmanagement">Keys Management</Link>
           </p>
           <p className="dropdown-text">
-            <Link to="">Auto Renewal Configuration</Link>
+            <Link to="/autorenewal_config">Auto Renewal Configuration</Link>
           </p>
           <p className="dropdown-text">
             <Link to="">Manage Credit Cards **New**</Link>
