@@ -1,0 +1,49 @@
+@use "../../assets/fonts/font.scss";
+.refundRequestHistoryPage {
+  .container {
+    font-family: "Open Sans", Verdana, Tahoma, serif;
+    padding-left: 170px;
+    padding-right: 30px;
+    margin-top: 20px;
+    h1 {
+      font-size: 36px;
+      padding-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333333;
+      border-bottom: solid 1px #ddd;
+    }
+    .table {
+      width: 100%;
+      box-shadow: 0 6px 12px rgba(140, 152, 164, 0.075);
+      border: 1px solid #ddd;
+      margin-top: 25px;
+      margin-bottom: 60px;
+      padding: 40px;
+    }
+  }
+}
+
+@media (min-width: 1258px) and (max-width: 1700px) {
+  .refundRequestHistoryPage {
+    .container {
+      padding-left: 100px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .refundRequestHistoryPage {
+    .container {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .refundRequestHistoryPage {
+    .container {
+      padding-left: 20px;
+    }
+  }
+}
