@@ -1,0 +1,86 @@
+@use "../../assets/fonts/font.scss";
+.userSecurityPage {
+  .container {
+    font-family: "Open Sans", Verdana, Tahoma, serif;
+    padding-left: 170px;
+    padding-right: 30px;
+    margin-top: 20px;
+    h1 {
+      font-size: 36px;
+      padding-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333333;
+      border-bottom: solid 1px #ddd;
+    }
+    .table {
+      width: 100%;
+      box-shadow: 0 6px 12px rgba(140, 152, 164, 0.075);
+      border: 1px solid #ddd;
+      margin-top: 25px;
+      margin-bottom: 60px;
+      padding: 40px;
+      h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 30px;
+      }
+      .authentications-infor {
+        font-size: 14px;
+        margin-bottom: 10px;
+        strong {
+          color: #ed143d;
+        }
+      }
+      .alert-warning {
+        display: flex;
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 35%);
+        border-left: #ffc021 solid 5px;
+        gap: 8px;
+        align-items: center;
+        img {
+          width: 23px;
+          height: 20px;
+        }
+      }
+      button {
+        padding: 6px 12px;
+        background-color: royalblue;
+        color: white;
+        &:hover {
+          background-color: #212083;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1258px) and (max-width: 1700px) {
+  .userSecurityPage {
+    .container {
+      padding-left: 100px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .userSecurityPage {
+    .container {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .userSecurityPage {
+    .container {
+      padding-left: 20px;
+      .table {
+        padding: 15px;
+      }
+    }
+  }
+}

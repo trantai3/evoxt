@@ -23,6 +23,7 @@ import SupportTickets from "@/pages/SupportTickets";
 import TermOfService from "@/pages/TermOfService";
 import UserPassword from "@/pages/UserPassword";
 import UserProfile from "@/pages/UserProfile";
+import UserSecurity from "@/pages/UserSecurity";
 import WeeklyOffsiteBackup from "@/pages/Weekly-Offsite-Backup";
 import {
   RouteObject,
@@ -77,6 +78,7 @@ const rootRoute: RouteObject[] = [
     children: [
       { path: "profile", element: <UserProfile /> },
       { path: "password", element: <UserPassword /> },
+      { path: "security", element: <UserSecurity /> },
     ],
   },
 ];
