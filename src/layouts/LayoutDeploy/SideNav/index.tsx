@@ -162,7 +162,7 @@ const SideNav = () => {
             <Link to="/deploy/submitticket">Open Ticket</Link>
           </p>
           <p className="dropdown-text">
-            <Link to="">Tickets</Link>
+            <Link to="/deploy/supporttickets">Tickets</Link>
           </p>
         </div>
       )}

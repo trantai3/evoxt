@@ -18,6 +18,7 @@ import RefundRequestHistory from "@/pages/RefundRequestHistory";
 import RegisterDomain from "@/pages/RegisterDomain";
 import Service from "@/pages/Service";
 import Submitticket from "@/pages/Submitticket";
+import SupportTickets from "@/pages/SupportTickets";
 import TermOfService from "@/pages/TermOfService";
 import WeeklyOffsiteBackup from "@/pages/Weekly-Offsite-Backup";
 import {
@@ -57,6 +58,10 @@ const rootRoute: RouteObject[] = [
       { path: "refund", element: <RefundRequest /> },
       { path: "refundrequesthistory", element: <RefundRequestHistory /> },
       { path: "submitticket", element: <Submitticket /> },
+      {
+        path: "supporttickets",
+        element: <SupportTickets />,
+      },
     ],
   },
 ];
