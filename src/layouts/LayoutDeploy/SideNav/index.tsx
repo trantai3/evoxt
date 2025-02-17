@@ -210,7 +210,7 @@ const SideNav = () => {
             <Link to="/clientarea-email-history">Email History</Link>
           </p>
           <p className="dropdown-text">
-            <Link to="">API Credentials</Link>
+            <Link to="/apicredentials">API Credentials</Link>
           </p>
         </div>
       )}

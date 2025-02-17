@@ -4,6 +4,7 @@ import AboutUs from "@/pages/AboutUs";
 import AccountContact from "@/pages/AccountContact";
 import AccountUser from "@/pages/AccountUser";
 import AddFunds from "@/pages/AddFunds";
+import ApiCredentials from "@/pages/APICredentials";
 import AutoRenew from "@/pages/AutoRenew";
 import ClientArea from "@/pages/ClientArea";
 import Clone from "@/pages/Clone";
@@ -116,6 +117,11 @@ const rootRoute: RouteObject[] = [
     path: "/clientarea-email-history",
     element: <LayoutDeploy />,
     children: [{ path: "", element: <EmailHistory /> }],
+  },
+  {
+    path: "/apicredentials",
+    element: <LayoutDeploy />,
+    children: [{ path: "", element: <ApiCredentials /> }],
   },
 ];
 
