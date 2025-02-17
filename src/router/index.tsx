@@ -1,6 +1,7 @@
 import LayoutDeploy from "@/layouts/LayoutDeploy";
 import { LayoutMain } from "@/layouts/LayoutMain";
 import AboutUs from "@/pages/AboutUs";
+import AccountContact from "@/pages/AccountContact";
 import AccountUser from "@/pages/AccountUser";
 import AddFunds from "@/pages/AddFunds";
 import AutoRenew from "@/pages/AutoRenew";
@@ -84,6 +85,10 @@ const rootRoute: RouteObject[] = [
       {
         path: "paymentmethods",
         element: <PaymentMethod />,
+      },
+      {
+        path: "contacts",
+        element: <AccountContact />,
       },
     ],
   },
