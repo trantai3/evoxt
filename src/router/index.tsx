@@ -11,6 +11,7 @@ import DeployDedicatedServer from "@/pages/DeployDedicatedServer";
 import Firewall from "@/pages/Firewall";
 import Invoices from "@/pages/Invoices";
 import IpManagement from "@/pages/IpManagement";
+import KeysManagement from "@/pages/KeyManagements";
 import MainPage from "@/pages/MainPage";
 import MemberRanking from "@/pages/MemberRanking";
 import OrderId from "@/pages/OrderId";
@@ -86,6 +87,11 @@ const rootRoute: RouteObject[] = [
       { path: "password", element: <UserPassword /> },
       { path: "security", element: <UserSecurity /> },
     ],
+  },
+  {
+    path: "/keysmanagement",
+    element: <LayoutDeploy />,
+    children: [{ path: "", element: <KeysManagement /> }],
   },
 ];
 
