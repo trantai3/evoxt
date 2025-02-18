@@ -4,6 +4,7 @@ import AboutUs from "@/pages/AboutUs";
 import AccountContact from "@/pages/AccountContact";
 import AccountUser from "@/pages/AccountUser";
 import AddFunds from "@/pages/AddFunds";
+import Affiliate from "@/pages/Affiliate";
 import ApiCredentials from "@/pages/APICredentials";
 import AutoRenew from "@/pages/AutoRenew";
 import ClientArea from "@/pages/ClientArea";
@@ -122,6 +123,11 @@ const rootRoute: RouteObject[] = [
     path: "/apicredentials",
     element: <LayoutDeploy />,
     children: [{ path: "", element: <ApiCredentials /> }],
+  },
+  {
+    path: "/affiliates",
+    element: <LayoutDeploy />,
+    children: [{ path: "", element: <Affiliate /> }],
   },
 ];
 

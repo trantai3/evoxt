@@ -218,7 +218,10 @@ const SideNav = () => {
         <div>
           <img src={iconAffilate} alt="" />
         </div>
-        <p>Affiliate</p>
+
+        <p>
+          <Link to="/affiliates">Affiliates</Link>
+        </p>
       </div>
       <div className="reseller">
         <div>
