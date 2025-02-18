@@ -1,5 +1,6 @@
 import LayoutDeploy from "@/layouts/LayoutDeploy";
 import { LayoutMain } from "@/layouts/LayoutMain";
+import LayoutStatus from "@/layouts/LayoutStatus";
 import AboutUs from "@/pages/AboutUs";
 import AccountContact from "@/pages/AccountContact";
 import AccountUser from "@/pages/AccountUser";
@@ -27,6 +28,7 @@ import RefundRequestHistory from "@/pages/RefundRequestHistory";
 import RegisterDomain from "@/pages/RegisterDomain";
 import Reseller from "@/pages/Reseller";
 import Service from "@/pages/Service";
+import Status from "@/pages/Status";
 import Submitticket from "@/pages/Submitticket";
 import SupportTickets from "@/pages/SupportTickets";
 import TermOfService from "@/pages/TermOfService";
@@ -134,6 +136,11 @@ const rootRoute: RouteObject[] = [
     path: "/reseller",
     element: <LayoutDeploy />,
     children: [{ path: "", element: <Reseller /> }],
+  },
+  {
+    path: "/status",
+    element: <LayoutStatus />,
+    children: [{ path: "", element: <Status /> }],
   },
 ];
 

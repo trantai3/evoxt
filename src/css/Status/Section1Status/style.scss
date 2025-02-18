@@ -1,0 +1,122 @@
+.section1Status {
+  .container {
+    padding: 0px 250px;
+    .card {
+      display: flex;
+      margin-top: -60px;
+      margin-bottom: 45px;
+      justify-content: space-between;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 60px;
+      background-color: white;
+      border-radius: 6px;
+      font-family: Roboto, Arial, sans-serif;
+      align-items: center;
+      padding: 60px;
+      .systems {
+        &-left {
+          display: flex;
+          align-items: center;
+          .systems-dot {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #3bd671;
+          }
+          .systems-title {
+            font-size: 36px;
+            margin-left: 20px;
+            color: rgb(19, 26, 38);
+            font-weight: bold;
+            strong {
+              color: rgb(59, 214, 113);
+            }
+          }
+        }
+        &-downtime {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+          font-size: 18px;
+          a {
+            color: #000000;
+            text-decoration: underline;
+          }
+          span {
+            color: #687790;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .section1Status {
+    .container {
+      padding: 0 50px;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .section1Status {
+    .container {
+      padding: 0 50px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .section1Status {
+    .container {
+      .card {
+        flex-direction: column;
+        .systems-left {
+          flex-direction: column;
+          .systems-title {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section1Status {
+    .container {
+      padding: 0 50px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .section1Status {
+    .container {
+      padding: 0 30px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .section1Status {
+    .container {
+      padding: 0 20px;
+      .card {
+        .systems-title {
+          margin-left: 0px !important;
+        }
+        .systems-downtime {
+          flex-direction: column;
+          a {
+            text-align: center;
+          }
+          span {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

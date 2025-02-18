@@ -45,7 +45,7 @@ const SideNav = () => {
       <button onClick={() => handleClick()} className="close">
         <IoIosClose />
       </button>
-      <Link className="img" to="/dashboard">
+      <Link className="img" to="/deploy/dashboard">
         <img src={iconMain} />
       </Link>
       <p className="username">Tai</p>
