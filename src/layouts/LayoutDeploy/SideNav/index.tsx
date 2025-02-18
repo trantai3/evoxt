@@ -227,7 +227,9 @@ const SideNav = () => {
         <div>
           <img src={iconReseller} alt="" />
         </div>
-        <p>Become a Reseller</p>
+        <p>
+          <Link to="/reseller">Become a Reseller</Link>
+        </p>
       </div>
       <p className="telegramChannel">
         <a href="https://t.me/evoxt">Follow our Telegram channel</a>

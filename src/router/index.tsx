@@ -25,6 +25,7 @@ import Pricing from "@/pages/Pricing";
 import RefundRequest from "@/pages/RefundRequest";
 import RefundRequestHistory from "@/pages/RefundRequestHistory";
 import RegisterDomain from "@/pages/RegisterDomain";
+import Reseller from "@/pages/Reseller";
 import Service from "@/pages/Service";
 import Submitticket from "@/pages/Submitticket";
 import SupportTickets from "@/pages/SupportTickets";
@@ -128,6 +129,11 @@ const rootRoute: RouteObject[] = [
     path: "/affiliates",
     element: <LayoutDeploy />,
     children: [{ path: "", element: <Affiliate /> }],
+  },
+  {
+    path: "/reseller",
+    element: <LayoutDeploy />,
+    children: [{ path: "", element: <Reseller /> }],
   },
 ];
 
