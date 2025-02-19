@@ -1,0 +1,26 @@
+@use "../../assets/fonts/font.scss";
+.cpuVsNumberPage {
+  .container {
+    margin: 95px auto;
+    .wrap {
+      background-color: #ffffff;
+      padding: 40px;
+      h1 {
+        color: #222222;
+        font-size: 42px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 17px;
+        font-weight: 400;
+        a {
+          color: #1e73be;
+        }
+      }
+      h3 {
+        font-size: 29px;
+        margin: 20px 0;
+      }
+    }
+  }
+}

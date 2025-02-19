@@ -29,8 +29,8 @@ const company = [
 ];
 const support = [
   { title: "Email us", link: "mailto:support@evoxt.com" },
-  { title: "Tickets", link: "/supporttickets" },
-  { title: "Open Ticket", link: "/submitticket" },
+  { title: "Tickets", link: "/deploy/supporttickets" },
+  { title: "Open Ticket", link: "/deploy/submitticket" },
 ];
 const pricing = [
   { title: "Pricing", link: "/pricing" },

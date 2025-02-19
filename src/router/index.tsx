@@ -10,6 +10,7 @@ import ApiCredentials from "@/pages/APICredentials";
 import AutoRenew from "@/pages/AutoRenew";
 import ClientArea from "@/pages/ClientArea";
 import Clone from "@/pages/Clone";
+import CpuVsNumber from "@/pages/CpuVsNumber";
 import Dashboard from "@/pages/Dashboard";
 import Deploy from "@/pages/Deploy";
 import DeployDedicatedServer from "@/pages/DeployDedicatedServer";
@@ -141,6 +142,11 @@ const rootRoute: RouteObject[] = [
     path: "/status",
     element: <LayoutStatus />,
     children: [{ path: "", element: <Status /> }],
+  },
+  {
+    path: "/cpu-clock-speed-vs-number-of-cpu-cores",
+    element: <LayoutMain />,
+    children: [{ path: "", element: <CpuVsNumber /> }],
   },
 ];
 
