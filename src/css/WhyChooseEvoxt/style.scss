@@ -1,0 +1,209 @@
+.whyChooseEvoxt {
+  .main {
+    display: flex;
+    align-items: start;
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+    .sidebar {
+      display: flex;
+      position: sticky;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      overflow-y: auto;
+      border-right: 1px solid #ccc;
+      width: 20%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-right: 20px;
+      flex-direction: column;
+      a {
+        font-size: 20px;
+        color: #333333;
+        font-family: "Roboto";
+        padding: 10px 65px 10px 10px;
+        text-align: right;
+      }
+      .header-active {
+        background: #4169e10a;
+        font-weight: bold;
+        border-right: 5px solid royalblue;
+      }
+    }
+    .wrapper {
+      flex: 0.75;
+      display: flex;
+      align-items: center;
+      padding-top: 50px;
+      padding-left: 60px;
+      &-left {
+        flex: 1;
+        .breadcrumbs {
+          display: flex;
+          gap: 24px;
+          align-items: center;
+          span {
+            font-family: "Roboto";
+            font-size: 17px;
+            border-top-right-radius: 18px;
+            border-bottom-right-radius: 18px;
+            color: #ffffff;
+            background-color: royalblue;
+            padding: 4px 10px;
+          }
+        }
+        .wrapper-header {
+          h1 {
+            margin-top: 10px;
+            font-size: 42px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #121f49;
+          }
+          .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          p {
+            margin-top: 20px;
+            font-size: 17px;
+          }
+        }
+        .faster-cpu,
+        .data-safety,
+        .oneClick-applications,
+        .firewalls,
+        .deployments,
+        .isolated,
+        .hardware,
+        .ip-ranges,
+        .future-ready,
+        .listen,
+        .uptime,
+        .privacy,
+        .vnc,
+        .customer-support,
+        .customer-satisfaction,
+        .pricing,
+        .scalability,
+        .address-management,
+        .api,
+        .passionate {
+          h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-family: "Roboto";
+            color: #121f49;
+            font-weight: 500;
+          }
+          p {
+            font-family: Roboto;
+            word-break: break-all;
+            margin-bottom: 20px;
+            color: rgb(51, 51, 51);
+            font-size: 17px;
+            a {
+              color: #1e73be;
+            }
+          }
+        }
+      }
+      &-right {
+        position: fixed;
+        width: 300px;
+        border-radius: 3px;
+        top: 250px;
+        right: 20px;
+        padding: 20px;
+        border: 1px solid rgb(239, 235, 255);
+        h3 {
+          font-size: 25px;
+          font-family: "Roboto";
+          color: #121f49;
+          font-weight: 500;
+        }
+        .subtitle {
+          font-size: 20px;
+          margin-bottom: 20px;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 400;
+        }
+        .price {
+          font-size: 20px;
+          margin-bottom: 20px;
+          display: inline-block;
+          strong {
+            color: royalblue;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            display: inline;
+          }
+        }
+        button {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          font-size: 20px;
+          color: white;
+          background: royalblue;
+          border-radius: 2px;
+          margin-top: 10px;
+          padding: 10px 20px;
+          text-align: center;
+          border: solid 2px transparent;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .whyChooseEvoxt {
+    .main {
+      .sidebar {
+        a {
+          padding-right: 20px;
+        }
+      }
+      .wrapper {
+        &-right {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .whyChooseEvoxt {
+    .main {
+      justify-content: center;
+      .sidebar {
+        display: none;
+      }
+      .wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .whyChooseEvoxt {
+    .main {
+      .wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+        &-left {
+          .breadcrumbs {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

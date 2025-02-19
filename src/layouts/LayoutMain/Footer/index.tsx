@@ -11,7 +11,7 @@ import { FaTwitter } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 const features = [
-  { title: "API Documentation", link: "/api" },
+  { title: "API Documentation", link: "/status" },
   { title: "Clone Servers", link: "/clone" },
   { title: "Firewall", link: "/firewall" },
   { title: "IP Address Management", link: "/ip-management" },

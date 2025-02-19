@@ -39,6 +39,7 @@ import UserPassword from "@/pages/UserPassword";
 import UserProfile from "@/pages/UserProfile";
 import UserSecurity from "@/pages/UserSecurity";
 import WeeklyOffsiteBackup from "@/pages/Weekly-Offsite-Backup";
+import WhyChooseEvoxt from "@/pages/WhyChooseEvoxt";
 import WindowOrLinux from "@/pages/WindowOrLinux";
 import {
   RouteObject,
@@ -165,6 +166,11 @@ const rootRoute: RouteObject[] = [
     path: "/malaysia-dedicated-server",
     element: <LayoutMain />,
     children: [{ path: "", element: <MalaysiaDedicated /> }],
+  },
+  {
+    path: "/why-choose-evoxt",
+    element: <LayoutMain />,
+    children: [{ path: "", element: <WhyChooseEvoxt /> }],
   },
 ];
 
