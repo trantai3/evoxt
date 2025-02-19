@@ -230,7 +230,9 @@ $a-color: #ffffff;
 
 @media (max-width: 350px) {
   .header__one {
-    gap: 2px;
+    .header__register {
+      display: none;
+    }
   }
   .header__two {
     padding: 10px;
