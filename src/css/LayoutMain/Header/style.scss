@@ -1,43 +1,81 @@
 @use "../../../assets/fonts/font.scss";
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 $a-color: #ffffff;
 .header {
+  display: flex;
+  flex-direction: column;
   &__one {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+    color: $a-color;
     background-color: #0f1e53;
-
     a {
       &:hover {
         color: #007bff;
       }
     }
-
+    .header__login {
+      text-decoration: none;
+      font-size: 14px;
+      padding: 0 10px;
+    }
     .header__register {
+      border-radius: 50px;
       border: 1px solid #77b6ea;
       cursor: pointer;
-    }
-
-    .header__register:hover {
-      background-color: #77b6ea;
-      a:hover {
-        color: $a-color;
+      &:hover {
+        background-color: #77b6ea;
+      }
+      a {
+        text-decoration: none;
+        font-size: 12px;
+        padding: 0 10px;
+        &:hover {
+          color: $a-color;
+        }
       }
     }
-
     .header__environment {
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 0 10px;
       border-left: 1px solid #ddd;
       text-decoration: none;
     }
     .header__environment:hover {
       color: #0f49c2;
     }
+    .icon-environment {
+      width: 30px;
+      margin-right: 10px;
+      height: auto;
+      max-width: 100%;
+    }
   }
-
   &__two {
+    color: white;
+    text-align: center;
+    padding: 20px 40px;
     background-color: #0f1e53;
   }
 
   &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      max-width: 230px;
+      height: auto;
+    }
     .header__right {
+      display: flex;
+      justify-content: space-between;
+      .icon-down {
+        margin-left: 15px;
+      }
       a {
         font-family: "Ubuntu", sans-serif;
         color: $a-color;
@@ -53,6 +91,100 @@ $a-color: #ffffff;
           background-color: #142763;
         }
       }
+      &-minwidth767,
+      &-bars {
+        .deploy {
+          font-size: 15px;
+          font-weight: 500;
+          &-menu {
+            display: flex;
+            gap: 15px;
+            padding: 20px 10px;
+            position: relative;
+            align-items: center;
+            .icon-down {
+              margin-left: 15px;
+            }
+          }
+          .submenu {
+            display: none;
+            position: absolute;
+            text-align: left;
+            padding: 10px 0;
+            ul {
+              background-color: #0f1e53;
+              li {
+                padding: 8px 10px;
+                a {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+          .submenubars {
+            &-maxwidth768 {
+              text-align: left;
+              padding: 10px 0;
+              border-bottom: 1px solid #000;
+              ul {
+                background-color: #0f1e53;
+                li {
+                  padding: 8px 10px;
+                  a {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+            &-clickSub {
+              text-align: left;
+              padding: 10px 0;
+              border-bottom: 1px solid #000;
+              ul {
+                background-color: #0f1e53;
+                li {
+                  padding: 8px 10px;
+                  a {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &-minwidth767 {
+        .elementMenu {
+          padding: 20px 0;
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+      &-bars {
+        display: flex;
+        justify-content: space-between;
+        .elementMenu {
+          padding: 20px 10px;
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1536px) {
+  .header {
+    &__right {
+      gap: 60px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__right {
+      gap: 40px;
     }
   }
 }
