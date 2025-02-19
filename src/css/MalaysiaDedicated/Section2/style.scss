@@ -1,0 +1,63 @@
+.section2Malaysia {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ddd;
+  .container {
+    padding: 50px;
+    .title {
+      font-size: 32px;
+      font-family: Montserrat;
+      text-align: center;
+      font-weight: bold;
+    }
+    .subTitle {
+      font-size: 16px;
+      color: #222222;
+      text-align: center;
+    }
+    .overflow-x {
+      overflow-x: auto;
+      white-space: nowrap;
+      max-width: 100%;
+      margin-bottom: 20px;
+      h4 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #222222;
+        text-align: center;
+      }
+      table {
+        width: 100%;
+        thead {
+          th {
+            font-size: 17px;
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+          }
+        }
+        tbody {
+          td {
+            font-size: 17px;
+            padding: 8px;
+            text-align: center;
+            .img {
+              display: flex;
+              align-items: center;
+              img {
+                width: 70px;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+      .contact {
+        font-size: 17px;
+        color: rgb(34, 34, 34);
+        text-align: center;
+        a {
+          color: #1e73be;
+        }
+      }
+    }
+  }
+}

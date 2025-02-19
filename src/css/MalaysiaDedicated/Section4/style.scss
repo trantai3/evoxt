@@ -1,0 +1,39 @@
+.section4Malaysia {
+  background-color: #0f1e53;
+  .container {
+    padding: 50px;
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        font-size: 32px;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        font-size: 17px;
+        padding: 10px 20px;
+        margin: 20px;
+        border: solid 1px royalblue;
+        background: royalblue;
+        margin: 20px;
+        transition: 0.3s;
+        color: white;
+        &:hover {
+          background: white;
+          color: royalblue;
+        }
+      }
+      .desc {
+        font-size: 17px;
+        color: white;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

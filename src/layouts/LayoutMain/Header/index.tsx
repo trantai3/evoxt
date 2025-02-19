@@ -94,7 +94,7 @@ const Header = () => {
                 <Link className="elementMenu" to="/pricing">
                   Pricing
                 </Link>
-                <Link className="elementMenu" to="/support/submitticket">
+                <Link className="elementMenu" to="/deploy/supporttickets">
                   Contact Us
                 </Link>
               </div>
@@ -142,7 +142,7 @@ const Header = () => {
                 <Link className="elementMenu" to="/pricing">
                   Pricing
                 </Link>
-                <Link className="elementMenu" to="/support/submitticket">
+                <Link className="elementMenu" to="/deploy/supporttickets">
                   Contact Us
                 </Link>
               </div>

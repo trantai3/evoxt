@@ -1,0 +1,81 @@
+.section3Malaysia {
+  .container {
+    padding: 50px;
+    .content {
+      display: flex;
+      flex-direction: column;
+      .wrap {
+        display: flex;
+        padding-bottom: 50px;
+        gap: 36px;
+        align-items: center;
+        justify-content: center;
+        &.wrap-1,
+        &.wrap-3 {
+          flex-direction: row-reverse;
+          .wrap-right {
+            justify-content: start;
+          }
+        }
+        &.wrap-0,
+        &.wrap-2,
+        &.wrap-4 {
+          .wrap-right {
+            display: flex;
+            justify-content: end;
+          }
+        }
+        &-left {
+          flex: 1;
+          .title {
+            font-size: 32px;
+            font-family: Montserrat;
+            font-weight: bold;
+            color: #222222;
+          }
+          .desc {
+            font-size: 17px;
+            ul {
+              margin-top: 20px;
+              li {
+                margin-left: 20px;
+                list-style-type: disc;
+              }
+            }
+          }
+        }
+        &-right {
+          flex: 1;
+          display: flex;
+          img {
+            width: 400px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .section3Malaysia {
+    .container {
+      .content {
+        .wrap {
+          flex-direction: column !important;
+          &-left {
+            .title {
+              text-align: center;
+            }
+            .desc {
+              text-align: center;
+              li {
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
