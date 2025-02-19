@@ -23,6 +23,7 @@ import MainPage from "@/pages/MainPage";
 import MemberRanking from "@/pages/MemberRanking";
 import OrderId from "@/pages/OrderId";
 import PaymentMethod from "@/pages/PaymentMethods";
+import PopularAppsAndWeb from "@/pages/PopularAppsAndWeb";
 import Pricing from "@/pages/Pricing";
 import RefundRequest from "@/pages/RefundRequest";
 import RefundRequestHistory from "@/pages/RefundRequestHistory";
@@ -153,6 +154,11 @@ const rootRoute: RouteObject[] = [
     path: "/windows-server-or-linux-server",
     element: <LayoutMain />,
     children: [{ path: "", element: <WindowOrLinux /> }],
+  },
+  {
+    path: "/popular-web-apps-and-websites-to-deploy",
+    element: <LayoutMain />,
+    children: [{ path: "", element: <PopularAppsAndWeb /> }],
   },
 ];
 
