@@ -37,6 +37,7 @@ import UserPassword from "@/pages/UserPassword";
 import UserProfile from "@/pages/UserProfile";
 import UserSecurity from "@/pages/UserSecurity";
 import WeeklyOffsiteBackup from "@/pages/Weekly-Offsite-Backup";
+import WindowOrLinux from "@/pages/WindowOrLinux";
 import {
   RouteObject,
   createBrowserRouter,
@@ -147,6 +148,11 @@ const rootRoute: RouteObject[] = [
     path: "/cpu-clock-speed-vs-number-of-cpu-cores",
     element: <LayoutMain />,
     children: [{ path: "", element: <CpuVsNumber /> }],
+  },
+  {
+    path: "/windows-server-or-linux-server",
+    element: <LayoutMain />,
+    children: [{ path: "", element: <WindowOrLinux /> }],
   },
 ];
 
