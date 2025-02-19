@@ -1,0 +1,73 @@
+.section1Malaysia {
+  background-color: #1b247b;
+  background-image: linear-gradient(
+    180deg,
+    #0f1e53 0%,
+    #1b247b00 46%,
+    rgb(27 36 123) 100%
+  );
+  .container {
+    .banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 100px 20px;
+      &-left {
+        &-title {
+          font-family: Khula;
+          font-size: 55px;
+          color: white;
+          font-weight: 600;
+        }
+        &-text {
+          font-size: 25px;
+          font-family: "Open Sans Light";
+          color: white;
+        }
+        button {
+          margin-top: 30px;
+          a {
+            font-size: 17px;
+            color: white;
+            background: royalblue;
+            padding: 20px 30px;
+            border: solid 1px royalblue;
+            transition: 0.4s;
+            &:hover {
+              background: white;
+              color: royalblue;
+            }
+          }
+        }
+      }
+      &-right {
+        img {
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .section1Malaysia {
+    .container {
+      .banner {
+        gap: 70px;
+        flex-direction: column;
+        &-left {
+          &-title {
+            text-align: center;
+          }
+          &-text {
+            text-align: center;
+          }
+          button {
+            display: flex;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}

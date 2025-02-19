@@ -20,6 +20,7 @@ import Invoices from "@/pages/Invoices";
 import IpManagement from "@/pages/IpManagement";
 import KeysManagement from "@/pages/KeyManagements";
 import MainPage from "@/pages/MainPage";
+import MalaysiaDedicated from "@/pages/MalaysiaDedicated";
 import MemberRanking from "@/pages/MemberRanking";
 import OrderId from "@/pages/OrderId";
 import PaymentMethod from "@/pages/PaymentMethods";
@@ -159,6 +160,11 @@ const rootRoute: RouteObject[] = [
     path: "/popular-web-apps-and-websites-to-deploy",
     element: <LayoutMain />,
     children: [{ path: "", element: <PopularAppsAndWeb /> }],
+  },
+  {
+    path: "/malaysia-dedicated-server",
+    element: <LayoutMain />,
+    children: [{ path: "", element: <MalaysiaDedicated /> }],
   },
 ];
 

@@ -230,15 +230,14 @@ $a-color: #ffffff;
 
 @media (max-width: 350px) {
   .header__one {
-    flex-direction: column;
-    gap: 24px;
+    gap: 2px;
   }
   .header__two {
+    padding: 10px;
     .header__container {
-      flex-direction: column;
-      gap: 24px;
+      gap: 8px;
       img {
-        max-width: 180px !important;
+        width: 180px !important;
       }
     }
   }
