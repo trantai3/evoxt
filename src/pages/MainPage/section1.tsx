@@ -21,7 +21,7 @@ const Section1 = () => {
             *Some legacy models are on 3.5 GHz+ Base Clock, if you are assigned
             3.5GHz+ and are dissatisfied, please contact us.
           </p>
-          <Link className="deploy-button" to="/deploy/dashboard">
+          <Link className="deploy-button" to="/deploy">
             Deploy a cloud virtual machine now
           </Link>
         </div>
