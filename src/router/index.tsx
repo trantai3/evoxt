@@ -27,6 +27,7 @@ import OrderId from "@/pages/OrderId";
 import PaymentMethod from "@/pages/PaymentMethods";
 import PopularAppsAndWeb from "@/pages/PopularAppsAndWeb";
 import Pricing from "@/pages/Pricing";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import RefundRequest from "@/pages/RefundRequest";
 import RefundRequestHistory from "@/pages/RefundRequestHistory";
 import RegisterDomain from "@/pages/RegisterDomain";
@@ -177,6 +178,11 @@ const rootRoute: RouteObject[] = [
     path: "/acceptable-use-policy",
     element: <LayoutMain />,
     children: [{ path: "", element: <AcceptableUsePolicy /> }],
+  },
+  {
+    path: "/privacy-policy",
+    element: <LayoutMain />,
+    children: [{ path: "", element: <PrivacyPolicy /> }],
   },
 ];
 
