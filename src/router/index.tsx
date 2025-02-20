@@ -2,6 +2,7 @@ import LayoutDeploy from "@/layouts/LayoutDeploy";
 import { LayoutMain } from "@/layouts/LayoutMain";
 import LayoutStatus from "@/layouts/LayoutStatus";
 import AboutUs from "@/pages/AboutUs";
+import AcceptableUsePolicy from "@/pages/AcceptableUsePolicy";
 import AccountContact from "@/pages/AccountContact";
 import AccountUser from "@/pages/AccountUser";
 import AddFunds from "@/pages/AddFunds";
@@ -171,6 +172,11 @@ const rootRoute: RouteObject[] = [
     path: "/why-choose-evoxt",
     element: <LayoutMain />,
     children: [{ path: "", element: <WhyChooseEvoxt /> }],
+  },
+  {
+    path: "/acceptable-use-policy",
+    element: <LayoutMain />,
+    children: [{ path: "", element: <AcceptableUsePolicy /> }],
   },
 ];
 
