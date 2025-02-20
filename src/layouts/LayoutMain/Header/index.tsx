@@ -52,7 +52,7 @@ const Header = () => {
               <FaBars />
             </div>
             {screenWidth > 767 && (
-              <div className="header__right header__right-minwidth767 md:gap-[40px] 2xl:gap-[60px] flex justify-between">
+              <div className="header__right">
                 <Link className="deploy" to="#">
                   <div
                     onClick={() => setIsClickSubMenu(!isClickSubMenu)}
