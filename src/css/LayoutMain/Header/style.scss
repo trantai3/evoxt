@@ -154,6 +154,8 @@ $a-color: #ffffff;
         }
       }
       &-minwidth767 {
+        display: flex;
+        justify-content: space-between;
         .elementMenu {
           padding: 20px 0;
           font-size: 15px;
