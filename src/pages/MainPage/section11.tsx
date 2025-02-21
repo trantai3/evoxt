@@ -10,12 +10,12 @@ const Section11 = () => {
             Create an account with Evoxt now or Contact us to learn more.
           </div>
           <div className="section__11-buttons-wrapper">
-            <div className="button button-account">
-              <Link to="/deploy/dashboard">Create Account</Link>
-            </div>
-            <div className="button button-contact">
-              <Link to="/deploy/submitticket">Contact Us</Link>
-            </div>
+            <Link to="/deploy/dashboard">
+              <div className="button button-account">Create Account</div>
+            </Link>
+            <Link to="/deploy/submitticket">
+              <div className="button button-contact">Contact Us</div>
+            </Link>
           </div>
         </div>
       </div>

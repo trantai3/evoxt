@@ -17,6 +17,7 @@ import img7 from "../../assets/images/MainPage/Section5/img7.png";
 import img8 from "../../assets/images/MainPage/Section5/img8.png";
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const section5Tab = [
   { icon: icon1, title: "Monitoring" },
@@ -127,21 +128,37 @@ const Section5 = () => {
                       {(e.tabClick === "IP Management" ||
                         e.tabClick === "Firewall") && (
                         <div className="listButtons">
-                          <button className="readmoreButton">Read More</button>
-                          <button className="docButton">Documentation</button>
+                          <Link
+                            to={`${e.tabClick === "IP Management" ? "/ip-management" : "/firewall"}`}
+                          >
+                            <button className="readmoreButton">
+                              Read More
+                            </button>
+                          </Link>
+                          <Link to="/why-choose-evoxt">
+                            <button className="docButton">Documentation</button>
+                          </Link>
                         </div>
                       )}
                       {(e.tabClick === "Cloning" ||
                         e.tabClick === "Backups") && (
                         <div className="listButtons">
-                          <button className="readmoreButton">Read More</button>
+                          <Link
+                            to={`${e.tabClick === "Cloning" ? "/clone" : "/weekly-offsite-backup"}`}
+                          >
+                            <button className="readmoreButton">
+                              Read More
+                            </button>
+                          </Link>
                         </div>
                       )}
                       {e.tabClick === "API" && (
                         <div>
-                          <button className="gotodocButton">
-                            Go to Documentation
-                          </button>
+                          <Link to="/status">
+                            <button className="gotodocButton">
+                              Go to Documentation
+                            </button>
+                          </Link>
                         </div>
                       )}
                     </div>
