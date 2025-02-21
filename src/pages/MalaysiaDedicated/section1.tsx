@@ -12,7 +12,9 @@ const Section1 = () => {
               Workstation Performance and server grade reliabilty at Low Prices
             </p>
             <button>
-              <Link to="">Deploy a Dedicated Server</Link>
+              <Link to="/deploy/dedicated-server">
+                Deploy a Dedicated Server
+              </Link>
             </button>
           </div>
           <div className="banner-right">
