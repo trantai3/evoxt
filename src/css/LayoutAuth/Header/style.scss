@@ -1,0 +1,16 @@
+.headerLayoutAuth {
+  height: 60px;
+  padding: 10px 0 10px 50px;
+  .tabs-link {
+    display: flex;
+    margin-right: 50px;
+    justify-content: end;
+    button {
+      padding: 6px 10px;
+      line-height: 20px;
+      a {
+        color: white;
+      }
+    }
+  }
+}

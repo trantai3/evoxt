@@ -48,11 +48,13 @@ const UserSecurity = lazy(() => import("@/pages/UserSecurity"));
 const WeeklyOffsiteBackup = lazy(() => import("@/pages/Weekly-Offsite-Backup"));
 const WhyChooseEvoxt = lazy(() => import("@/pages/WhyChooseEvoxt"));
 const WindowOrLinux = lazy(() => import("@/pages/WindowOrLinux"));
+const Login = lazy(() => import("@/pages/Login"));
 import {
   RouteObject,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import LayoutAuth from "@/layouts/LayoutAuth";
 
 const rootRoute: RouteObject[] = [
   {
@@ -438,6 +440,20 @@ const rootRoute: RouteObject[] = [
         element: (
           <Suspense>
             <PrivacyPolicy />
+          </Suspense>
+        ),
+      },
+    ],
+  },
+  {
+    path: "/login",
+    element: <LayoutAuth />,
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <Login />
           </Suspense>
         ),
       },

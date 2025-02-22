@@ -26,7 +26,7 @@ const Header = () => {
     <>
       <div className="header">
         <div className="header__one">
-          <a className="header__login" href="https://console.evoxt.com/login">
+          <a className="header__login" href="/login">
             Login
           </a>
           <div className="header__register">

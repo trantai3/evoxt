@@ -1,0 +1,89 @@
+.ant-layout-content {
+  .overflow-x {
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+    .loginPage {
+      &-container {
+        font-family: "Open Sans", Verdana, Tahoma, serif;
+        margin: 40px auto 100px auto;
+        padding: 0 10px;
+        max-width: 500px;
+        .img-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .img {
+            width: 300px;
+            height: auto;
+          }
+        }
+        .loginpanel {
+          padding: 10%;
+          margin: 30px auto;
+          width: 90%;
+          min-width: 320px;
+          background: white;
+          .row {
+            display: flex;
+            gap: 8px;
+            flex-direction: column;
+            margin-bottom: 12px;
+            .password {
+              display: flex;
+              justify-content: space-between;
+              span {
+                color: royalblue;
+              }
+            }
+            .title {
+              font-weight: 600;
+            }
+            input {
+              height: 50px;
+              width: 100%;
+              border: 1px solid #ccc;
+              transition: border-colorease-in-out 0.15s;
+              padding-left: 5%;
+              outline: none;
+              &:focus {
+                outline: none;
+                border: 1px solid royalblue;
+              }
+            }
+          }
+          .remember-me {
+            display: flex;
+            color: #333333;
+            cursor: pointer;
+            align-items: center;
+            gap: 6px;
+          }
+          .button {
+            display: flex;
+            cursor: pointer;
+            padding: 8px 0;
+            margin: 10px 0;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 18px;
+            background-color: royalblue;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+              outline: none;
+              background-color: #212083;
+              border: none;
+            }
+          }
+          .register {
+            color: royalblue;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
