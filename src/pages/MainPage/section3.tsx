@@ -176,7 +176,16 @@ const Section3 = () => {
               {section2ca.map((e, index) => (
                 <div className={`wrapper wrapper-${index}`}>
                   <div className="logo-space-apps">
-                    <div>{e.img}</div>
+                    {index === 14 || index === 15 ? (
+                      typeof e.img === "string" ? (
+                        <img className="iconca" src={e.img} />
+                      ) : (
+                        e.img
+                      )
+                    ) : (
+                      <div>{e.img}</div>
+                    )}
+
                     <div className="logo-space-apps-desc">
                       <p className="logo-space-title">{e.title}</p>
                       <p className="logo-space-desc">{e.content}</p>
