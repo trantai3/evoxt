@@ -8,7 +8,7 @@ import icon6 from "../.,/../../assets/icons/RegisterDomain/icon6.png";
 import { ReactComponent as Icon7 } from "../.,/../../assets/icons/RegisterDomain/icon7.svg";
 
 const featuredList = [
-  <Icon1 className="  " />,
+  <Icon1 className="icon" />,
   <Icon2 className="icon" />,
   <Icon3 className="icon" />,
   <Icon4 className="icon" />,

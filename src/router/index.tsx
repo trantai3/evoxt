@@ -1,50 +1,53 @@
 // Layout
+import { Suspense, lazy } from "react";
 import LayoutDeploy from "@/layouts/LayoutDeploy";
 import { LayoutMain } from "@/layouts/LayoutMain";
 import LayoutStatus from "@/layouts/LayoutStatus";
 // Page
-import AboutUs from "@/pages/AboutUs";
-import AcceptableUsePolicy from "@/pages/AcceptableUsePolicy";
-import AccountContact from "@/pages/AccountContact";
-import AccountUser from "@/pages/AccountUser";
-import AddFunds from "@/pages/AddFunds";
-import Affiliate from "@/pages/Affiliate";
-import ApiCredentials from "@/pages/APICredentials";
-import AutoRenew from "@/pages/AutoRenew";
-import ClientArea from "@/pages/ClientArea";
-import Clone from "@/pages/Clone";
-import CpuVsNumber from "@/pages/CpuVsNumber";
-import Dashboard from "@/pages/Dashboard";
-import Deploy from "@/pages/Deploy";
-import DeployDedicatedServer from "@/pages/DeployDedicatedServer";
-import EmailHistory from "@/pages/EmailHistory";
-import Firewall from "@/pages/Firewall";
-import Invoices from "@/pages/Invoices";
-import IpManagement from "@/pages/IpManagement";
-import KeysManagement from "@/pages/KeyManagements";
-import MainPage from "@/pages/MainPage";
-import MalaysiaDedicated from "@/pages/MalaysiaDedicated";
-import MemberRanking from "@/pages/MemberRanking";
-import OrderId from "@/pages/OrderId";
-import PaymentMethod from "@/pages/PaymentMethods";
-import PopularAppsAndWeb from "@/pages/PopularAppsAndWeb";
-import Pricing from "@/pages/Pricing";
-import PrivacyPolicy from "@/pages/PrivacyPolicy";
-import RefundRequest from "@/pages/RefundRequest";
-import RefundRequestHistory from "@/pages/RefundRequestHistory";
-import RegisterDomain from "@/pages/RegisterDomain";
-import Reseller from "@/pages/Reseller";
-import Service from "@/pages/Service";
-import Status from "@/pages/Status";
-import Submitticket from "@/pages/Submitticket";
-import SupportTickets from "@/pages/SupportTickets";
-import TermOfService from "@/pages/TermOfService";
-import UserPassword from "@/pages/UserPassword";
-import UserProfile from "@/pages/UserProfile";
-import UserSecurity from "@/pages/UserSecurity";
-import WeeklyOffsiteBackup from "@/pages/Weekly-Offsite-Backup";
-import WhyChooseEvoxt from "@/pages/WhyChooseEvoxt";
-import WindowOrLinux from "@/pages/WindowOrLinux";
+const AboutUs = lazy(() => import("@/pages/AboutUs"));
+const AcceptableUsePolicy = lazy(() => import("@/pages/AcceptableUsePolicy"));
+const AccountContact = lazy(() => import("@/pages/AccountContact"));
+const AccountUser = lazy(() => import("@/pages/AccountUser"));
+const AddFunds = lazy(() => import("@/pages/AddFunds"));
+const Affiliate = lazy(() => import("@/pages/Affiliate"));
+const ApiCredentials = lazy(() => import("@/pages/APICredentials"));
+const AutoRenew = lazy(() => import("@/pages/AutoRenew"));
+const ClientArea = lazy(() => import("@/pages/ClientArea"));
+const Clone = lazy(() => import("@/pages/Clone"));
+const CpuVsNumber = lazy(() => import("@/pages/CpuVsNumber"));
+const Dashboard = lazy(() => import("@/pages/Dashboard"));
+const Deploy = lazy(() => import("@/pages/Deploy"));
+const DeployDedicatedServer = lazy(
+  () => import("@/pages/DeployDedicatedServer"),
+);
+const EmailHistory = lazy(() => import("@/pages/EmailHistory"));
+const Firewall = lazy(() => import("@/pages/Firewall"));
+const Invoices = lazy(() => import("@/pages/Invoices"));
+const IpManagement = lazy(() => import("@/pages/IpManagement"));
+const KeysManagement = lazy(() => import("@/pages/KeyManagements"));
+const MainPage = lazy(() => import("@/pages/MainPage"));
+const MalaysiaDedicated = lazy(() => import("@/pages/MalaysiaDedicated"));
+const MemberRanking = lazy(() => import("@/pages/MemberRanking"));
+const OrderId = lazy(() => import("@/pages/OrderId"));
+const PaymentMethod = lazy(() => import("@/pages/PaymentMethods"));
+const PopularAppsAndWeb = lazy(() => import("@/pages/PopularAppsAndWeb"));
+const Pricing = lazy(() => import("@/pages/Pricing"));
+const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
+const RefundRequest = lazy(() => import("@/pages/RefundRequest"));
+const RefundRequestHistory = lazy(() => import("@/pages/RefundRequestHistory"));
+const RegisterDomain = lazy(() => import("@/pages/RegisterDomain"));
+const Reseller = lazy(() => import("@/pages/Reseller"));
+const Service = lazy(() => import("@/pages/Service"));
+const Status = lazy(() => import("@/pages/Status"));
+const Submitticket = lazy(() => import("@/pages/Submitticket"));
+const SupportTickets = lazy(() => import("@/pages/SupportTickets"));
+const TermOfService = lazy(() => import("@/pages/TermOfService"));
+const UserPassword = lazy(() => import("@/pages/UserPassword"));
+const UserProfile = lazy(() => import("@/pages/UserProfile"));
+const UserSecurity = lazy(() => import("@/pages/UserSecurity"));
+const WeeklyOffsiteBackup = lazy(() => import("@/pages/Weekly-Offsite-Backup"));
+const WhyChooseEvoxt = lazy(() => import("@/pages/WhyChooseEvoxt"));
+const WindowOrLinux = lazy(() => import("@/pages/WindowOrLinux"));
 import {
   RouteObject,
   createBrowserRouter,
@@ -56,25 +59,117 @@ const rootRoute: RouteObject[] = [
     path: "/",
     element: <LayoutMain />,
     children: [
-      { index: true, element: <MainPage /> },
-      { path: "clone", element: <Clone /> },
-      { path: "firewall", element: <Firewall /> },
-      { path: "ip-management", element: <IpManagement /> },
-      { path: "weekly-offsite-backup", element: <WeeklyOffsiteBackup /> },
-      { path: "membership-ranking", element: <MemberRanking /> },
-      { path: "pricing", element: <Pricing /> },
-      { path: "about-us", element: <AboutUs /> },
-      { path: "terms-of-service", element: <TermOfService /> },
+      {
+        index: true,
+        element: (
+          <Suspense>
+            <MainPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: "clone",
+        element: (
+          <Suspense>
+            <Clone />
+          </Suspense>
+        ),
+      },
+      {
+        path: "firewall",
+        element: (
+          <Suspense>
+            <Firewall />
+          </Suspense>
+        ),
+      },
+      {
+        path: "ip-management",
+        element: (
+          <Suspense>
+            <IpManagement />
+          </Suspense>
+        ),
+      },
+      {
+        path: "weekly-offsite-backup",
+        element: (
+          <Suspense>
+            <WeeklyOffsiteBackup />
+          </Suspense>
+        ),
+      },
+      {
+        path: "membership-ranking",
+        element: (
+          <Suspense>
+            <MemberRanking />
+          </Suspense>
+        ),
+      },
+      {
+        path: "pricing",
+        element: (
+          <Suspense>
+            <Pricing />
+          </Suspense>
+        ),
+      },
+      {
+        path: "about-us",
+        element: (
+          <Suspense>
+            <AboutUs />
+          </Suspense>
+        ),
+      },
+      {
+        path: "terms-of-service",
+        element: (
+          <Suspense>
+            <TermOfService />
+          </Suspense>
+        ),
+      },
     ],
   },
   {
     path: "/deploy",
     element: <LayoutDeploy />,
     children: [
-      { index: true, path: "dashboard", element: <Dashboard /> },
-      { path: "service", element: <Service /> },
-      { path: "", element: <Deploy /> },
-      { path: "dedicated-server", element: <DeployDedicatedServer /> },
+      {
+        index: true,
+        path: "dashboard",
+        element: (
+          <Suspense>
+            <Dashboard />
+          </Suspense>
+        ),
+      },
+      {
+        path: "service",
+        element: (
+          <Suspense>
+            <Service />
+          </Suspense>
+        ),
+      },
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <Deploy />
+          </Suspense>
+        ),
+      },
+      {
+        path: "dedicated-server",
+        element: (
+          <Suspense>
+            <DeployDedicatedServer />
+          </Suspense>
+        ),
+      },
       { path: "order-id", element: <OrderId /> },
       { path: "register-domain", element: <RegisterDomain /> },
       { path: "invoices", element: <Invoices /> },
@@ -96,95 +191,257 @@ const rootRoute: RouteObject[] = [
     path: "/account",
     element: <LayoutDeploy />,
     children: [
-      { path: "users", element: <AccountUser /> },
+      {
+        path: "users",
+        element: (
+          <Suspense>
+            <AccountUser />
+          </Suspense>
+        ),
+      },
       {
         path: "paymentmethods",
-        element: <PaymentMethod />,
+        element: (
+          <Suspense>
+            <PaymentMethod />
+          </Suspense>
+        ),
       },
       {
         path: "contacts",
-        element: <AccountContact />,
+        element: (
+          <Suspense>
+            <AccountContact />
+          </Suspense>
+        ),
       },
     ],
   },
   {
     path: "/autorenewal_config",
     element: <LayoutDeploy />,
-    children: [{ path: "", element: <AutoRenew /> }],
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <AutoRenew />
+          </Suspense>
+        ),
+      },
+    ],
   },
   {
     path: "/user",
     element: <LayoutDeploy />,
     children: [
-      { path: "profile", element: <UserProfile /> },
-      { path: "password", element: <UserPassword /> },
-      { path: "security", element: <UserSecurity /> },
+      {
+        path: "profile",
+        element: (
+          <Suspense>
+            <UserProfile />
+          </Suspense>
+        ),
+      },
+      {
+        path: "password",
+        element: (
+          <Suspense>
+            <UserPassword />
+          </Suspense>
+        ),
+      },
+      {
+        path: "security",
+        element: (
+          <Suspense>
+            <UserSecurity />
+          </Suspense>
+        ),
+      },
     ],
   },
   {
     path: "/keysmanagement",
     element: <LayoutDeploy />,
-    children: [{ path: "", element: <KeysManagement /> }],
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <KeysManagement />
+          </Suspense>
+        ),
+      },
+    ],
   },
   {
     path: "/clientarea-email-history",
     element: <LayoutDeploy />,
-    children: [{ path: "", element: <EmailHistory /> }],
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <EmailHistory />
+          </Suspense>
+        ),
+      },
+    ],
   },
   {
     path: "/apicredentials",
     element: <LayoutDeploy />,
-    children: [{ path: "", element: <ApiCredentials /> }],
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <ApiCredentials />
+          </Suspense>
+        ),
+      },
+    ],
   },
   {
     path: "/affiliates",
     element: <LayoutDeploy />,
-    children: [{ path: "", element: <Affiliate /> }],
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <Affiliate />
+          </Suspense>
+        ),
+      },
+    ],
   },
   {
     path: "/reseller",
     element: <LayoutDeploy />,
-    children: [{ path: "", element: <Reseller /> }],
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <Reseller />
+          </Suspense>
+        ),
+      },
+    ],
   },
   {
     path: "/status",
     element: <LayoutStatus />,
-    children: [{ path: "", element: <Status /> }],
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <Status />
+          </Suspense>
+        ),
+      },
+    ],
   },
   {
     path: "/cpu-clock-speed-vs-number-of-cpu-cores",
     element: <LayoutMain />,
-    children: [{ path: "", element: <CpuVsNumber /> }],
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <CpuVsNumber />
+          </Suspense>
+        ),
+      },
+    ],
   },
   {
     path: "/windows-server-or-linux-server",
     element: <LayoutMain />,
-    children: [{ path: "", element: <WindowOrLinux /> }],
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <WindowOrLinux />
+          </Suspense>
+        ),
+      },
+    ],
   },
   {
     path: "/popular-web-apps-and-websites-to-deploy",
     element: <LayoutMain />,
-    children: [{ path: "", element: <PopularAppsAndWeb /> }],
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <PopularAppsAndWeb />
+          </Suspense>
+        ),
+      },
+    ],
   },
   {
     path: "/malaysia-dedicated-server",
     element: <LayoutMain />,
-    children: [{ path: "", element: <MalaysiaDedicated /> }],
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <MalaysiaDedicated />
+          </Suspense>
+        ),
+      },
+    ],
   },
   {
     path: "/why-choose-evoxt",
     element: <LayoutMain />,
-    children: [{ path: "", element: <WhyChooseEvoxt /> }],
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <WhyChooseEvoxt />
+          </Suspense>
+        ),
+      },
+    ],
   },
   {
     path: "/acceptable-use-policy",
     element: <LayoutMain />,
-    children: [{ path: "", element: <AcceptableUsePolicy /> }],
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <AcceptableUsePolicy />
+          </Suspense>
+        ),
+      },
+    ],
   },
   {
     path: "/privacy-policy",
     element: <LayoutMain />,
-    children: [{ path: "", element: <PrivacyPolicy /> }],
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <PrivacyPolicy />
+          </Suspense>
+        ),
+      },
+    ],
   },
 ];
 

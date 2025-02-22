@@ -1,6 +1,6 @@
 import "../../../css/LayoutMain/Header/style.scss";
-import icon from "../../../assets/icons/HeaderLayoutMain/icon.svg";
-import logo from "../../../assets/images/HeaderLayoutMain/logo.svg";
+import { ReactComponent as Icon } from "../../../assets/icons/HeaderLayoutMain/icon.svg";
+import { ReactComponent as Logo } from "../../../assets/images/HeaderLayoutMain/logo.svg";
 import { FaAngleDown } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -38,12 +38,12 @@ const Header = () => {
           >
             We care about the Environment
           </a>
-          <img src={icon} className="icon-environment" />
+          <Icon className="icon-environment" />
         </div>
         <div className="header__two">
           <div className="header__container">
             <a href="/">
-              <img src={logo} className="logo" alt="" />
+              <Logo className="logo" />
             </a>
             <div
               onClick={() => setIsBars(!isBars)}

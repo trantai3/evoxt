@@ -1,4 +1,4 @@
-import imgFlag from "../../../assets/images/Dashboard/flag.svg";
+import { ReactComponent as ImgFlag } from "../../../assets/images/Dashboard/flag.svg";
 import { bars } from "@/components/Recoil/atom/app";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaBars } from "react-icons/fa";
@@ -19,7 +19,7 @@ const Header = () => {
         <div className="section__1-right">
           <div className="chooseLanguage">
             <div className="flag">
-              <img src={imgFlag} />
+              <ImgFlag className="img" />
             </div>
             <p className="language">English</p>
             <span>

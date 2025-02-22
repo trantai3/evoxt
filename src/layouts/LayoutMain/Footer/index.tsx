@@ -3,9 +3,9 @@ import { FaTelegram } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import "../../../css/MainPage/Footer/style.scss";
 import { Link } from "react-router-dom";
-import icon from "../../../assets/icons/MainPage/Footer/icon.svg";
-import flat from "../../../assets/icons/MainPage/Footer/flat.svg";
-import climateIcon from "../../../assets/icons/MainPage/Footer/climate.svg";
+import { ReactComponent as Icon } from "../../../assets/icons/MainPage/Footer/icon.svg";
+import { ReactComponent as Flag } from "../../../assets/icons/MainPage/Footer/flat.svg";
+import { ReactComponent as Climate } from "../../../assets/icons/MainPage/Footer/climate.svg";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -171,7 +171,7 @@ const Footer = () => {
             </div>
             <div className="footer-main-right">
               <div className="icon">
-                <img src={icon} />
+                <Icon className="icon-main" />
               </div>
               <span className="copyright">
                 ©2025 Evoxt - All rights reserved
@@ -199,7 +199,7 @@ const Footer = () => {
               </div>
               <div className="selected-language">
                 <div className="flat">
-                  <img src={flat} />
+                  <Flag className="flat-img" />
                 </div>
                 <span>English</span>
                 <span className="icon">
@@ -209,7 +209,7 @@ const Footer = () => {
               <div className="climate-member">
                 <span>Stripe Climate member</span>
                 <div>
-                  <img src={climateIcon} />
+                  <Climate className="climateImg" />
                 </div>
               </div>
             </div>

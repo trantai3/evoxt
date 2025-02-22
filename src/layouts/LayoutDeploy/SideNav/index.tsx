@@ -1,11 +1,11 @@
 import "../../../css/SideNavLayoutDeploy/SideNav/style.scss";
 import { bars } from "@/components/Recoil/atom/app";
-import iconMain from "../../../assets/icons/Dashboard/icon.svg";
-import iconDashboard from "../../../assets/icons/Dashboard/iconDashboard.svg";
-import iconService from "../../../assets/icons/Dashboard/iconService.svg";
-import iconDeploy from "../../../assets/icons/Dashboard/iconDeploy.svg";
-import iconAffilate from "../../../assets/icons/Dashboard/iconAffiliate.svg";
-import iconReseller from "../../../assets/icons/Dashboard/iconReseller.svg";
+import { ReactComponent as IconMain } from "../../../assets/icons/Dashboard/icon.svg";
+import { ReactComponent as IconDashboard } from "../../../assets/icons/Dashboard/iconDashboard.svg";
+import { ReactComponent as IconService } from "../../../assets/icons/Dashboard/iconService.svg";
+import { ReactComponent as IconDeploy } from "../../../assets/icons/Dashboard/iconDeploy.svg";
+import { ReactComponent as IconAffiliate } from "../../../assets/icons/Dashboard/iconAffiliate.svg";
+import { ReactComponent as IconReseller } from "../../../assets/icons/Dashboard/iconReseller.svg";
 import { IoIosClose } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaFileAlt } from "react-icons/fa";
@@ -46,7 +46,7 @@ const SideNav = () => {
         <IoIosClose />
       </button>
       <Link className="img" to="/deploy/dashboard">
-        <img src={iconMain} />
+        <IconMain className="iconMain" />
       </Link>
       <p className="username">Tai</p>
       <p className="email">trantai09032003@gmail.com</p>
@@ -73,7 +73,7 @@ const SideNav = () => {
       </div>
       <div className="dashboard">
         <div>
-          <img src={iconDashboard} alt="" />
+          <IconDashboard className="icon-element" />
         </div>
         <Link to="/deploy/dashboard">
           <p>Dashboard</p>
@@ -81,7 +81,7 @@ const SideNav = () => {
       </div>
       <div onClick={() => toggleDropdown("service")} className="service">
         <div>
-          <img src={iconService} alt="" />
+          <IconService className="icon-element" />
         </div>
         <p>Service</p>
         <span className="icon">
@@ -97,7 +97,7 @@ const SideNav = () => {
       )}
       <div onClick={() => toggleDropdown("deploy")} className="deploy">
         <div>
-          <img src={iconDeploy} alt="" />
+          <IconDeploy className="icon-element" />
         </div>
         <p>Deploy</p>
         <span className="icon">
@@ -216,16 +216,15 @@ const SideNav = () => {
       )}
       <div className="affiliate">
         <div>
-          <img src={iconAffilate} alt="" />
+          <IconAffiliate className="icon-element" />
         </div>
-
         <p>
           <Link to="/affiliates">Affiliates</Link>
         </p>
       </div>
       <div className="reseller">
         <div>
-          <img src={iconReseller} alt="" />
+          <IconReseller className="icon-element" />
         </div>
         <p>
           <Link to="/reseller">Become a Reseller</Link>
