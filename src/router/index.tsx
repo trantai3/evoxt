@@ -49,6 +49,7 @@ const WeeklyOffsiteBackup = lazy(() => import("@/pages/Weekly-Offsite-Backup"));
 const WhyChooseEvoxt = lazy(() => import("@/pages/WhyChooseEvoxt"));
 const WindowOrLinux = lazy(() => import("@/pages/WindowOrLinux"));
 const Login = lazy(() => import("@/pages/Login"));
+const Register = lazy(() => import("@/pages/Register"));
 import {
   RouteObject,
   createBrowserRouter,
@@ -454,6 +455,20 @@ const rootRoute: RouteObject[] = [
         element: (
           <Suspense>
             <Login />
+          </Suspense>
+        ),
+      },
+    ],
+  },
+  {
+    path: "/register",
+    element: <LayoutAuth />,
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <Register />
           </Suspense>
         ),
       },
