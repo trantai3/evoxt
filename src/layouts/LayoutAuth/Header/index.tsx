@@ -4,12 +4,13 @@ const Header = () => {
   return (
     <div className="headerLayoutAuth">
       <div className="tabs-link">
-        <button>
-          <Link to="/login">Login</Link>
-        </button>
-        <button>
-          <Link to="/register">Register</Link>
-        </button>
+        <Link to="/login">
+          <button>Login</button>
+        </Link>
+
+        <Link to="/register">
+          <button>Register</button>
+        </Link>
       </div>
     </div>
   );

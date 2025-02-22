@@ -25,9 +25,10 @@
     }
     .scrollX {
       overflow-x: auto;
+      white-space: nowrap;
+      max-width: 100%;
     }
     .tab {
-      max-width: 1300px;
       display: flex;
       align-items: center;
       justify-content: space-between;

@@ -26,9 +26,9 @@ const Header = () => {
     <>
       <div className="header">
         <div className="header__one">
-          <a className="header__login" href="/login">
+          <Link className="header__login" to="/login">
             Login
-          </a>
+          </Link>
           <div className="header__register">
             <Link to="/deploy/dashboard">Register</Link>
           </div>
