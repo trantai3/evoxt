@@ -49,6 +49,11 @@ const Register = () => {
                 </button>
               </div>
             </div>
+            <span className="term-privacy">
+              By signing up you agree to our
+              <Link to="/terms-of-service"> terms of service </Link>
+              and our <Link to="/privacy-policy"> privacy policy.</Link>
+            </span>
           </div>
         </div>
       </div>

@@ -22,25 +22,35 @@
       font-weight: 300;
       margin-bottom: 65px;
     }
-    .ant-carousel {
-      .slick-slider {
-        .slick-dots {
-          .slick-active {
-            button {
-              background-color: #007aff;
-            }
-          }
+    .carousels {
+      .carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        label {
+          font-size: 17px;
+          margin-top: 20px;
+          color: #222222;
         }
       }
     }
-    .carouselImg {
-      img {
-        margin: 0 auto;
+    .swipers {
+      margin-top: 10px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      span {
+        display: block;
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 50%;
       }
-      p {
-        text-align: center;
-        padding-bottom: 60px;
-        font-size: 17px;
+      .swiper-active {
+        background-color: royalblue;
       }
     }
   }

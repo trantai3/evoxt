@@ -3,7 +3,7 @@ import { bars } from "@/components/Recoil/atom/app";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaBars } from "react-icons/fa";
 import "../../../css/LayoutDeploy/Header/style.scss";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useRecoilState } from "recoil";
 const Header = () => {
   const location = useLocation();
@@ -27,9 +27,13 @@ const Header = () => {
             </span>
           </div>
           <div className="addservicebutton">
-            <button type="button">+</button>
+            <button type="button">
+              <Link to="/malaysia-dedicated-server">+</Link>
+            </button>
           </div>
-          <div className="logout">Logout</div>
+          <div className="logout">
+            <Link to="/login">Logout</Link>
+          </div>
         </div>
       </div>
     </div>
