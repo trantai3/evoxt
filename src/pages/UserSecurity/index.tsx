@@ -1,5 +1,5 @@
 import "../../css/UserSecurity/style.scss";
-import icon from "../../assets/icons/UserSecurity/icon.svg";
+import { ReactComponent as Icon } from "../../assets/icons/UserSecurity/icon.svg";
 const UserSecurity = () => {
   return (
     <div className="userSecurityPage">
@@ -12,7 +12,7 @@ const UserSecurity = () => {
           </p>
           <div className="alert-warning">
             <div className="img">
-              <img src={icon} />
+              <Icon className="icon" />
             </div>
             <p>
               We recommend enabling two-factor authentication to provide an

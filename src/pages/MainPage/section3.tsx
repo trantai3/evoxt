@@ -1,115 +1,115 @@
 import { useState } from "react";
-import icon1 from "../../assets/icons/MainPage/Section3/icon1Head.svg";
-import icon2 from "../../assets/icons/MainPage/Section3/icon2Head.svg";
-import icon1OS from "../../assets/icons/MainPage/Section3/icon1OS.svg";
-import icon2OS from "../../assets/icons/MainPage/Section3/icon2OS.svg";
-import icon3OS from "../../assets/icons/MainPage/Section3/icon3OS.svg";
-import icon4OS from "../../assets/icons/MainPage/Section3/icon4OS.svg";
-import icon5OS from "../../assets/icons/MainPage/Section3/icon5OS.svg";
-import icon1CA from "../../assets/icons/MainPage/Section3/icon1CA.svg";
-import icon2CA from "../../assets/icons/MainPage/Section3/icon2CA.svg";
-import icon3CA from "../../assets/icons/MainPage/Section3/icon3CA.svg";
-import icon4CA from "../../assets/icons/MainPage/Section3/icon4CA.svg";
-import icon5CA from "../../assets/icons/MainPage/Section3/icon5CA.svg";
-import icon6CA from "../../assets/icons/MainPage/Section3/icon6CA.svg";
-import icon7CA from "../../assets/icons/MainPage/Section3/icon7CA.svg";
-import icon8CA from "../../assets/icons/MainPage/Section3/icon8CA.svg";
-import icon9CA from "../../assets/icons/MainPage/Section3/icon9CA.svg";
-import icon10CA from "../../assets/icons/MainPage/Section3/icon10CA.svg";
-import icon11CA from "../../assets/icons/MainPage/Section3/icon11CA.svg";
-import icon12CA from "../../assets/icons/MainPage/Section3/icon12CA.svg";
-import icon13CA from "../../assets/icons/MainPage/Section3/icon13CA.svg";
-import icon14CA from "../../assets/icons/MainPage/Section3/icon14CA.svg";
+import { ReactComponent as Icon1Head } from "../../assets/icons/MainPage/Section3/icon1Head.svg";
+import { ReactComponent as ICon2Head } from "../../assets/icons/MainPage/Section3/icon2Head.svg";
+import { ReactComponent as Icon1Os } from "../../assets/icons/MainPage/Section3/icon1OS.svg";
+import { ReactComponent as Icon2Os } from "../../assets/icons/MainPage/Section3/icon2OS.svg";
+import { ReactComponent as Icon3Os } from "../../assets/icons/MainPage/Section3/icon3OS.svg";
+import { ReactComponent as Icon4Os } from "../../assets/icons/MainPage/Section3/icon4OS.svg";
+import { ReactComponent as Icon5Os } from "../../assets/icons/MainPage/Section3/icon5OS.svg";
+import { ReactComponent as Icon1Ca } from "../../assets/icons/MainPage/Section3/icon1CA.svg";
+import { ReactComponent as Icon2Ca } from "../../assets/icons/MainPage/Section3/icon2CA.svg";
+import { ReactComponent as Icon3Ca } from "../../assets/icons/MainPage/Section3/icon3CA.svg";
+import { ReactComponent as Icon4Ca } from "../../assets/icons/MainPage/Section3/icon4CA.svg";
+import { ReactComponent as Icon5Ca } from "../../assets/icons/MainPage/Section3/icon5CA.svg";
+import { ReactComponent as Icon6Ca } from "../../assets/icons/MainPage/Section3/icon6CA.svg";
+import { ReactComponent as Icon7Ca } from "../../assets/icons/MainPage/Section3/icon7CA.svg";
+import { ReactComponent as Icon8Ca } from "../../assets/icons/MainPage/Section3/icon8CA.svg";
+import { ReactComponent as Icon9Ca } from "../../assets/icons/MainPage/Section3/icon9CA.svg";
+import { ReactComponent as Icon10Ca } from "../../assets/icons/MainPage/Section3/icon10CA.svg";
+import { ReactComponent as Icon11Ca } from "../../assets/icons/MainPage/Section3/icon11CA.svg";
+import { ReactComponent as Icon12Ca } from "../../assets/icons/MainPage/Section3/icon12CA.svg";
+import { ReactComponent as Icon13Ca } from "../../assets/icons/MainPage/Section3/icon13CA.svg";
+import { ReactComponent as Icon14Ca } from "../../assets/icons/MainPage/Section3/icon14CA.svg";
 import icon15CA from "../../assets/icons/MainPage/Section3/icon15CA.png";
 import icon16CA from "../../assets/icons/MainPage/Section3/icon16CA.png";
-import icon17CA from "../../assets/icons/MainPage/Section3/icon17CA.svg";
+import { ReactComponent as Icon17Ca } from "../../assets/icons/MainPage/Section3/icon17CA.svg";
 import "../../css/MainPage/Section3/style.scss";
 import { Link } from "react-router-dom";
 const section2Header = [
-  { icon: icon1, title: "Operating Systems" },
-  { icon: icon2, title: "1-Click Apps" },
+  { icon: <Icon1Head className="iconhead" />, title: "Operating Systems" },
+  { icon: <ICon2Head className="iconhead" />, title: "1-Click Apps" },
 ];
 const section2ca = [
   {
-    img: icon1CA,
+    img: <Icon1Ca className="iconca" />,
     title: "WordPress (Litespeed)",
     content: "The world's most popular website builder, but faster",
     moreInfo: "More Information",
   },
   {
-    img: icon2CA,
+    img: <Icon2Ca className="iconca" />,
     title: "Magento",
     content: "A very powerful ecommerce system",
     moreInfo: "More Information",
   },
   {
-    img: icon3CA,
+    img: <Icon3Ca className="iconca" />,
     title: "Drupal",
     content: "Open-source web content management framework",
     moreInfo: "More Information",
   },
   {
-    img: icon4CA,
+    img: <Icon4Ca className="iconca" />,
     title: "LAMP",
     content: "Linux, Apache, MySQL & PHP",
     moreInfo: "More Information",
   },
   {
-    img: icon5CA,
+    img: <Icon5Ca className="iconca" />,
     title: "LEMP",
     content: "Linux, NGINX, MySQL & PHP",
     moreInfo: "More Information",
   },
   {
-    img: icon6CA,
+    img: <Icon6Ca className="iconca" />,
     title: "OpenLiteSpeed",
     content: "High-performance, open source HTTP server",
     moreInfo: "More Information",
   },
   {
-    img: icon7CA,
+    img: <Icon7Ca className="iconca" />,
     title: "Joomla",
     content: "Free and open-source content management system",
     moreInfo: "More Information",
   },
   {
-    img: icon8CA,
+    img: <Icon8Ca className="iconca" />,
     title: "Prestashop",
     content: "eCommerce website builder for your online business",
     moreInfo: "More Information",
   },
   {
-    img: icon9CA,
+    img: <Icon9Ca className="iconca" />,
     title: "Chevereto",
     content: "Self-hosted image hosting",
     moreInfo: "More Information",
   },
   {
-    img: icon10CA,
+    img: <Icon10Ca className="iconca" />,
     title: "Nextcloud",
     content: "Open-source file hosting application",
     moreInfo: "More Information",
   },
   {
-    img: icon11CA,
+    img: <Icon11Ca className="iconca" />,
     title: "Docker",
     content: "Open source containerization platform",
     moreInfo: "More Information",
   },
   {
-    img: icon12CA,
+    img: <Icon12Ca className="iconca" />,
     title: "Gitlab",
     content: "Web-based DevOps lifecycle tool",
     moreInfo: "More Information",
   },
   {
-    img: icon13CA,
+    img: <Icon13Ca className="iconca" />,
     title: "CyberPanel",
     content: "Web hosting control panel powered by OpenLiteSpeed",
     moreInfo: "More Information",
   },
   {
-    img: icon14CA,
+    img: <Icon14Ca className="iconca" />,
     title: "CPanel",
     content: "Industry-leading web hosting platform for over 20 years",
     moreInfo: "More Information",
@@ -127,13 +127,19 @@ const section2ca = [
     moreInfo: "More Information",
   },
   {
-    img: icon17CA,
+    img: <Icon17Ca className="iconca" />,
     title: "Minecraft",
     content: "Build everything from the simplest to grandest",
     moreInfo: "More Information",
   },
 ];
-const section2OS = [icon1OS, icon2OS, icon3OS, icon4OS, icon5OS];
+const section2OS = [
+  <Icon1Os className="iconos" />,
+  <Icon2Os className="iconos" />,
+  <Icon3Os className="iconos" />,
+  <Icon4Os className="iconos" />,
+  <Icon5Os className="iconos" />,
+];
 const Section3 = () => {
   const [isClick, setClick] = useState("Operating Systems");
   return (
@@ -147,7 +153,7 @@ const Section3 = () => {
                 className={`tablinks ${e.title === isClick ? "active" : ""}`}
                 key={index}
               >
-                <img className="w-[25px] h-[25px]" src={e.icon} />
+                {e.icon}
                 <span>{e.title}</span>
               </div>
             ))}
@@ -161,9 +167,7 @@ const Section3 = () => {
           {isClick === "Operating Systems" && (
             <div className="section__3-os">
               {section2OS.map((e, index) => (
-                <div key={index}>
-                  <img src={e} />
-                </div>
+                <div key={index}>{e}</div>
               ))}
             </div>
           )}
@@ -172,9 +176,7 @@ const Section3 = () => {
               {section2ca.map((e, index) => (
                 <div className={`wrapper wrapper-${index}`}>
                   <div className="logo-space-apps">
-                    <div>
-                      <img src={e.img} />
-                    </div>
+                    <div>{e.img}</div>
                     <div className="logo-space-apps-desc">
                       <p className="logo-space-title">{e.title}</p>
                       <p className="logo-space-desc">{e.content}</p>

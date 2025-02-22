@@ -1,106 +1,106 @@
 import "../../css/Deploy/style.scss";
-import icon1 from "../../assets/icons/Deploy/Regin/icon1.svg";
-import icon2 from "../../assets/icons/Deploy/Regin/icon1.svg";
-import icon3 from "../../assets/icons/Deploy/Regin/icon2.svg";
-import icon4 from "../../assets/icons/Deploy/Regin/icon3.svg";
-import icon5 from "../../assets/icons/Deploy/Regin/icon4.svg";
-import icon6 from "../../assets/icons/Deploy/Regin/icon4.svg";
-import icon7 from "../../assets/icons/Deploy/Regin/icon5.svg";
-import icon8 from "../../assets/icons/Deploy/Regin/icon6.svg";
-import icon9 from "../../assets/icons/Deploy/Regin/icon7.svg";
-import icon10 from "../../assets/icons/Deploy/Regin/icon7.svg";
-import icon11 from "../../assets/icons/Deploy/Regin/icon8.svg";
-import icon12 from "../../assets/icons/Deploy/Regin/icon9.svg";
-import icon13 from "../../assets/icons/Deploy/Regin/icon10.svg";
-import icon1Os from "../../assets/icons/Deploy/Os/icon1.svg";
-import icon2Os from "../../assets/icons/Deploy/Os/icon2.svg";
-import icon3Os from "../../assets/icons/Deploy/Os/icon3.svg";
-import icon4Os from "../../assets/icons/Deploy/Os/icon4.svg";
-import icon5Os from "../../assets/icons/Deploy/Os/icon5.svg";
-import icon1Ap from "../../assets/icons/Deploy/Ap/icon1.svg";
-import icon2Ap from "../../assets/icons/Deploy/Ap/icon2.svg";
-import icon3Ap from "../../assets/icons/Deploy/Ap/icon3.svg";
-import icon4Ap from "../../assets/icons/Deploy/Ap/icon4.svg";
-import icon5Ap from "../../assets/icons/Deploy/Ap/icon5.svg";
-import icon6Ap from "../../assets/icons/Deploy/Ap/icon6.svg";
-import icon7Ap from "../../assets/icons/Deploy/Ap/icon7.svg";
-import icon8Ap from "../../assets/icons/Deploy/Ap/icon8.svg";
-import icon9Ap from "../../assets/icons/Deploy/Ap/icon9.svg";
-import icon10Ap from "../../assets/icons/Deploy/Ap/icon10.svg";
-import icon11Ap from "../../assets/icons/Deploy/Ap/icon11.svg";
-import icon12Ap from "../../assets/icons/Deploy/Ap/icon12.svg";
-import icon13Ap from "../../assets/icons/Deploy/Ap/icon13.svg";
-import icon14Ap from "../../assets/icons/Deploy/Ap/icon14.svg";
-import icon15Ap from "../../assets/icons/Deploy/Ap/icon15.svg";
-import icon16Ap from "../../assets/icons/Deploy/Ap/icon16.svg";
-import icon17Ap from "../../assets/icons/Deploy/Ap/icon17.svg";
-import iconGame from "../../assets/icons/Deploy/Game/icon.svg";
-import icon1CP from "../../assets/icons/Deploy/ControlPanel/icon1.svg";
-import icon2CP from "../../assets/icons/Deploy/ControlPanel/icon2.svg";
+import { ReactComponent as Icon1Region } from "../../assets/icons/Deploy/Regin/icon1.svg";
+import { ReactComponent as Icon2Region } from "../../assets/icons/Deploy/Regin/icon1.svg";
+import { ReactComponent as Icon3Region } from "../../assets/icons/Deploy/Regin/icon2.svg";
+import { ReactComponent as Icon4Region } from "../../assets/icons/Deploy/Regin/icon3.svg";
+import { ReactComponent as Icon5Region } from "../../assets/icons/Deploy/Regin/icon4.svg";
+import { ReactComponent as Icon6Region } from "../../assets/icons/Deploy/Regin/icon4.svg";
+import { ReactComponent as Icon7Region } from "../../assets/icons/Deploy/Regin/icon5.svg";
+import { ReactComponent as Icon8Region } from "../../assets/icons/Deploy/Regin/icon6.svg";
+import { ReactComponent as Icon9Region } from "../../assets/icons/Deploy/Regin/icon7.svg";
+import { ReactComponent as Icon10Region } from "../../assets/icons/Deploy/Regin/icon7.svg";
+import { ReactComponent as Icon11Region } from "../../assets/icons/Deploy/Regin/icon8.svg";
+import { ReactComponent as Icon12Region } from "../../assets/icons/Deploy/Regin/icon9.svg";
+import { ReactComponent as Icon13Region } from "../../assets/icons/Deploy/Regin/icon10.svg";
+import { ReactComponent as Icon1Os } from "../../assets/icons/Deploy/Os/icon1.svg";
+import { ReactComponent as Icon2Os } from "../../assets/icons/Deploy/Os/icon2.svg";
+import { ReactComponent as Icon3Os } from "../../assets/icons/Deploy/Os/icon3.svg";
+import { ReactComponent as Icon4Os } from "../../assets/icons/Deploy/Os/icon4.svg";
+import { ReactComponent as Icon5Os } from "../../assets/icons/Deploy/Os/icon5.svg";
+import { ReactComponent as Icon1Ap } from "../../assets/icons/Deploy/Ap/icon1.svg";
+import { ReactComponent as Icon2Ap } from "../../assets/icons/Deploy/Ap/icon2.svg";
+import { ReactComponent as Icon3Ap } from "../../assets/icons/Deploy/Ap/icon3.svg";
+import { ReactComponent as Icon4Ap } from "../../assets/icons/Deploy/Ap/icon4.svg";
+import { ReactComponent as Icon5Ap } from "../../assets/icons/Deploy/Ap/icon5.svg";
+import { ReactComponent as Icon6Ap } from "../../assets/icons/Deploy/Ap/icon6.svg";
+import { ReactComponent as Icon7Ap } from "../../assets/icons/Deploy/Ap/icon7.svg";
+import { ReactComponent as Icon8Ap } from "../../assets/icons/Deploy/Ap/icon8.svg";
+import { ReactComponent as Icon9Ap } from "../../assets/icons/Deploy/Ap/icon9.svg";
+import { ReactComponent as Icon10Ap } from "../../assets/icons/Deploy/Ap/icon10.svg";
+import { ReactComponent as Icon11Ap } from "../../assets/icons/Deploy/Ap/icon11.svg";
+import { ReactComponent as Icon12Ap } from "../../assets/icons/Deploy/Ap/icon12.svg";
+import { ReactComponent as Icon13Ap } from "../../assets/icons/Deploy/Ap/icon13.svg";
+import { ReactComponent as Icon14Ap } from "../../assets/icons/Deploy/Ap/icon14.svg";
+import { ReactComponent as Icon15Ap } from "../../assets/icons/Deploy/Ap/icon15.svg";
+import { ReactComponent as Icon16Ap } from "../../assets/icons/Deploy/Ap/icon16.svg";
+import { ReactComponent as Icon17Ap } from "../../assets/icons/Deploy/Ap/icon17.svg";
+import { ReactComponent as IconGame } from "../../assets/icons/Deploy/Game/icon.svg";
+import { ReactComponent as Icon1CP } from "../../assets/icons/Deploy/ControlPanel/icon1.svg";
+import { ReactComponent as Icon2CP } from "../../assets/icons/Deploy/ControlPanel/icon2.svg";
 import icon3CP from "../../assets/icons/Deploy/ControlPanel/icon3.png";
 import icon4CP from "../../assets/icons/Deploy/ControlPanel/icon4.png";
-import icon1Sm from "../../assets/icons/Deploy/Summary/icon1.svg";
-import icon2Sm from "../../assets/icons/Deploy/Summary/icon2.svg";
-import icon3Sm from "../../assets/icons/Deploy/Summary/icon3.svg";
-import icon4Sm from "../../assets/icons/Deploy/Summary/icon4.svg";
-import icon5Sm from "../../assets/icons/Deploy/Summary/icon5.svg";
-import icon6Sm from "../../assets/icons/Deploy/Summary/icon6.svg";
-import icon7Sm from "../../assets/icons/Deploy/Summary/icon7.svg";
+import { ReactComponent as Icon1Sm } from "../../assets/icons/Deploy/Summary/icon1.svg";
+import { ReactComponent as Icon2Sm } from "../../assets/icons/Deploy/Summary/icon2.svg";
+import { ReactComponent as Icon3Sm } from "../../assets/icons/Deploy/Summary/icon3.svg";
+import { ReactComponent as Icon4Sm } from "../../assets/icons/Deploy/Summary/icon4.svg";
+import { ReactComponent as Icon5Sm } from "../../assets/icons/Deploy/Summary/icon5.svg";
+import { ReactComponent as Icon6Sm } from "../../assets/icons/Deploy/Summary/icon6.svg";
+import { ReactComponent as Icon7Sm } from "../../assets/icons/Deploy/Summary/icon7.svg";
 
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
 const region = [
   {
-    icon: icon1,
+    icon: <Icon1Region className="iconRegion" />,
     title: "New York, US",
   },
   {
-    icon: icon2,
+    icon: <Icon2Region className="iconRegion" />,
     title: "Los Angeles, US",
   },
   {
-    icon: icon3,
+    icon: <Icon3Region className="iconRegion" />,
     title: "United Kingdom",
   },
   {
-    icon: icon4,
+    icon: <Icon4Region className="iconRegion" />,
     title: "Germany",
   },
   {
-    icon: icon5,
+    icon: <Icon5Region className="iconRegion" />,
     title: "Poland",
   },
   {
-    icon: icon6,
+    icon: <Icon6Region className="iconRegion" />,
     title: "Malaysia",
   },
   {
-    icon: icon7,
+    icon: <Icon7Region className="iconRegion" />,
     title: "Malaysia",
   },
   {
-    icon: icon8,
+    icon: <Icon8Region className="iconRegion" />,
     title: "Hong Kong",
   },
   {
-    icon: icon9,
+    icon: <Icon9Region className="iconRegion" />,
     title: "Osaka, JP",
   },
   {
-    icon: icon10,
+    icon: <Icon10Region className="iconRegion" />,
     title: "Tokyo, JP",
   },
   {
-    icon: icon11,
+    icon: <Icon11Region className="iconRegion" />,
     title: "Amsterdam, NL",
   },
   {
-    icon: icon12,
+    icon: <Icon12Region className="iconRegion" />,
     title: "Montreal, CA",
   },
   {
-    icon: icon13,
+    icon: <Icon13Region className="iconRegion" />,
     title: "Sydney, AU",
   },
 ];
@@ -338,7 +338,7 @@ const specifications = [
 const listChoice = ["Operating System", "Application", "Game", "Control Panel"];
 const os = [
   {
-    icon: icon1Os,
+    icon: <Icon1Os className="iconOs" />,
     title: "Ubuntu",
     subTitle: (
       <p className="subTitle">
@@ -348,7 +348,7 @@ const os = [
     pricestatus: <p className="pricestatus">Ubuntu 24.04 x64</p>,
   },
   {
-    icon: icon2Os,
+    icon: <Icon2Os className="iconOs" />,
     title: "Debian",
     subTitle: (
       <p className="subTitle">
@@ -358,7 +358,7 @@ const os = [
     pricestatus: <p className="pricestatus">Debian 12 x64</p>,
   },
   {
-    icon: icon3Os,
+    icon: <Icon3Os className="iconOs" />,
     title: "AlmaLinux",
     subTitle: (
       <p className="subTitle">
@@ -368,7 +368,7 @@ const os = [
     pricestatus: <p className="pricestatus">AlmaLinux 9.4 x64</p>,
   },
   {
-    icon: icon4Os,
+    icon: <Icon4Os className="iconOs" />,
     title: "Rocky Linux",
     subTitle: (
       <p className="subTitle">
@@ -378,7 +378,7 @@ const os = [
     pricestatus: <p className="pricestatus">Rocky Linux 9.3 x64</p>,
   },
   {
-    icon: icon5Os,
+    icon: <Icon5Os className="iconOs" />,
     title: "Windows",
     subTitle: (
       <p className="subTitle">
@@ -390,7 +390,7 @@ const os = [
 ];
 const ap = [
   {
-    icon: icon1Ap,
+    icon: <Icon1Ap className="iconAp" />,
     title: "WordPress",
     subTitle: (
       <p className="subTitle">
@@ -400,7 +400,7 @@ const ap = [
     pricestatus: <p className="pricestatus">WordPress</p>,
   },
   {
-    icon: icon2Ap,
+    icon: <Icon2Ap className="iconAp" />,
     title: "WordPress+Litespeed",
     subTitle: (
       <p className="subTitle">
@@ -410,7 +410,7 @@ const ap = [
     pricestatus: <p className="pricestatus">WordPress+Litespeed</p>,
   },
   {
-    icon: icon3Ap,
+    icon: <Icon3Ap className="iconAp" />,
     title: "Magento",
     subTitle: (
       <p className="subTitle">
@@ -420,7 +420,7 @@ const ap = [
     pricestatus: <p className="pricestatus">Magento</p>,
   },
   {
-    icon: icon4Ap,
+    icon: <Icon4Ap className="iconAp" />,
     title: "Drupal",
     subTitle: (
       <p className="subTitle">
@@ -430,7 +430,7 @@ const ap = [
     pricestatus: <p className="pricestatus">Drupal</p>,
   },
   {
-    icon: icon5Ap,
+    icon: <Icon5Ap className="iconAp" />,
     title: "LAMP",
     subTitle: (
       <p className="subTitle">
@@ -440,7 +440,7 @@ const ap = [
     pricestatus: <p className="pricestatus">LAMP</p>,
   },
   {
-    icon: icon6Ap,
+    icon: <Icon6Ap className="iconAp" />,
     title: "LEMP",
     subTitle: (
       <p className="subTitle">
@@ -450,7 +450,7 @@ const ap = [
     pricestatus: <p className="pricestatus">LEMP</p>,
   },
   {
-    icon: icon7Ap,
+    icon: <Icon7Ap className="iconAp" />,
     title: "Joomla",
     subTitle: (
       <p className="subTitle">
@@ -460,7 +460,7 @@ const ap = [
     pricestatus: <p className="pricestatus">Joomla</p>,
   },
   {
-    icon: icon8Ap,
+    icon: <Icon8Ap className="iconAp" />,
     title: "Prestashop",
     subTitle: (
       <p className="subTitle">
@@ -470,7 +470,7 @@ const ap = [
     pricestatus: <p className="pricestatus">Prestashop</p>,
   },
   {
-    icon: icon9Ap,
+    icon: <Icon9Ap className="iconAp" />,
     title: "Chevereto",
     subTitle: (
       <p className="subTitle">
@@ -480,7 +480,7 @@ const ap = [
     pricestatus: <p className="pricestatus">Chevereto</p>,
   },
   {
-    icon: icon10Ap,
+    icon: <Icon10Ap className="iconAp" />,
     title: "WordPress",
     subTitle: (
       <p className="subTitle">
@@ -490,7 +490,7 @@ const ap = [
     pricestatus: <p className="pricestatus">WordPress</p>,
   },
   {
-    icon: icon11Ap,
+    icon: <Icon11Ap className="iconAp" />,
     title: "Nextcloud",
     subTitle: (
       <p className="subTitle">
@@ -500,7 +500,7 @@ const ap = [
     pricestatus: <p className="pricestatus">Nextcloud</p>,
   },
   {
-    icon: icon12Ap,
+    icon: <Icon12Ap className="iconAp" />,
     title: "Docker",
     subTitle: (
       <p className="subTitle">
@@ -510,7 +510,7 @@ const ap = [
     pricestatus: <p className="pricestatus">Docker</p>,
   },
   {
-    icon: icon13Ap,
+    icon: <Icon13Ap className="iconAp" />,
     title: "Gitlab",
     subTitle: (
       <p className="subTitle">
@@ -520,7 +520,7 @@ const ap = [
     pricestatus: <p className="pricestatus">Gitlab</p>,
   },
   {
-    icon: icon14Ap,
+    icon: <Icon14Ap className="iconAp" />,
     title: "OpenLiteSpeed",
     subTitle: (
       <p className="subTitle">
@@ -530,7 +530,7 @@ const ap = [
     pricestatus: <p className="pricestatus">OpenLiteSpeed</p>,
   },
   {
-    icon: icon15Ap,
+    icon: <Icon15Ap className="iconAp" />,
     title: "Pritunl",
     subTitle: (
       <p className="subTitle">
@@ -540,7 +540,7 @@ const ap = [
     pricestatus: <p className="pricestatus">Pritunl</p>,
   },
   {
-    icon: icon16Ap,
+    icon: <Icon16Ap className="iconAp" />,
     title: "Bitwarden",
     subTitle: (
       <p className="subTitle">
@@ -550,7 +550,7 @@ const ap = [
     pricestatus: <p className="pricestatus">Bitwarden</p>,
   },
   {
-    icon: icon17Ap,
+    icon: <Icon17Ap className="iconAp" />,
     title: "OpenVPN",
     subTitle: (
       <p className="subTitle">
@@ -563,7 +563,7 @@ const ap = [
 
 const game = [
   {
-    icon: iconGame,
+    icon: <IconGame className="iconGame" />,
     title: "Minecraft",
     subTitle: (
       <p className="subTitle">
@@ -576,7 +576,7 @@ const game = [
 
 const cp = [
   {
-    icon: icon1CP,
+    icon: <Icon1CP className="iconCp" />,
     title: "CyberPanel",
     subTitle: (
       <p className="subTitle">
@@ -586,7 +586,7 @@ const cp = [
     pricestatus: <p className="pricestatus">CyberPanel</p>,
   },
   {
-    icon: icon2CP,
+    icon: <Icon2CP className="iconCp" />,
     title: "cPanel",
     subTitle: (
       <p className="subTitle">
@@ -625,7 +625,15 @@ const bc = [
   "Annually (-10%)",
 ];
 
-const sm = [icon1Sm, icon2Sm, icon3Sm, icon4Sm, icon5Sm, icon6Sm, icon7Sm];
+const sm = [
+  <Icon1Sm className="iconW140Sm" />,
+  <Icon2Sm className="iconW30Sm" />,
+  <Icon3Sm className="iconW30Sm" />,
+  <Icon4Sm className="iconW140Sm" />,
+  <Icon5Sm className="iconW140Sm" />,
+  <Icon6Sm className="iconW140Sm" />,
+  <Icon7Sm className="iconW140Sm" />,
+];
 const smright = [
   { title: "Region", content: "Los Angeles, US" },
   { title: "Server Specifications", content: "VM-1.5" },
@@ -658,9 +666,7 @@ const Deploy = () => {
                       Temporary out of stock
                     </div>
                   )}
-                  <div>
-                    <img src={e.icon} />
-                  </div>
+                  <div>{e.icon}</div>
                   <p className="region-title">{e.title}</p>
                   {(e.title === "Malaysia" ||
                     e.title === "Hong Kong" ||
@@ -712,7 +718,7 @@ const Deploy = () => {
                   <div className="os-element" key={index} tabIndex={0}>
                     <div className="os-element-top">
                       <div className="img">
-                        <img src={e.icon} />
+                        {e.icon}
                         <p className="title">{e.title}</p>
                       </div>
                       {e.subTitle}
@@ -731,7 +737,7 @@ const Deploy = () => {
                   <div className="ap-element" key={index} tabIndex={0}>
                     <div className="ap-element-top">
                       <div className="img">
-                        <img src={e.icon} />
+                        {e.icon}
                         <p className="title">{e.title}</p>
                       </div>
                       {e.subTitle}
@@ -748,7 +754,7 @@ const Deploy = () => {
                   <div className="game-element" key={index} tabIndex={0}>
                     <div className="game-element-top">
                       <div className="img">
-                        <img src={e.icon} />
+                        {e.icon}
                         <p className="title">{e.title}</p>
                       </div>
                       {e.subTitle}
@@ -765,7 +771,15 @@ const Deploy = () => {
                   <div className="cp-element" key={index} tabIndex={0}>
                     <div className="cp-element-top">
                       <div className="img">
-                        <img src={e.icon} />
+                        {e.title === "CyberPanel" || e.title === "cPanel" ? (
+                          <>{e.icon}</>
+                        ) : (
+                          <>
+                            <img
+                              src={typeof e.icon === "string" ? e.icon : ""}
+                            />
+                          </>
+                        )}
                         <p className="title">{e.title}</p>
                       </div>
                       {e.subTitle}
@@ -859,12 +873,7 @@ const Deploy = () => {
                 <div className="summary-content-left-choosePayment">
                   {sm.map((e, index) => (
                     <div className="box" key={index}>
-                      <div>
-                        <img
-                          className={`${index === 1 || index === 2 ? "imgW30" : "imgW140"}`}
-                          src={e}
-                        />
-                      </div>
+                      <div>{e}</div>
                       {index === 1 && (
                         <p className="credit">Credit Card/ Debit Card</p>
                       )}

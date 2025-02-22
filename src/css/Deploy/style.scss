@@ -55,7 +55,7 @@
           &:focus-within {
             border: 2px solid #476de2;
           }
-          img {
+          .iconRegion {
             width: 40px;
             height: 40px;
           }
@@ -202,7 +202,9 @@
               align-items: start;
               justify-content: space-between;
               .img {
-                img {
+                .iconOs,
+                .iconAp,
+                .iconGame {
                   width: 40px;
                   height: 40px;
                 }
@@ -501,11 +503,11 @@
                   font-weight: 700;
                 }
               }
-              .imgW30 {
+              .iconW30Sm {
                 width: 30px;
                 height: auto;
               }
-              .imgW140 {
+              .iconW140Sm {
                 width: 140px;
                 height: 30px;
               }

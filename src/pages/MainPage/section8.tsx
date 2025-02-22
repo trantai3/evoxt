@@ -1,5 +1,5 @@
 import "../../css/MainPage/Section8/style.scss";
-import imgMap from "../../assets/images/MainPage/Section8/img.svg";
+import { ReactComponent as ImgMap } from "../../assets/images/MainPage/Section8/img.svg";
 import img1 from "../../assets/images/MainPage/Section8/img1.png";
 import img2 from "../../assets/images/MainPage/Section8/img2.jpg";
 import img3 from "../../assets/images/MainPage/Section8/img3.jpg";
@@ -138,7 +138,7 @@ const Section8 = () => {
                 </div>
               </React.Fragment>
             ))}
-            <img src={imgMap} />
+            <ImgMap className="imgMap" />
           </div>
         </div>
       </div>

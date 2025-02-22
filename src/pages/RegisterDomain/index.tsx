@@ -1,13 +1,21 @@
 import "../../css/RegisterDomain/style.scss";
-import icon1 from "../.,/../../assets/icons/RegisterDomain/icon1.svg";
-import icon2 from "../.,/../../assets/icons/RegisterDomain/icon2.svg";
-import icon3 from "../.,/../../assets/icons/RegisterDomain/icon3.svg";
-import icon4 from "../.,/../../assets/icons/RegisterDomain/icon4.svg";
-import icon5 from "../.,/../../assets/icons/RegisterDomain/icon5.svg";
+import { ReactComponent as Icon1 } from "../.,/../../assets/icons/RegisterDomain/icon1.svg";
+import { ReactComponent as Icon2 } from "../.,/../../assets/icons/RegisterDomain/icon2.svg";
+import { ReactComponent as Icon3 } from "../.,/../../assets/icons/RegisterDomain/icon3.svg";
+import { ReactComponent as Icon4 } from "../.,/../../assets/icons/RegisterDomain/icon4.svg";
+import { ReactComponent as Icon5 } from "../.,/../../assets/icons/RegisterDomain/icon5.svg";
 import icon6 from "../.,/../../assets/icons/RegisterDomain/icon6.png";
-import icon7 from "../.,/../../assets/icons/RegisterDomain/icon7.svg";
+import { ReactComponent as Icon7 } from "../.,/../../assets/icons/RegisterDomain/icon7.svg";
 
-const featuredList = [icon1, icon2, icon3, icon4, icon5, icon6, icon7];
+const featuredList = [
+  <Icon1 className="  " />,
+  <Icon2 className="icon" />,
+  <Icon3 className="icon" />,
+  <Icon4 className="icon" />,
+  <Icon5 className="icon" />,
+  icon6,
+  <Icon7 className="icon" />,
+];
 const RegisterDomain = () => {
   return (
     <div className="registerDomainPage">
@@ -29,7 +37,11 @@ const RegisterDomain = () => {
         <div className="featuredList">
           {featuredList.map((e, index) => (
             <div className="img" key={index}>
-              <img src={e} />
+              {index === 5 ? (
+                <>{typeof e === "string" && <img className="icon" src={e} />}</>
+              ) : (
+                <>{e}</>
+              )}
             </div>
           ))}
         </div>

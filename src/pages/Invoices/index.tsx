@@ -1,5 +1,5 @@
 import "../../css/Invoices/style.scss";
-import icon from "../../assets/icons/Invoices/icon.svg";
+import { ReactComponent as Icon } from "../../assets/icons/Invoices/icon.svg";
 import { CiSearch } from "react-icons/ci";
 import { Link } from "react-router-dom";
 const thead = ["Invoice #", "Invoice Date", "Due Date", "Total", "Status"];
@@ -54,7 +54,7 @@ const Invoices = () => {
         <h1>Invoices</h1>
         <div className="alert">
           <div>
-            <img src={icon} />
+            <Icon className="icon" />
           </div>
           <div className="alert-text">
             Need to pay for multiple invoices at once? Take advantage of Evoxt's

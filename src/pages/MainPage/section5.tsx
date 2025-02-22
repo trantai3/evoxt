@@ -1,12 +1,12 @@
 import "../../css/MainPage/Section5/style.scss";
-import icon1 from "../../assets/icons/MainPage/Section5/icon1.svg";
-import icon2 from "../../assets/icons/MainPage/Section5/icon2.svg";
-import icon3 from "../../assets/icons/MainPage/Section5/icon3.svg";
-import icon4 from "../../assets/icons/MainPage/Section5/icon4.svg";
-import icon5 from "../../assets/icons/MainPage/Section5/icon5.svg";
-import icon6 from "../../assets/icons/MainPage/Section5/icon6.svg";
-import icon7 from "../../assets/icons/MainPage/Section5/icon7.svg";
-import icon8 from "../../assets/icons/MainPage/Section5/icon8.svg";
+import { ReactComponent as Icon1 } from "../../assets/icons/MainPage/Section5/icon1.svg";
+import { ReactComponent as Icon2 } from "../../assets/icons/MainPage/Section5/icon2.svg";
+import { ReactComponent as Icon3 } from "../../assets/icons/MainPage/Section5/icon3.svg";
+import { ReactComponent as Icon4 } from "../../assets/icons/MainPage/Section5/icon4.svg";
+import { ReactComponent as Icon5 } from "../../assets/icons/MainPage/Section5/icon5.svg";
+import { ReactComponent as Icon6 } from "../../assets/icons/MainPage/Section5/icon6.svg";
+import { ReactComponent as Icon7 } from "../../assets/icons/MainPage/Section5/icon7.svg";
+import { ReactComponent as Icon8 } from "../../assets/icons/MainPage/Section5/icon8.svg";
 import img1 from "../../assets/images/MainPage/Section5/img1.png";
 import img2 from "../../assets/images/MainPage/Section5/img2.png";
 import img3 from "../../assets/images/MainPage/Section5/img3.png";
@@ -20,14 +20,14 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const section5Tab = [
-  { icon: icon1, title: "Monitoring" },
-  { icon: icon2, title: "IP Management" },
-  { icon: icon3, title: "Firewall" },
-  { icon: icon4, title: "Cloning" },
-  { icon: icon5, title: "Sub Accounts" },
-  { icon: icon6, title: "Backups" },
-  { icon: icon7, title: "VNC" },
-  { icon: icon8, title: "API" },
+  { icon: <Icon1 className="icon" />, title: "Monitoring" },
+  { icon: <Icon2 className="icon" />, title: "IP Management" },
+  { icon: <Icon3 className="icon" />, title: "Firewall" },
+  { icon: <Icon4 className="icon" />, title: "Cloning" },
+  { icon: <Icon5 className="icon" />, title: "Sub Accounts" },
+  { icon: <Icon6 className="icon" />, title: "Backups" },
+  { icon: <Icon7 className="icon" />, title: "VNC" },
+  { icon: <Icon8 className="icon" />, title: "API" },
 ];
 const section5Content = [
   {
@@ -106,9 +106,7 @@ const Section5 = () => {
                   key={index}
                   className={`tablinks ${e.title === isTab ? "active" : ""}`}
                 >
-                  <div>
-                    <img src={e.icon} />
-                  </div>
+                  <div>{e.icon}</div>
                   <span>{e.title}</span>
                 </div>
               ))}
@@ -166,7 +164,7 @@ const Section5 = () => {
                       <img src={e.img} alt="img" />
                     </div>
                   </div>
-                )
+                ),
             )}
           </div>
         </div>

@@ -24,7 +24,7 @@ const SideNav = () => {
     account: false,
   });
   const toggleDropdown = (
-    menu: "service" | "deploy" | "billing" | "support" | "account"
+    menu: "service" | "deploy" | "billing" | "support" | "account",
   ) => {
     setDropdowns((pre) => ({
       ...pre,

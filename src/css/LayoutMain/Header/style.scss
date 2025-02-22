@@ -70,6 +70,12 @@ $a-color: #ffffff;
       max-width: 230px;
       height: auto;
     }
+    .iconBarMaxWidth768 {
+      display: block;
+    }
+    .iconBarMinWidth768 {
+      display: none;
+    }
     .header__right {
       display: flex;
       justify-content: space-between;

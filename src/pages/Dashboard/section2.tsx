@@ -12,14 +12,14 @@ const Section2 = () => {
           <div className="ticket">
             <div className="ticket-head">
               <h3>Recent Tickets</h3>
-              <Link to="">View all tickets</Link>
+              <Link to="/deploy/submitticket">View all tickets</Link>
             </div>
             <div className="ticket-box">You don't have any active tickets.</div>
           </div>
           <div className="invoices">
             <div className="invoices-head">
               <h3>Overdue/ Unpaid Invoices</h3>
-              <Link to="">View all invoices</Link>
+              <Link to="/deploy/invoices">View all invoices</Link>
             </div>
             <div className="invoices-box">
               You don't have any unpaid invoices.

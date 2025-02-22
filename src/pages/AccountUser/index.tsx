@@ -1,5 +1,5 @@
 import "../../css/AccountUser/style.scss";
-import icon from "../../assets/icons/AccountUser/icon.svg";
+import { ReactComponent as Icon } from "../../assets/icons/AccountUser/icon.svg";
 import { FaShield } from "react-icons/fa6";
 import React, { useState } from "react";
 
@@ -51,7 +51,7 @@ const AccountUser = () => {
                 <td className="td-0">
                   <div className="emailAddress">
                     <div className="img">
-                      <img src={icon} />
+                      <Icon className="imgIcon" />
                     </div>
                     <div className="email">
                       <p className="email-infor">trantai09032003@gmail.com</p>

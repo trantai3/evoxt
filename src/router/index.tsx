@@ -1,6 +1,8 @@
+// Layout
 import LayoutDeploy from "@/layouts/LayoutDeploy";
 import { LayoutMain } from "@/layouts/LayoutMain";
 import LayoutStatus from "@/layouts/LayoutStatus";
+// Page
 import AboutUs from "@/pages/AboutUs";
 import AcceptableUsePolicy from "@/pages/AcceptableUsePolicy";
 import AccountContact from "@/pages/AccountContact";

@@ -1,4 +1,4 @@
-import img from "../../assets/images/Clone/Section1/img1.svg";
+import { ReactComponent as Img } from "../../assets/images/Clone/Section1/img1.svg";
 import "../../css/Clone/Section1/style.scss";
 const Section1 = () => {
   return (
@@ -6,7 +6,7 @@ const Section1 = () => {
       <div className="section__1">
         <div className="container">
           <div className="banner">
-            <img src={img} />
+            <Img className="img" />
             <div className="text-banner">
               <h1>Clone Servers</h1>
               <p>

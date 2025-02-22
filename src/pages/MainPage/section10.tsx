@@ -1,5 +1,5 @@
 import "../../css/MainPage/Section10/style.scss";
-import icon from "../../assets/icons/MainPage/Section10/icon.svg";
+import { ReactComponent as Icon } from "../../assets/icons/MainPage/Section10/icon.svg";
 import { IoSearch } from "react-icons/io5";
 import { FaChevronRight } from "react-icons/fa";
 const section10 = [
@@ -49,7 +49,7 @@ const Section10 = () => {
           </div>
           <div className="go-to-categories">
             <div className="section-10-items-documentation-inner">
-              <img src={icon} />
+              <Icon className="icon" />
             </div>
             <p className="documentation-text">
               Ready to explore? Click here for a treasure trove of guides and

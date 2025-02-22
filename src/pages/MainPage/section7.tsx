@@ -1,12 +1,12 @@
 import "../../css/MainPage/Section7/style.scss";
-import icon1 from "../../assets/icons/MainPage/Section7/icon1.svg";
-import icon2 from "../../assets/icons/MainPage/Section7/icon2.svg";
-import icon3 from "../../assets/icons/MainPage/Section7/icon3.svg";
+import { ReactComponent as Icon1 } from "../../assets/icons/MainPage/Section7/icon1.svg";
+import { ReactComponent as ICon2 } from "../../assets/icons/MainPage/Section7/icon2.svg";
+import { ReactComponent as Icon3 } from "../../assets/icons/MainPage/Section7/icon3.svg";
 
 const section7 = [
   {
     title: "Isolated",
-    icon: icon1,
+    icon: <Icon1 className="icon" />,
     content1:
       "Isolated virtual machine environment prevents unauthorized access to your server.",
     content2:
@@ -14,14 +14,14 @@ const section7 = [
   },
   {
     title: "Firewall",
-    icon: icon2,
+    icon: <ICon2 className="icon" />,
     content1:
       "Enterprise-level layer 3 security firewall that you can easily tweak and set up with a few clicks.",
     content2: "Better DDoS protection with layer 3 firewall.",
   },
   {
     title: "Backups",
-    icon: icon3,
+    icon: <Icon3 className="icon" />,
     content1:
       "Automatic backups of your server's data will be taken to secure your server further.",
     content2:
@@ -44,9 +44,7 @@ const Section7 = () => {
               <div key={index} className="wrapper">
                 <div className="title">
                   <h3>{e.title}</h3>
-                  <div>
-                    <img src={e.icon} />
-                  </div>
+                  <div>{e.icon}</div>
                 </div>
                 <div className="content">
                   <p>{e.content1}</p>

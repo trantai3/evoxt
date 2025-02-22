@@ -12,12 +12,10 @@ const Section1 = () => {
           </div>
           <div className="heading2">Virtual Machines.</div>
           <h3 className="subheading">
-            {" "}
             Industry Leading Single Core CPU Performance, up to 6.0 GHz Turbo
             Clock*
           </h3>
           <p className="disclaimer-heading">
-            {" "}
             *Some legacy models are on 3.5 GHz+ Base Clock, if you are assigned
             3.5GHz+ and are dissatisfied, please contact us.
           </p>

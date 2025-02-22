@@ -1,6 +1,6 @@
 import "../../css/MalaysiaDedicated/Section2/style.scss";
-import imgamd from "../../assets/images/Malaysia/Section2/amd.svg";
-import imgintel from "../../assets/images/Malaysia/Section2/intel.svg";
+import { ReactComponent as ImgAmd } from "../../assets/images/Malaysia/Section2/amd.svg";
+import { ReactComponent as ImgIntel } from "../../assets/images/Malaysia/Section2/intel.svg";
 import { Link } from "react-router-dom";
 const thead = [
   "Brand",
@@ -12,7 +12,7 @@ const thead = [
 ];
 const tbodyAmd = [
   {
-    brand: imgamd,
+    brand: <ImgAmd className="imgamd" />,
     processor: (
       <p>
         7800x3D – 8 Cores <br />
@@ -25,7 +25,7 @@ const tbodyAmd = [
     price: "$219",
   },
   {
-    brand: imgamd,
+    brand: <ImgAmd className="imgamd" />,
     processor: (
       <p>
         7900x3D – 12 Cores
@@ -39,7 +39,7 @@ const tbodyAmd = [
     price: "$249",
   },
   {
-    brand: imgamd,
+    brand: <ImgAmd className="imgamd" />,
     processor: (
       <p>
         7950x3D – 16 Cores
@@ -56,7 +56,7 @@ const tbodyAmd = [
 
 const tbodyIntel = [
   {
-    brand: imgintel,
+    brand: <ImgIntel className="imgintel" />,
     processor: (
       <p>
         13600K – 14 Cores
@@ -70,7 +70,7 @@ const tbodyIntel = [
     price: "$259",
   },
   {
-    brand: imgintel,
+    brand: <ImgIntel className="imgintel" />,
     processor: (
       <p>
         13700K – 16 Cores
@@ -84,7 +84,7 @@ const tbodyIntel = [
     price: "$289",
   },
   {
-    brand: imgintel,
+    brand: <ImgIntel className="imgintel" />,
     processor: (
       <p>
         13900K – 24 Cores
@@ -122,9 +122,7 @@ const Section2 = () => {
             <tbody>
               {tbodyAmd.map((e, index) => (
                 <tr key={index}>
-                  <td className="img">
-                    <img src={e.brand} />
-                  </td>
+                  <td className="img">{e.brand}</td>
                   <td>{e.processor}</td>
                   <td>{e.memory}</td>
                   <td>{e.storage}</td>
@@ -154,9 +152,7 @@ const Section2 = () => {
             <tbody>
               {tbodyIntel.map((e, index) => (
                 <tr key={index}>
-                  <td className="img">
-                    <img src={e.brand} />
-                  </td>
+                  <td className="img">{e.brand}</td>
                   <td>{e.processor}</td>
                   <td>{e.memory}</td>
                   <td>{e.storage}</td>

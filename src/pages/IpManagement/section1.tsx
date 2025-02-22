@@ -1,4 +1,4 @@
-import img from "../../assets/images/IpManagement/Section1/img.svg";
+import { ReactComponent as Img } from "../../assets/images/IpManagement/Section1/img.svg";
 import "../../css/IpManagement/Section1/style.scss";
 const Section1 = () => {
   return (
@@ -6,7 +6,7 @@ const Section1 = () => {
       <div className="section__1">
         <div className="container">
           <div className="banner">
-            <img src={img} />
+            <Img className="img" />
             <div className="text-banner">
               <h1>IP Address Management</h1>
               <p>

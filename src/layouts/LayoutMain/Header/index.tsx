@@ -47,7 +47,7 @@ const Header = () => {
             </a>
             <div
               onClick={() => setIsBars(!isBars)}
-              className={`iconBar ${screenWidth < 768 ? "block" : "hidden"}`}
+              className={`iconBar ${screenWidth < 768 ? "iconBarMaxWidth768" : "iconBarMinWidth768"}`}
             >
               <FaBars />
             </div>

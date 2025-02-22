@@ -1,19 +1,19 @@
 import "../../css/MainPage/Section4/style.scss";
-import icon1 from "../../assets/icons/MainPage/Section4/icon1.svg";
-import icon2 from "../../assets/icons/MainPage/Section4/icon2.svg";
-import icon3 from "../../assets/icons/MainPage/Section4/icon3.svg";
+import { ReactComponent as Icon1 } from "../../assets/icons/MainPage/Section4/icon1.svg";
+import { ReactComponent as Icon2 } from "../../assets/icons/MainPage/Section4/icon2.svg";
+import { ReactComponent as Icon3 } from "../../assets/icons/MainPage/Section4/icon3.svg";
 import { useState } from "react";
 const section4Tab = [
   {
-    icon: icon1,
+    icon: <Icon1 className="icon" />,
     title: "CPU",
   },
   {
-    icon: icon2,
+    icon: <Icon2 className="icon" />,
     title: "Memory",
   },
   {
-    icon: icon3,
+    icon: <Icon3 className="icon" />,
     title: "Disk",
   },
 ];
@@ -34,9 +34,7 @@ const Section4 = () => {
                 key={index}
                 className={`tabLinks ${isTab === e.title ? "active" : ""}`}
               >
-                <div>
-                  <img src={e.icon} />
-                </div>
+                <div>{e.icon}</div>
                 <span>{e.title}</span>
               </div>
             ))}

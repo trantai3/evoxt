@@ -1,13 +1,13 @@
 import "../../css/PopularAppsAndWebPage/style.scss";
-import img1 from "../../assets/images/PopularWebAndApps/img1.svg";
-import img2 from "../../assets/images/PopularWebAndApps/img2.svg";
-import img3 from "../../assets/images/PopularWebAndApps/img3.svg";
-import img4 from "../../assets/images/PopularWebAndApps/img4.svg";
-import img5 from "../../assets/images/PopularWebAndApps/img5.svg";
+import { ReactComponent as Img1 } from "../../assets/images/PopularWebAndApps/img1.svg";
+import { ReactComponent as Img2 } from "../../assets/images/PopularWebAndApps/img2.svg";
+import { ReactComponent as Img3 } from "../../assets/images/PopularWebAndApps/img3.svg";
+import { ReactComponent as Img4 } from "../../assets/images/PopularWebAndApps/img4.svg";
+import { ReactComponent as Img5 } from "../../assets/images/PopularWebAndApps/img5.svg";
 import img6 from "../../assets/images/PopularWebAndApps/img6.png";
 import img7 from "../../assets/images/PopularWebAndApps/img7.png";
-import img8 from "../../assets/images/PopularWebAndApps/img8.svg";
-import img9 from "../../assets/images/PopularWebAndApps/img9.svg";
+import { ReactComponent as Img8 } from "../../assets/images/PopularWebAndApps/img8.svg";
+import { ReactComponent as Img9 } from "../../assets/images/PopularWebAndApps/img9.svg";
 import { Link } from "react-router-dom";
 
 const PopularAppsAndWeb = () => {
@@ -23,7 +23,7 @@ const PopularAppsAndWeb = () => {
           <br />
           <h3>1. WordPress</h3>
           <div className="img">
-            <img src={img1} />
+            <Img1 className="img-element" />
           </div>
           <br />
           <p>
@@ -88,7 +88,7 @@ const PopularAppsAndWeb = () => {
           <br />
           <h3>2. NextCloud</h3>
           <div className="img">
-            <img src={img2} />
+            <Img2 className="img-element" />
           </div>
           <br />
           <p>
@@ -101,7 +101,7 @@ const PopularAppsAndWeb = () => {
           <br />
           <h3>3. cPanel</h3>
           <div className="img">
-            <img src={img3} />
+            <Img3 className="img-element" />
           </div>
           <br />
           <p>
@@ -114,7 +114,7 @@ const PopularAppsAndWeb = () => {
           <br />
           <h3>4. Magento</h3>
           <div className="img">
-            <img src={img4} />
+            <Img4 className="img-element" />
           </div>
           <br />
           <p>
@@ -165,7 +165,7 @@ const PopularAppsAndWeb = () => {
           <br />
           <h3>5. Prestashop</h3>
           <div className="img">
-            <img src={img5} />
+            <Img5 className="img-element" />
           </div>
           <br />
           <p>
@@ -181,7 +181,7 @@ const PopularAppsAndWeb = () => {
           </p>
           <h3>6. VestaCP</h3>
           <div className="img">
-            <img src={img6} />
+            <img className="img-element" src={img6} />
           </div>
           <br />
           <p>
@@ -194,7 +194,7 @@ const PopularAppsAndWeb = () => {
           </p>
           <h3>7. HestiaCP</h3>
           <div className="img">
-            <img src={img7} />
+            <img className="img-element" src={img7} />
           </div>
           <br />
           <p>
@@ -206,7 +206,7 @@ const PopularAppsAndWeb = () => {
           </p>
           <h3>8. CyberPanel</h3>
           <div className="img">
-            <img src={img8} />
+            <Img8 className="img-element" />
           </div>
           <br />
           <p>
@@ -220,7 +220,7 @@ const PopularAppsAndWeb = () => {
           </p>
           <h3>9. Cloudron</h3>
           <div className="img">
-            <img src={img9} />
+            <Img9 className="img-element" />
           </div>
           <br />
           <p>

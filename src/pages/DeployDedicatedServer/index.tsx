@@ -1,5 +1,5 @@
 import "../../css/DeployDedicatedServer/style.scss";
-import icon from "../../assets/icons/DeployDedicatedServer/icon.svg";
+import { ReactComponent as Icon } from "../../assets/icons/DeployDedicatedServer/icon.svg";
 const thead = [
   "CPU",
   "RAM",
@@ -15,7 +15,7 @@ const tbody = [
     cpu: "AMD Ryzen 7800x3D",
     ram: "64 GB",
     disk: "2x 1.6 TB",
-    region: icon,
+    region: <Icon className="iconRegion" />,
     setupTime: "<24 hours",
     mothly: "1 Gbps @ 20 TB",
     price: "$189",
@@ -24,7 +24,7 @@ const tbody = [
     cpu: "Intel i9-13900KF",
     ram: "128 GB",
     disk: "2x 3.84 TB",
-    region: icon,
+    region: <Icon className="iconRegion" />,
     setupTime: "<24 hours",
     mothly: "10 Gbps @ 20 TB",
     price: "$279 ",
@@ -33,7 +33,7 @@ const tbody = [
     cpu: "AMD Ryzen 7950x3D",
     ram: "128 GB",
     disk: "2x 3.84 TB",
-    region: icon,
+    region: <Icon className="iconRegion" />,
     setupTime: "<24 hours",
     mothly: "1 Gbps @ 20 TB",
     price: "$279",
@@ -42,7 +42,7 @@ const tbody = [
     cpu: "AMD Ryzen 7950x3D",
     ram: "128 GB",
     disk: "2x 3.84 TB",
-    region: icon,
+    region: <Icon className="iconRegion" />,
     setupTime: "<24 hours",
     mothly: "1 Gbps @ 20 TB",
     price: "$279 ",
@@ -51,7 +51,7 @@ const tbody = [
     cpu: "AMD Ryzen 7950x3D",
     ram: "128 GB",
     disk: "2x 3.84 TB",
-    region: icon,
+    region: <Icon className="iconRegion" />,
     setupTime: "<24 hours",
     mothly: "1 Gbps @ 20 TB",
     price: "$279 ",
@@ -60,7 +60,7 @@ const tbody = [
     cpu: "AMD Ryzen 7950x3D",
     ram: "128 GB",
     disk: "2x 3.84 TB",
-    region: icon,
+    region: <Icon className="iconRegion" />,
     setupTime: "<24 hours",
     mothly: "1 Gbps @ 20 TB",
     price: "$279 ",
@@ -91,9 +91,7 @@ const DeployDedicatedServer = () => {
                   <td>{e.ram}</td>
                   <td>{e.disk}</td>
                   <td>
-                    <div>
-                      <img src={e.region} />
-                    </div>
+                    <div>{e.region}</div>
                   </td>
                   <td>{e.setupTime}</td>
                   <td>{e.mothly}</td>

@@ -42,7 +42,8 @@
             .img {
               display: flex;
               align-items: center;
-              img {
+              .imgamd,
+              .imgintel {
                 width: 70px;
                 height: auto;
               }

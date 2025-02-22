@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../../css/AddFunds/style.scss";
 import icon1 from "../../assets/icons/AddFunds/icon1.png";
-import icon2 from "../../assets/icons/AddFunds/icon2.svg";
+import { ReactComponent as Icon2 } from "../../assets/icons/AddFunds/icon2.svg";
 const tabs = ["Add Funds", "Credit History"];
 const creditDebit = [
   {
@@ -25,7 +25,7 @@ const creditDebit = [
 ];
 const paypal = [
   {
-    img: icon2,
+    img: <Icon2 className="imgIcon2" />,
     imgTitle: "PayPal",
     title: "Automatic Top-up",
     auto: (
@@ -119,7 +119,7 @@ const AddFunds = () => {
                 {paypal.map((e, index) => (
                   <div key={index} className="paypal">
                     <h3>
-                      <img src={e.img} />
+                      {e.img}
                       {e.imgTitle}
                     </h3>
                     <div className="paypal-table">

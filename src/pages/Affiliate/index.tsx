@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "../../css/Affiliate/style.scss";
 import { CiSearch } from "react-icons/ci";
-import img728x90 from "../../assets/images/GraphicAssets/728x90.png";
-import img300x250 from "../../assets/images/GraphicAssets/300x250.png";
-import img300x600 from "../../assets/images/GraphicAssets/300x600.png";
-import img160x600 from "../../assets/images/GraphicAssets/160x600.png";
+import img1 from "../../assets/images/GraphicAssets/728x90.png";
+import img2 from "../../assets/images/GraphicAssets/300x250.png";
+import img3 from "../../assets/images/GraphicAssets/300x600.png";
+import img4 from "../../assets/images/GraphicAssets/160x600.png";
 const affiliate = [
   "Dashboard",
   "Coupons",
@@ -313,7 +313,7 @@ const Affiliate = () => {
             </p>
             <div className="img728x90">
               <h3>728x90</h3>
-              <img src={img728x90} />
+              <img src={img1} />
               <p>
                 Image Url:
                 <a href="https://console.evoxt.com/affiliates-assets/english/728x90.png">
@@ -323,7 +323,7 @@ const Affiliate = () => {
             </div>
             <div className="img300x250">
               <h3>300x250</h3>
-              <img src={img300x250} />
+              <img src={img2} />
               <p>
                 Image Url:
                 <a href="https://console.evoxt.com/affiliates-assets/english/300x250.png">
@@ -333,7 +333,7 @@ const Affiliate = () => {
             </div>
             <div className="img300x600">
               <h3>300x600</h3>
-              <img src={img300x600} />
+              <img src={img3} />
               <p>
                 Image Url:
                 <a href="https://console.evoxt.com/affiliates-assets/english/300x600.png">
@@ -343,7 +343,7 @@ const Affiliate = () => {
             </div>
             <div className="img160x600">
               <h3>160x600</h3>
-              <img src={img160x600} />
+              <img src={img4} />
               <p>
                 Image Url:
                 <a href="https://console.evoxt.com/affiliates-assets/english/160x600.png">

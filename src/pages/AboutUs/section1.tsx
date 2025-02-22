@@ -1,5 +1,5 @@
 import "../../css/AboutUs/Section1/style.scss";
-import icon from "../../assets/icons/About-Us/icon.svg";
+import { ReactComponent as Icon } from "../../assets/icons/About-Us/icon.svg";
 const Section1 = () => {
   return (
     <div className="aboutUsPage">
@@ -8,7 +8,7 @@ const Section1 = () => {
           <div className="wrap">
             <h1>About us</h1>
             <div className="img">
-              <img src={icon} />
+              <Icon className="icon" />
             </div>
             <h2>Our Mission</h2>
             <span>
