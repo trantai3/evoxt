@@ -13,7 +13,7 @@ import { FaRegQuestionCircle } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 const SideNav = () => {
   const [dropdowns, setDropdowns] = useState({
@@ -38,6 +38,27 @@ const SideNav = () => {
     setIsBars(false);
   };
   const location = useLocation();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const handleClickLink = () => {
+    if (windowWidth < 1025) {
+      setClose(false);
+      setIsBars(false);
+    }
+  };
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  useEffect(() => {
+    if (location.pathname === "/deploy") {
+      setClose(true);
+    }
+  }, [location.pathname]);
   return isClose === true || isBars === true ? (
     <div
       className={`sideNavLayoutDeploy ${isClose === true ? "openSideNav" : ""}`}
@@ -79,7 +100,12 @@ const SideNav = () => {
           <p>Dashboard</p>
         </Link>
       </div>
-      <div onClick={() => toggleDropdown("service")} className="service">
+      <div
+        onClick={() => {
+          toggleDropdown("service");
+        }}
+        className="service"
+      >
         <div>
           <IconService className="icon-element" />
         </div>
@@ -90,7 +116,7 @@ const SideNav = () => {
       </div>
       {dropdowns.service === true && (
         <div className="dropdown">
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/deploy/service">Service</Link>
           </p>
         </div>
@@ -106,16 +132,16 @@ const SideNav = () => {
       </div>
       {dropdowns.deploy === true && (
         <div className="dropdown">
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/deploy">Deploy a Virtual Machine</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/deploy/dedicated-server">Deploy a Dedicated Server</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/deploy/order-id">Order Extra IP Address</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/deploy/register-domain">Register a Domain</Link>
           </p>
         </div>
@@ -131,16 +157,16 @@ const SideNav = () => {
       </div>
       {dropdowns.billing === true && (
         <div className="dropdown">
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/deploy/invoices">Invoices</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/deploy/addfunds">Add Funds</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/deploy/refund">Refund Request</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/deploy/refundrequesthistory">
               Refund Request History
             </Link>
@@ -158,10 +184,10 @@ const SideNav = () => {
       </div>
       {dropdowns.support === true && (
         <div className="dropdown">
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/deploy/submitticket">Open Ticket</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/deploy/supporttickets">Tickets</Link>
           </p>
         </div>
@@ -177,39 +203,39 @@ const SideNav = () => {
       </div>
       {dropdowns.account === true && (
         <div className="dropdown">
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/deploy/clientarea">Evoxt Account Details</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/user/profile">User Profile</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/user/password">Change User Password</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/user/security">User Security Settings</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/account/users">Manage Users</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/keysmanagement">Keys Management</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/autorenewal_config">Auto Renewal Configuration</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/account/paymentmethods">
               Manage Credit Cards **New**
             </Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/account/contacts">Email Contacts</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/clientarea-email-history">Email History</Link>
           </p>
-          <p className="dropdown-text">
+          <p onClick={() => handleClickLink()} className="dropdown-text">
             <Link to="/apicredentials">API Credentials</Link>
           </p>
         </div>
@@ -218,7 +244,7 @@ const SideNav = () => {
         <div>
           <IconAffiliate className="icon-element" />
         </div>
-        <p>
+        <p onClick={() => handleClickLink()}>
           <Link to="/affiliates">Affiliates</Link>
         </p>
       </div>
@@ -226,7 +252,7 @@ const SideNav = () => {
         <div>
           <IconReseller className="icon-element" />
         </div>
-        <p>
+        <p onClick={() => handleClickLink()}>
           <Link to="/reseller">Become a Reseller</Link>
         </p>
       </div>
