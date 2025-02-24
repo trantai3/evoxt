@@ -79,7 +79,11 @@
     .container {
       padding-left: 20px;
       .table {
-        padding: 15px;
+        h2 {
+          word-wrap: break-word;
+          overflow-wrap: break-word;
+        }
+        padding: 10px;
       }
     }
   }

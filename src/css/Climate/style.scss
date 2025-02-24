@@ -284,17 +284,6 @@
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1320px) {
-  .climateStripePage {
-    .header {
-      padding-left: 100px;
-    }
-    .section1 {
-      padding-left: 100px;
-    }
-  }
-}
-
 @media (min-width: 1025px) {
   .climateStripePage {
     .header {
@@ -307,27 +296,43 @@
       .chart__figure {
         .chart__overlay {
           .chart__axisLabel--y {
-            left: 1.2%;
-            top: 46.1%;
+            position: absolute;
+            left: 1.2% !important;
+            top: 46.1% !important;
           }
           .chart__lineLabel--solarPanels {
-            left: 10.2%;
-            top: 39.2%;
+            position: absolute;
+            left: 10.2% !important;
+            top: 39.2% !important;
           }
           .chart__lineLabel--hardDrives {
-            left: 26.7%;
-            top: 68.8%;
+            position: absolute;
+            left: 26.7% !important;
+            top: 68.8% !important;
           }
           .chart__lineLabel--dnaSequencing {
-            left: 28.6%;
-            top: 8.9%;
+            position: absolute;
+            left: 28.6% !important;
+            top: 8.9% !important;
           }
           .chart__lineLabel--carbonRemoval {
-            left: 63%;
-            top: 37.9%;
+            position: absolute;
+            left: 63% !important;
+            top: 37.9% !important;
           }
         }
       }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1320px) {
+  .climateStripePage {
+    .header {
+      padding-left: 100px;
+    }
+    .section1 {
+      padding-left: 100px;
     }
   }
 }
@@ -389,11 +394,11 @@
 @media (min-width: 451px) and (max-width: 768px) {
   .climateStripePage {
     .header {
-      padding-left: 50px !important;
-      padding-right: 100px !important;
+      padding-left: 50px;
+      padding-right: 100px;
     }
     .section1 {
-      padding-left: 50px !important;
+      padding-left: 50px;
     }
     .section2 {
       .media-backgroundMask {

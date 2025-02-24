@@ -45,7 +45,9 @@
 @media (max-width: 575px) {
   .windowOrLinuxPage {
     .container {
+      padding: 10px;
       .wrap {
+        padding: 20px;
         .gui,
         .protocols {
           flex-direction: column;

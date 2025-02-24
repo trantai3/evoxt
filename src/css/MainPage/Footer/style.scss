@@ -157,17 +157,19 @@
             }
           }
           .climate-member {
-            display: flex;
-            gap: 12px;
-            margin-top: 20px;
-            align-items: center;
-            span {
-              font-size: 14px;
-              color: white;
-            }
-            .climateImg {
-              min-width: 25px;
-              min-height: 25px;
+            a {
+              display: flex;
+              gap: 12px;
+              margin-top: 20px;
+              align-items: center;
+              span {
+                font-size: 14px;
+                color: white;
+              }
+              .climateImg {
+                min-width: 25px;
+                min-height: 25px;
+              }
             }
           }
         }
@@ -265,7 +267,19 @@
   .mainPage {
     .footer {
       .container {
-        padding: 0 20px;
+        padding: 0 16px;
+        .footer-feature-inner {
+          padding-left: 4px;
+          padding-right: 4px;
+          .feature-top-item {
+            .media {
+              gap: 8px;
+              &-left {
+                padding-right: 8px;
+              }
+            }
+          }
+        }
       }
       &-heading {
         font-size: 32px;

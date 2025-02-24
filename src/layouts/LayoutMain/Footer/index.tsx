@@ -207,10 +207,12 @@ const Footer = () => {
                 </span>
               </div>
               <div className="climate-member">
-                <span>Stripe Climate member</span>
-                <div>
-                  <Climate className="climateImg" />
-                </div>
+                <Link to="/climate-stripe">
+                  <span>Stripe Climate member</span>
+                  <div>
+                    <Climate className="climateImg" />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

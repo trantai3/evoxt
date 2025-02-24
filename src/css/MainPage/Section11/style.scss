@@ -24,22 +24,23 @@
       color: white;
     }
     &-buttons-wrapper {
-      display: flex;
-      gap: 15px;
-      justify-content: center;
-      align-items: center;
-      .button {
-        color: white;
-        padding: 18px 40px;
-        font-weight: bold;
-        font-size: 21px;
-        text-align: center;
-        &-account {
-          background-color: royalblue;
-        }
-        &-contact {
-          background-color: white;
-          color: #050049;
+      .buttons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        .button {
+          padding: 18px 40px;
+          font-size: 21px;
+          font-weight: bold;
+          &-account {
+            background-color: royalblue;
+            color: white;
+          }
+          &-contact {
+            background-color: white;
+            color: #050049;
+          }
         }
       }
     }
@@ -90,13 +91,25 @@
   .mainPage {
     .section__11 {
       .container {
-        padding: 0 20px;
+        padding: 0 10px;
       }
       &-heading {
         font-size: 32px;
       }
       &-buttons-wrapper {
-        flex-direction: column;
+        .buttons {
+          flex-direction: column;
+          .button {
+            min-width: 200px;
+            text-align: center;
+            &-account {
+              padding: 10px 20px;
+            }
+            &-contact {
+              padding: 10px 20px;
+            }
+          }
+        }
       }
     }
   }

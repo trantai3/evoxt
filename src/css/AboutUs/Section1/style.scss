@@ -44,3 +44,16 @@
     }
   }
 }
+
+@media (max-width: 575px) {
+  .aboutUsPage {
+    .section__1 {
+      .container {
+        padding: 0 10px;
+        .wrap {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}

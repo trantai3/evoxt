@@ -156,6 +156,9 @@
     .section__10 {
       .container {
         padding: 0 50px;
+        .popular-searches {
+          width: 80%;
+        }
       }
     }
   }
@@ -168,12 +171,15 @@
         font-size: 32px;
       }
       .container {
-        padding: 0 20px;
+        padding: 0 16px;
         .go-to-categories {
           flex-direction: column;
           .documentation-text {
             text-align: center;
           }
+        }
+        .popular-searches {
+          width: 100%;
         }
       }
     }

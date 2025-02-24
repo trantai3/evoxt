@@ -47,7 +47,7 @@
           }
         }
         &-email {
-          width: 60%;
+          width: 100%;
         }
       }
       .button {
@@ -108,9 +108,15 @@
             width: 100%;
           }
         }
+        .form-group {
+          width: 100%;
+        }
       }
       .button {
         flex-direction: column;
+        button {
+          min-width: 150px;
+        }
       }
     }
   }

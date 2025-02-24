@@ -605,13 +605,17 @@
 @media (max-width: 575px) {
   .affiliatePage {
     .container {
-      padding-left: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
       .dashboard,
       .estimator {
-        padding: 20px;
+        padding: 10px;
         .dashboard-inner {
           flex-basis: 100% !important;
         }
+      }
+      .coupons {
+        padding: 10px;
       }
     }
   }

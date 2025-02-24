@@ -202,6 +202,12 @@
               align-items: start;
               justify-content: space-between;
               .img {
+                svg,
+                img {
+                  width: 40px;
+                  height: 40px;
+                }
+
                 .iconOs,
                 .iconAp,
                 .iconGame {
@@ -620,32 +626,6 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .deployPage {
-    .container {
-      .table {
-        .summary {
-          &-content {
-            flex-direction: column;
-            &-left {
-              width: 100%;
-              &-affiliate-title {
-                text-align: center;
-              }
-              &-affiliate-apply {
-                justify-content: center;
-              }
-            }
-            &-right {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 @media (min-width: 1258px) and (max-width: 1700px) {
   .deployPage {
     .container {
@@ -722,6 +702,47 @@
     }
   }
 }
+@media (max-width: 1199px) {
+  .deployPage {
+    .container {
+      .table {
+        .specifications-element {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .deployPage {
+    .container {
+      .table {
+        .summary {
+          &-content {
+            flex-direction: column;
+            &-left {
+              width: 100%;
+              &-affiliate-title {
+                text-align: center;
+              }
+              &-affiliate-apply {
+                justify-content: center;
+              }
+              &-choosePayment {
+                .box {
+                  max-width: 100%;
+                }
+              }
+            }
+            &-right {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
   .deployPage {
@@ -729,7 +750,7 @@
       .table {
         .specifications {
           &-element {
-            width: 60%;
+            width: 100%;
           }
         }
         .os,
@@ -752,7 +773,7 @@
       .table {
         .specifications {
           &-element {
-            width: 60%;
+            width: 100%;
           }
         }
         .os,
@@ -794,7 +815,7 @@
         }
         .specifications {
           &-element {
-            width: 70%;
+            width: 100%;
           }
         }
         .operatingSystem {
@@ -869,8 +890,15 @@
 @media (max-width: 400px) {
   .deployPage {
     .container {
+      padding-left: 10px;
+      padding-right: 10px;
       .table {
+        margin: 0;
         .region {
+          &-list {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+          }
           &-element {
             padding-left: 10px;
             padding-right: 10px;
@@ -881,7 +909,47 @@
             padding: 10px !important;
           }
           &-element {
-            width: 90%;
+            width: 100%;
+          }
+        }
+        .os {
+          padding: 10px !important;
+        }
+        .hostname {
+          &-content {
+            padding: 10px;
+            &-title {
+              padding: 0;
+            }
+            &-inner {
+              padding: 0 !important;
+            }
+          }
+        }
+        .startup {
+          &-content {
+            padding: 10px;
+            textarea {
+              width: 100%;
+            }
+          }
+        }
+        .billingcycle {
+          &-content {
+            label {
+              width: 100%;
+            }
+          }
+        }
+        .summary {
+          &-content {
+            &-left {
+              &-choosePayment {
+                .box {
+                  max-width: 100%;
+                }
+              }
+            }
           }
         }
       }

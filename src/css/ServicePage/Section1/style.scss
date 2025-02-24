@@ -34,57 +34,58 @@
       .overflowX {
         overflow-x: auto;
         white-space: nowrap;
-        max-width: 1200px;
-      }
-      .table {
-        margin-top: 25px;
-        margin-bottom: 30px;
-        width: 100%;
-        padding: 15px 40px;
-        border: 1px solid #ddd;
-        box-shadow: 0 6px 12px rgba(140, 152, 164, 0.075);
-        &-search {
-          label {
-            display: flex;
-            align-items: center;
-            padding: 8px;
-            border: 1px solid #ddd;
-            &:focus-within {
-              border: 1px royalblue solid;
-            }
-            &:hover {
-              border: 1px royalblue solid;
-            }
-            .iconSearch {
-              font-size: 24px;
-              margin-right: 12px;
-            }
-            input {
-              width: 100%;
-              background-color: #f5f5f5;
-              &:focus {
-                outline: none;
+        max-width: 100%;
+        .table {
+          margin-top: 25px;
+          margin-bottom: 30px;
+          width: 100%;
+          padding: 15px 40px;
+          border: 1px solid #ddd;
+          box-shadow: 0 6px 12px rgba(140, 152, 164, 0.075);
+          &-search {
+            label {
+              display: flex;
+              align-items: center;
+              padding: 8px;
+              border: 1px solid #ddd;
+              &:focus-within {
+                border: 1px royalblue solid;
+              }
+              &:hover {
+                border: 1px royalblue solid;
+              }
+              .iconSearch {
+                font-size: 24px;
+                margin-right: 12px;
+              }
+              input {
+                width: 100%;
+                background-color: #f5f5f5;
+                &:focus {
+                  outline: none;
+                }
               }
             }
           }
-        }
-        &-list {
-          margin-top: 20px;
-          table {
-            width: 100%;
-            thead {
-              th {
-                text-align: center;
-                padding: 10px 0;
-                border-bottom: 1px solid #ccc;
-                color: #333333;
+          &-list {
+            overflow-x: auto;
+            margin-top: 20px;
+            table {
+              width: 100%;
+              thead {
+                th {
+                  text-align: center;
+                  padding: 10px 0;
+                  border-bottom: 1px solid #ccc;
+                  color: #333333;
+                }
               }
-            }
-            tbody {
-              td {
-                padding: 10px;
-                text-align: center;
-                border-bottom: 1px solid #ccc;
+              tbody {
+                td {
+                  padding: 10px;
+                  text-align: center;
+                  border-bottom: 1px solid #ccc;
+                }
               }
             }
           }
@@ -129,6 +130,12 @@
     .section__1 {
       .container {
         padding-left: 20px;
+        .overflowX {
+          .table {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
       }
     }
   }

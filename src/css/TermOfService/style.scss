@@ -26,3 +26,20 @@
     }
   }
 }
+
+@media (max-width: 575px) {
+  .termOfServicePage {
+    .section__1 {
+      .container {
+        padding: 0 10px;
+        .wrap {
+          padding: 20px;
+        }
+        h1 {
+          word-wrap: break-word;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

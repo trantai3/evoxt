@@ -1,6 +1,6 @@
 import "../../../css/SideNavLayoutDeploy/SideNav/style.scss";
 import { bars } from "@/components/Recoil/atom/app";
-import { ReactComponent as IconMain } from "../../../assets/icons/Dashboard/icon.svg";
+import iconMain from "../../../assets/icons/Dashboard/icon.svg";
 import { ReactComponent as IconDashboard } from "../../../assets/icons/Dashboard/iconDashboard.svg";
 import { ReactComponent as IconService } from "../../../assets/icons/Dashboard/iconService.svg";
 import { ReactComponent as IconDeploy } from "../../../assets/icons/Dashboard/iconDeploy.svg";
@@ -46,7 +46,7 @@ const SideNav = () => {
         <IoIosClose />
       </button>
       <Link className="img" to="/deploy/dashboard">
-        <IconMain className="iconMain" />
+        <img className="iconMain" src={iconMain} alt="" />
       </Link>
       <p className="username">Tai</p>
       <p className="email">trantai09032003@gmail.com</p>

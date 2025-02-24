@@ -255,7 +255,8 @@
 @media (max-width: 575px) {
   .AccountUserPage {
     .container {
-      padding-left: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
       .table {
         table {
           thead {
@@ -303,6 +304,33 @@
                 .email-time {
                   text-align: center;
                 }
+              }
+            }
+            .actions {
+              flex-direction: column;
+              button {
+                min-width: 150px;
+              }
+            }
+            .emailAddress {
+              padding-left: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .AccountUserPage {
+    .container {
+      .table {
+        table {
+          tbody {
+            .actions {
+              button {
+                width: 100%;
               }
             }
           }
