@@ -199,6 +199,7 @@
 @media (max-width: 1280px) {
   .addFundsPage {
     .container {
+      padding-left: 0;
       .payment-choose {
         flex-direction: column;
         .credit-debit {
@@ -217,6 +218,7 @@
     }
   }
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .addFundsPage {
     .container {

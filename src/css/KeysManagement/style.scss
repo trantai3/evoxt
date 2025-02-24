@@ -52,6 +52,14 @@
   }
 }
 
+@media (max-width: 1025px) {
+  .keysManagementPage {
+    .container {
+      padding-left: 0;
+    }
+  }
+}
+
 @media (min-width: 576px) and (max-width: 767px) {
   .keysManagementPage {
     .container {

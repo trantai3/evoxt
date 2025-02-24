@@ -153,6 +153,14 @@
   }
 }
 
+@media (max-width: 1025px) {
+  .submitticketPage {
+    .container {
+      padding-left: 0;
+    }
+  }
+}
+
 @media (min-width: 576px) and (max-width: 767px) {
   .submitticketPage {
     .container {

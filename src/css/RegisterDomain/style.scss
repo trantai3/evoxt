@@ -78,6 +78,14 @@
   }
 }
 
+@media (max-width: 1025px) {
+  .registerDomainPage {
+    .container {
+      padding-left: 0;
+    }
+  }
+}
+
 @media (min-width: 576px) and (max-width: 767px) {
   .registerDomainPage {
     .container {
