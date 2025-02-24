@@ -32,12 +32,9 @@ const Header = () => {
           <div className="header__register">
             <Link to="/deploy/dashboard">Register</Link>
           </div>
-          <a
-            className="header__environment"
-            href="https://climate.stripe.com/tzMi7z"
-          >
+          <Link className="header__environment" to="/climate-stripe">
             We care about the Environment
-          </a>
+          </Link>
           <Icon className="icon-environment" />
         </div>
         <div className="header__two">

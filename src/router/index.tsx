@@ -50,6 +50,7 @@ const WhyChooseEvoxt = lazy(() => import("@/pages/WhyChooseEvoxt"));
 const WindowOrLinux = lazy(() => import("@/pages/WindowOrLinux"));
 const Login = lazy(() => import("@/pages/Login"));
 const Register = lazy(() => import("@/pages/Register"));
+const ClimateStripe = lazy(() => import("@/pages/ClimateStripe"));
 import {
   RouteObject,
   createBrowserRouter,
@@ -473,6 +474,14 @@ const rootRoute: RouteObject[] = [
         ),
       },
     ],
+  },
+  {
+    path: "/climate-stripe",
+    element: (
+      <Suspense>
+        <ClimateStripe />
+      </Suspense>
+    ),
   },
 ];
 
