@@ -27,7 +27,7 @@
           align-items: center;
           margin-bottom: 15px;
           .form-group {
-            width: 40%;
+            flex: 1;
           }
         }
         label {
@@ -60,7 +60,7 @@
           align-items: center;
           margin-bottom: 15px;
           .form-group {
-            width: 40%;
+            flex: 1;
             select {
               width: 100%;
               font-size: 14px;
