@@ -43,7 +43,7 @@
     }
     .overflow-x {
       overflow-x: auto;
-      max-width: 1200px;
+      max-width: 100%;
       white-space: nowrap;
     }
     .tabs {
@@ -67,6 +67,7 @@
       }
     }
     .vms {
+      overflow-x: auto;
       padding: 6px 12px;
       box-shadow: 0 6px 12px rgba(140, 152, 164, 0.075);
       border: 1px solid #ddd;
