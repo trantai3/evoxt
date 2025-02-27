@@ -8,43 +8,58 @@ import imgFirewalls from "../../assets/images/WhyChooseEvoxt/imgFirewall.png";
 import imgUptime from "../../assets/images/WhyChooseEvoxt/imgUptime.png";
 import imgVnc from "../../assets/images/WhyChooseEvoxt/imgVnc.png";
 import imgAddressManagement from "../../assets/images/WhyChooseEvoxt/imgAddressManagement.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 const sidebar = [
-  "Faster CPU",
-  "Data Safety",
-  "One-click Applications",
-  "Firewalls",
-  "Quick deployments",
-  "Isolated",
-  "Enterprise grade hardware",
-  "Clean IP ranges",
-  "Future ready",
-  "We Listen from you",
-  "Uptime",
-  "Privacy",
-  "VNC",
-  "Customer support",
-  "Customer satisfaction",
-  "Pricing",
-  "Scalability",
-  "IP address management",
-  "API",
-  "We are passionate!",
+  { title: "Faster CPU", id: "header-1" },
+  { title: "Data Safety", id: "header-2" },
+  { title: "One-click Applications", id: "header-3" },
+  { title: "Firewalls", id: "header-4" },
+  { title: "Quick deployments", id: "header-5" },
+  { title: "Isolated", id: "header-6" },
+  { title: "Enterprise grade hardware", id: "header-7" },
+  { title: "Clean IP ranges", id: "header-8" },
+  { title: "Future ready", id: "header-9" },
+  { title: "We Listen from you", id: "header-10" },
+  { title: "Uptime", id: "header-11" },
+  { title: "Privacy", id: "header-12" },
+  { title: "VNC", id: "header-13" },
+  { title: "Customer support", id: "header-14" },
+  { title: "Customer satisfaction", id: "header-15" },
+  { title: "Pricing", id: "header-16" },
+  { title: "Scalability", id: "header-17" },
+  { title: "IP address management", id: "header-18" },
+  { title: "API", id: "header-19" },
+  { title: "We are passionate!", id: "header-20" },
 ];
+
 const WhyChooseEvoxt = () => {
-  const [isTab, setTab] = useState("Faster CPU");
+  const [isTab, setTab] = useState("");
+  useEffect(() => {
+    const handleScroll = () => {
+      let scrollPosition = window.scrollY;
+      sidebar.forEach((section) => {
+        const element = document.getElementById(section.id);
+        if (element && element.offsetTop <= scrollPosition + 100) {
+          setTab(section.title);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div className="whyChooseEvoxt">
       <div className="main">
         <div className="sidebar">
           {sidebar.map((e, index) => (
             <a
-              onClick={() => setTab(e)}
+              onClick={() => setTab(e.title)}
               href={`#header-${index + 1}`}
-              className={`${isTab === e ? "header-active" : ""}`}
+              className={`${isTab === e.title ? "header-active" : ""}`}
               key={index}
             >
-              {e}
+              {e.title}
             </a>
           ))}
         </div>
