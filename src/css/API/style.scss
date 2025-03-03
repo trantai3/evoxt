@@ -1,0 +1,862 @@
+.api {
+  display: flex;
+  align-items: start;
+  .section-active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(7, 14, 40);
+  }
+  .tab-active {
+    background-color: white;
+  }
+  .sidenav {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 100vh;
+    height: 100%;
+    background-color: rgb(15, 30, 83);
+    max-width: 260px;
+    .imgSideNav {
+      padding: 15px;
+      width: 260px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .search {
+      display: flex;
+      gap: 4px;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid rgb(23, 46, 126);
+      align-items: center;
+      &-icon {
+        color: white;
+      }
+      input {
+        font-size: 13px;
+        caret-color: white;
+        background-color: rgb(15, 30, 83);
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .section {
+      display: block;
+      cursor: pointer;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      color: white;
+      padding: 12px 20px;
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    .dropdown {
+      a {
+        cursor: pointer;
+        font-size: 13.5px;
+        color: white;
+        padding: 12px 20px 12px 40px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        .post,
+        .get {
+          width: 32px;
+          border-radius: 3px;
+          font-size: 7px;
+          padding: 2px 4px;
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: bold;
+        }
+        .post {
+          background-color: rgb(24, 111, 175);
+        }
+        .get {
+          background-color: rgb(47, 129, 50);
+        }
+      }
+    }
+  }
+  .api-main {
+    flex: 1;
+
+    .intro-getting {
+      display: flex;
+      align-items: stretch;
+      &-left {
+        flex: 3;
+        .evoxt {
+          padding: 40px 40px;
+          color: #333333;
+          h1 {
+            font-size: 26px;
+          }
+          .download {
+            font-size: 14px;
+            margin: 14px 0;
+            span {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: 4px;
+              padding: 4px 8px;
+              border: 1px solid rgb(50, 50, 159);
+              color: rgb(50, 50, 159);
+            }
+          }
+          .email {
+            font-size: 14px;
+            .emailLink,
+            .term {
+              color: rgb(50, 50, 159);
+            }
+          }
+        }
+        .introduction,
+        .gettingstart,
+        .sign-up,
+        .authentication,
+        .tools,
+        .deploy {
+          padding: 40px;
+          color: #333333;
+          h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+          }
+          p {
+            margin-top: 14px;
+            font-size: 14px;
+            code {
+              color: rgb(229, 57, 53);
+              background-color: rgba(38, 50, 56, 0.05);
+              border: 1px solid rgba(38, 50, 56, 0.1);
+              border-radius: 2px;
+              padding: 0 5px;
+              font-size: 13px;
+              word-break: break-all;
+            }
+          }
+          a {
+            color: rgb(50, 50, 159);
+          }
+        }
+        .authentication {
+          .generateKey {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .tools {
+          .imgPost,
+          .imgInsomia {
+            width: 150px;
+          }
+          .insomia {
+            padding-top: 14px;
+            padding-bottom: 14px;
+          }
+        }
+      }
+      &-right {
+        flex: 2;
+        height: auto;
+        background-color: #333333;
+      }
+    }
+    .deploy-server {
+      display: flex;
+      align-items: stretch;
+      &-left {
+        flex: 3;
+        .deploy-server-infor {
+          padding: 40px;
+          color: #333333;
+          h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+          }
+          p {
+            margin-top: 14px;
+            font-size: 14px;
+            a {
+              color: rgb(50, 50, 159);
+            }
+          }
+          h5 {
+            color: #26323880;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(38, 50, 56, 0.3);
+            margin: 15px 0;
+            span {
+              margin-left: 4px;
+              font-size: 12px;
+              color: #000000;
+            }
+          }
+          table {
+            width: 100%;
+            tr {
+              .td {
+                &-first {
+                  &-left {
+                    background-image: linear-gradient(
+                      transparent 0%,
+                      transparent 22px,
+                      rgb(124, 124, 187) 22px,
+                      rgb(124, 124, 187) 100%
+                    );
+                    border-left-width: 0px;
+                    background-position: left top;
+                    background-repeat: no-repeat;
+                    background-size: 1px 100%;
+                    padding-right: 10px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                  }
+                }
+                &-left {
+                  width: 20%;
+                  border-left: 1px solid rgb(124, 124, 187);
+                  position: relative;
+                  padding: 10px 10px 10px 0px;
+                  .icon {
+                    margin-right: 10px;
+                    &::before {
+                      content: "";
+                      display: inline-block;
+                      vertical-align: middle;
+                      width: 10px;
+                      height: 1px;
+                      background: rgb(124, 124, 187);
+                    }
+                    &::after {
+                      content: "";
+                      display: inline-block;
+                      vertical-align: middle;
+                      width: 1px;
+                      background: rgb(124, 124, 187);
+                      height: 7px;
+                    }
+                  }
+                  .td-required {
+                    margin-left: 20px;
+                    color: rgb(212, 31, 28);
+                    font-size: 12px;
+                  }
+                }
+                &-right {
+                  padding: 10px 0;
+                  border-bottom: 1px solid rgb(159, 180, 190);
+                }
+              }
+            }
+          }
+        }
+      }
+      &-right {
+        flex: 2;
+        background-color: #333333;
+      }
+    }
+    .deploy-api {
+      padding-left: 40px;
+      padding-right: 40px;
+      &-method {
+        margin-bottom: 5px;
+        button {
+          display: flex;
+          background-color: rgb(26, 26, 26);
+          box-shadow:
+            rgba(0, 0, 0, 0.45) 0px 2px 2px inset,
+            rgba(128, 128, 128, 0.25) 0px 2px 0px;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px 20px;
+          .link-method {
+            display: flex;
+            align-items: center;
+            span {
+              color: white;
+              &.method {
+                font-size: 12px;
+                text-transform: uppercase;
+                padding: 3px 10px;
+              }
+              &.post {
+                background-color: rgb(24, 111, 175);
+              }
+              &.link {
+                font-size: 13px;
+                margin-left: 8px;
+              }
+            }
+          }
+          .icon {
+            color: white;
+          }
+        }
+        .sub-button {
+          padding: 10px;
+          background-color: white;
+          .link {
+            padding: 5px;
+            border: 1px solid rgb(204, 204, 204);
+          }
+        }
+        h3 {
+          margin-top: 16px;
+          margin-bottom: 16px;
+          color: rgb(255, 255, 255);
+          font-size: 16px;
+          font-weight: 700;
+        }
+        .tabsList {
+          display: flex;
+          align-items: center;
+          .tab {
+            padding: 5px 10px;
+            cursor: pointer;
+            border: 1px solid rgb(13, 13, 13);
+            background-color: rgb(26, 26, 26);
+            border-radius: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            &-active {
+              background-color: white;
+            }
+            &:focus {
+              background-color: rgb(255, 255, 255);
+            }
+            &-200 {
+              color: rgb(29, 129, 39);
+              &:focus {
+                border-color: rgb(29, 129, 39);
+              }
+            }
+            &-400,
+            &-401 {
+              color: rgb(212, 31, 28);
+              &:focus {
+                border-color: rgb(212, 31, 28);
+              }
+            }
+          }
+        }
+        .return-api {
+          margin-top: 10px;
+          background-color: rgb(26, 26, 26);
+          padding: 20px;
+          &-top {
+            color: rgb(255, 255, 255);
+            .app-json {
+              background-color: rgba(51, 51, 51, 0.4);
+              padding: 11px;
+              margin-top: 10px;
+              margin-bottom: 10px;
+            }
+          }
+          &-bottom {
+            code {
+              span {
+                color: white;
+              }
+              ul {
+                padding-left: 20px;
+                line-height: 1.8;
+                li:nth-child(2) {
+                  word-break: break-all;
+                }
+                li {
+                  font-size: 13px;
+                  div {
+                    color: white;
+                    .green {
+                      color: rgb(160, 251, 170);
+                    }
+                    .blue {
+                      color: rgb(74, 139, 179);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .response {
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .success-responses,
+    .invalid-response,
+    .unauthorized-response {
+      padding: 10px;
+      margin-bottom: 4px;
+      &::before {
+        content: "—";
+        font-weight: bold;
+        width: 1.5em;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+      }
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      strong {
+        font-size: 13px;
+      }
+      span {
+        font-size: 13px;
+      }
+    }
+    .success-responses {
+      background-color: rgba(29, 129, 39, 0.07);
+      color: rgb(29, 129, 39);
+    }
+    .invalid-response,
+    .unauthorized-response {
+      background-color: rgba(212, 31, 28, 0.07);
+      color: rgb(212, 31, 28);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .api-main {
+    .intro-getting {
+      &-right {
+        display: none;
+      }
+    }
+    .deploy-server {
+      &-right {
+        display: none;
+      }
+    }
+    .viewapp {
+      &-right {
+        display: none;
+      }
+    }
+    .viewplanlist {
+      &-right {
+        display: none;
+      }
+    }
+    .serverdetails {
+      &-right {
+        display: none;
+      }
+    }
+    .serverstatus {
+      &-right {
+        display: none;
+      }
+    }
+    .serverfirewall {
+      &-right {
+        display: none;
+      }
+    }
+    .enablefirewall {
+      &-right {
+        display: none;
+      }
+    }
+    .addfirewallrule {
+      &-right {
+        display: none;
+      }
+    }
+    .deletefirewallrule {
+      &-right {
+        display: none;
+      }
+    }
+    .disablefirewall {
+      &-right {
+        display: none;
+      }
+    }
+    .serverbackup {
+      &-right {
+        display: none;
+      }
+    }
+    .restorebackup {
+      &-right {
+        display: none;
+      }
+    }
+    .serverpowercontrol {
+      &-right {
+        display: none;
+      }
+    }
+    .changeserverlabel {
+      &-right {
+        display: none;
+      }
+    }
+    .changeserverpassword {
+      &-right {
+        display: none;
+      }
+    }
+    .changeserverhostname {
+      &-right {
+        display: none;
+      }
+    }
+    .reinstallserver {
+      &-right {
+        display: none;
+      }
+    }
+    .upgradeserver {
+      &-right {
+        display: none;
+      }
+    }
+    .getserverinvoices {
+      &-right {
+        display: none;
+      }
+    }
+    .getinvoices {
+      &-right {
+        display: none;
+      }
+    }
+    .getinvoicesdetail {
+      &-right {
+        display: none;
+      }
+    }
+    .payinvoice {
+      &-right {
+        display: none;
+      }
+    }
+    .renewservice {
+      &-right {
+        display: none;
+      }
+    }
+    .getaccountcredits {
+      &-right {
+        display: none;
+      }
+    }
+    .submitcancellationrequest {
+      &-right {
+        display: none;
+      }
+    }
+    .withdrawcancellationrequest {
+      &-right {
+        display: none;
+      }
+    }
+    .openticket {
+      &-right {
+        display: none;
+      }
+    }
+    .addticketreply {
+      &-right {
+        display: none;
+      }
+    }
+    .getaticket {
+      &-right {
+        display: none;
+      }
+    }
+    .gettickets {
+      &-right {
+        display: none;
+      }
+    }
+    .ratetime {
+      &-right {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .api {
+    .sidenav {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .api {
+    table {
+      td {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .api {
+    table {
+      td {
+        width: 40%;
+      }
+    }
+    .api-main {
+      .intro-getting {
+        &-left {
+          .evoxt,
+          .introduction,
+          .gettingstart,
+          .sign-up,
+          .authentication,
+          .tools,
+          .deploy {
+            padding: 10px;
+          }
+        }
+      }
+      .deploy-server {
+        padding: 10px;
+        &-left {
+          .deploy-server-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .viewapp {
+        &-left {
+          .viewapp-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .viewplanlist {
+        &-left {
+          .viewplanlist-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .serverdetails {
+        &-left {
+          .serverdetails-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .serverstatus {
+        &-left {
+          .serverstatus-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .serverfirewall {
+        &-left {
+          .serverfirewall-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .enablefirewall {
+        &-left {
+          .enablefirewall-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .addfirewallrule {
+        &-left {
+          .addfirewallrule-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .deletefirewallrule {
+        &-left {
+          .deletefirewallrule-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .disablefirewall {
+        &-left {
+          .disablefirewall-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .serverbackup {
+        &-left {
+          .serverbackup-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .restorebackup {
+        &-left {
+          .restorebackup-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .serverpowercontrol {
+        &-left {
+          .serverpowercontrol-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .changeserverlabel {
+        &-left {
+          .changeserverlabel-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .changeserverpassword {
+        &-left {
+          .changeserverpassword-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .changeserverhostname {
+        &-left {
+          .changeserverhostname-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .reinstallserver {
+        &-left {
+          .reinstallserver-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .upgradeserver {
+        &-left {
+          .upgradeserver-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .getserverinvoices {
+        &-left {
+          .getserverinvoices-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .getinvoices {
+        &-left {
+          .getinvoices-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .getinvoicesdetail {
+        &-left {
+          .getinvoicesdetail-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .payinvoice {
+        &-left {
+          .payinvoice-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .renewservice {
+        &-left {
+          .renewservice-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .getaccountcredits {
+        &-left {
+          .getaccountcredits-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .submitcancellationrequest {
+        &-left {
+          .submitcancellationrequest-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .withdrawcancellationrequest {
+        &-left {
+          .withdrawcancellationrequest-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .openticket {
+        &-left {
+          .openticket-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .addticketreply {
+        &-left {
+          .addticketreply-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .getaticket {
+        &-left {
+          .getaticket-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .gettickets {
+        &-left {
+          .gettickets-infor {
+            padding: 10px;
+          }
+        }
+      }
+      .ratetime {
+        &-left {
+          .ratetime-infor {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}

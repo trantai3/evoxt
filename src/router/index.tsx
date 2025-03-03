@@ -51,6 +51,7 @@ const WindowOrLinux = lazy(() => import("@/pages/WindowOrLinux"));
 const Login = lazy(() => import("@/pages/Login"));
 const Register = lazy(() => import("@/pages/Register"));
 const ClimateStripe = lazy(() => import("@/pages/ClimateStripe"));
+const API = lazy(() => import("@/pages/API"));
 import {
   RouteObject,
   createBrowserRouter,
@@ -480,6 +481,14 @@ const rootRoute: RouteObject[] = [
     element: (
       <Suspense>
         <ClimateStripe />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/api",
+    element: (
+      <Suspense>
+        <API />
       </Suspense>
     ),
   },
